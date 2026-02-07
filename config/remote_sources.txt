@@ -1,12 +1,23 @@
-# iptv_api项目源
-https://raw.githubusercontent.com/alantang1977/iptv_api/refs/heads/main/output/live_ipv4.m3u
-# rtp源
-https://raw.wangqifei.eu.org/rtp
-# 洛阳酒店源
-https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1
+#
+# # 国际源
 # thetvapp
 # https://raw.wangqifei.eu.org/thetvapp/thetvapplist.m3u
+https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u
+
+#
+# # 国内源
+# iptv_api项目源
+# https://raw.githubusercontent.com/alantang1977/iptv_api/refs/heads/main/output/live_ipv4.m3u
+
+https://raw.wangqifei.eu.org/rtp
+https://s.wangqifei.eu.org/live
+
+# 洛阳酒店源
+https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1
+
 # myiptv
-# https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
+https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
 # iptv-api
 # https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u
+# gntv
+https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u
