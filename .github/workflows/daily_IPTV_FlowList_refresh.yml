@@ -44,9 +44,9 @@ jobs:
           pip install pytesseract opencv-python pillow
 
       # ✅ 关键：在正确目录下运行脚本
-      - name: 🧹 Run IPTV Cleaner (Enhanced Version)
+      - name: 🧹 Run daily-IPTVFlowList-refresh 📺
         run: |
-          python clean_iptv.py  # 👈 确保文件名匹配！
+          python iptvflow.py  # 👈 确保文件名匹配！
         env:
           # 如果你脚本里启用了 BARK 推送，保留；否则可删。默认启用
           BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
@@ -58,7 +58,7 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           
           # 注意：路径是相对于仓库根目录
-          git add live_clean.m3u report.md
+          git add output/live.m3u output/report.md
           
           if git diff --staged --quiet; then
             echo "ℹ️ No changes — skipping commit."
