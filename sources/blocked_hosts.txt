@@ -1,0 +1,4 @@
+# 忽略这些劣质主机
+# 根据网络环境按需自定义
+live.catvod.com:443
+bxtv.3a.ink
