@@ -1,6 +1,6 @@
 # 📺 IPTVFlow — 智能 IPTV 直播源清洗与验证系统
 
-[![daily_IPTV_FlowList_refresh.yml](https://github.com/fqw000/IPTVFlow/actions/workflows/daily_IPTV_FlowList_refresh.yml.yml/badge.svg)](https://github.com/fqw000/IPTVFlow/actions)
+[![daily_IPTV_FlowList_refresh](https://github.com/fqw000/IPTVFlow/actions/workflows/daily_IPTV_FlowList_refresh.yml/badge.svg)](https://github.com/fqw000/IPTVFlow/actions/workflows/daily_IPTV_FlowList_refresh.yml)
 ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![License](https://img.shields.io/github/license/your-username/IPTVFlow)
 
