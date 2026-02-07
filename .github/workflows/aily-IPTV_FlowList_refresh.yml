@@ -1,0 +1,80 @@
+name: 📺 daily-IPTVFlowList-refresh
+
+on:
+  schedule:
+    - cron: '15 1 * * *'  # UTC 01:15 → 北京时间 09:15
+  workflow_dispatch:
+
+jobs:
+  update-iptv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20  # 增加至 20 分钟（OCR 可能较慢）
+
+    steps:
+      - name: 🛎️ Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: 🔄 Sync with remote (rebase)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main || echo "✅ Already up-to-date"
+
+      - name: 🐍 Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # ✅ 安装基础依赖
+      - name: 📦 Install Python dependencies
+        run: |
+          pip install requests
+
+      # ✅ 【可选】安装 FFmpeg（用于深度验证）
+      - name: 🎞️ Install FFmpeg (for stream validation)
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      # ✅ 【可选】安装 Tesseract + OCR 依赖（用于画面检测）
+      - name: 🔍 Install Tesseract OCR (optional, for soft-error detection)
+        run: |
+          sudo apt-get install -y tesseract-ocr libtesseract-dev
+          pip install pytesseract opencv-python pillow
+
+      # ✅ 关键：在正确目录下运行脚本
+      - name: 🧹 Run IPTV Cleaner (Enhanced Version)
+        run: |
+          python clean_iptv.py  # 👈 确保文件名匹配！
+        env:
+          # 如果你脚本里启用了 BARK 推送，保留；否则可删。默认启用
+          BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
+
+      # ✅ 关键：使用绝对路径或相对于仓库根目录的路径
+      - name: 📤 Commit and push if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # 注意：路径是相对于仓库根目录
+          git add live_clean.m3u report.md
+          
+          if git diff --staged --quiet; then
+            echo "ℹ️ No changes — skipping commit."
+            exit 0
+          fi
+          
+          echo "✅ Changes detected. Committing..."
+          git commit -m "chore(iptv): auto-update clean playlist [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push origin main
+          echo "📤 Push successful"
+
+      # 🐞 调试：上传可能的 debug 文件（如果脚本生成了）
+      - name: 📦 Upload debug artifacts (if any)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: iptv-debug-files
+          path: clean_iptv/debug_*
+          retention-days: 3
