@@ -47,6 +47,7 @@ jobs:
       - name: 🧹 Run daily-IPTVFlowList-refresh 📺
         run: |
           python iptvflow.py  # 👈 确保文件名匹配！
+          # python iptvflowLite.py # 运行精简版本（无FFMEPG\OCR)提升速度
         env:
           # 如果你脚本里启用了 BARK 推送，保留；否则可删。默认启用
           BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
@@ -76,5 +77,5 @@ jobs:
         if: always()
         with:
           name: iptv-debug-files
-          path: clean_iptv/debug_*
+          path: debug_*
           retention-days: 3
