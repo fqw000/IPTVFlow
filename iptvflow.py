@@ -25,17 +25,12 @@ from typing import List, Dict, Any, Optional, Tuple, Set, DefaultDict
 
 
 # ================== 全局配置类 ==================
-
-# if os.getenv('DEBUG', '').lower() in ('1', 'true', 'yes'):
-#     logging.basicConfig(level=logging.DEBUG)
-#     logging.debug("Debug mode enabled")
-
 class Config:
     """集中管理所有可调参数，便于维护和调整策略"""
     BASE_URL_FILE: str = "config/remote_sources.txt"            # 远程源列表文件
     BLACKLIST_FILE: str = "config/blackHost_list.txt"           # 主机黑名单文件（每行一个 host:port）
     OUTPUT_FILE: str = "output/live.m3u"                        # 最终输出的 M3U 文件
-    REPORT_FILE: str = "output/report.md"                              # 清洗报告（Markdown）
+    REPORT_FILE: str = "output/report.md"                       # 清洗报告（Markdown）
 
 
     # 新增：Bark 通知设备密钥（可留空，此时从环境变量读取）
@@ -66,7 +61,7 @@ class Config:
         (r'(体育|CCTV5|高尔夫|足球|NBA|英超|西甲|欧冠)', "⚽ 体育频道"),
         (r'(电影|影院|CHC|HBO|星空|AXN|TCM|佳片)', "🎬 影视频道"),
         (r'(AMC|BET|Discovery|CBS|BET|cine|CNN|disney|epix|espn|fox|american|boomerang|cnbc|entertainment|fs|fuse|fx|hbo|国家地理|Animal Planet|BBC|NHK|DW|France24|CNN|Al Jazeera)', "🌍 国际频道"),
-        (r'(教育|课堂|空中|大学|学习|国学|书画|考试|中学|学堂|)', "🎓 教育频道"),
+        (r'(教育|课堂|空中|大学|学习|国学|书画|考试|中学|学堂)', "🎓 教育频道"),
         # 兜底规则：全英文且不含 CCTV/CGTN → 国际频道
         (r'^(?=.*[a-zA-Z])(?!.*\b(cctv|cgtn)\b)[a-zA-Z0-9\s\-\+\&\.\'\!\(\)]+$', "🌍 国际频道"),
     ]
@@ -558,35 +553,104 @@ def detect_and_convert_to_m3u(content: str) -> str:
         return txt2m3u_content(stripped)
 
 
-def load_blacklist() -> Set[str]:
+def load_blacklist() -> Tuple[Set[str], Set[str]]:
     """
-    加载主机黑名单文件（blackHost_list.txt）。
-    - 忽略空行和 # 开头的注释行
-    - 自动补全默认端口（80/443）
+    智能加载黑名单，区分两种模式：
+    - 仅主机名（通配）：阻止该主机所有端口
+    - 主机名+端口（精确）：阻止特定端口组合
     
     Returns:
-        set of "host:port" strings
+        (host_only_set, host_with_port_set)
     """
-    blacklist: Set[str] = set()
+    host_only = set()
+    host_with_port = set()
+    
     if not os.path.exists(Config.BLACKLIST_FILE):
-        logging.info(f"ℹ️  黑名单文件 {Config.BLACKLIST_FILE} 不存在，跳过过滤")
-        return blacklist
-
+        logging.info(f"ℹ️  黑名单文件不存在，跳过过滤")
+        return host_only, host_with_port
+    
     try:
         with open(Config.BLACKLIST_FILE, 'r', encoding='utf-8') as f:
             for line_num, line in enumerate(f, 1):
                 raw = line.strip()
                 if not raw or raw.startswith("#"):
                     continue
-                host = raw.lower().strip()
-                # 补全端口（与 get_host_key 逻辑一致）
-                if ':' not in host:
-                    host += ':80'
-                blacklist.add(host)
-        logging.info(f"🛡️  加载黑名单主机数: {len(blacklist)} | 来自: {os.path.abspath(Config.BLACKLIST_FILE)}")
+                    
+                # 标准化为小写
+                entry = raw.lower()
+                
+                # 分离两种模式
+                if ':' in entry:
+                    # 格式：host:port（精确匹配）
+                    parts = entry.split(':', 1)
+                    host = parts[0].strip()
+                    port_str = parts[1].strip()
+                    
+                    # 验证端口有效性
+                    if host and port_str.isdigit():
+                        host_with_port.add(f"{host}:{port_str}")
+                        logging.debug(f"📝 加载精确黑名单: {host}:{port_str}")
+                    else:
+                        logging.warning(f"⚠️  第{line_num}行无效的host:port格式: {raw}")
+                else:
+                    # 格式：host（通配匹配）
+                    host_only.add(entry.strip())
+                    logging.debug(f"📝 加载通配黑名单: {entry}")
+        
+        logging.info(f"🛡️  黑名单加载完成: {len(host_only)}个通配 + {len(host_with_port)}个精确")
+        
     except Exception as e:
         logging.error(f"❌ 读取黑名单失败: {e}")
-    return blacklist
+    
+    return host_only, host_with_port
+
+def is_blocked_by_blacklist(url: str, host_only_set: Set[str], host_with_port_set: Set[str]) -> bool:
+    """
+    智能判断URL是否应被黑名单阻止
+    
+    Args:
+        url: 要检查的URL
+        host_only_set: 仅主机名集合（匹配所有端口）
+        host_with_port_set: 主机名+端口集合（精确匹配）
+    
+    Returns:
+        True表示应阻止，False表示放行
+    """
+    try:
+        parsed = urlparse(url)
+        hostname = parsed.hostname
+        
+        if not hostname:
+            return False  # 无效URL
+        
+        # 标准化主机名
+        hostname_lower = hostname.lower()
+        
+        # 获取端口（处理默认端口）
+        if parsed.port:
+            port = parsed.port
+        else:
+            # 根据协议使用默认端口
+            port = 443 if parsed.scheme == 'https' else 80
+        
+        # 构造精确匹配键
+        exact_key = f"{hostname_lower}:{port}"
+        
+        # 第一步：精确匹配（优先级高）
+        if exact_key in host_with_port_set:
+            logging.debug(f"🚫 精确黑名单匹配: {url} → {exact_key}")
+            return True
+        
+        # 第二步：通配匹配
+        if hostname_lower in host_only_set:
+            logging.debug(f"🚫 通配黑名单匹配: {url} → {hostname_lower}")
+            return True
+        
+        return False
+        
+    except Exception as e:
+        logging.warning(f"⚠️  黑名单检查异常 URL={url}: {e}")
+        return False  # 出错时不阻止
 
 
 # ================== 核心流程函数（保持不变） ==================
@@ -907,8 +971,8 @@ def generate_outputs_and_notify(
 
     # --- 生成报告 ---
     report = f"""# ✅ IPTV直播源清洗报告
-**生成时间**: {beijing_time_str()}
-**存活率**: {stats['survival_rate']:.1f}%
+>**生成时间**: {beijing_time_str()}<br>
+>**存活率**: {stats['survival_rate']:.1f}%
 
 ## 📊 核心统计
 | 项目 | 数量 |
@@ -919,7 +983,7 @@ def generate_outputs_and_notify(
 | 最终频道 | {stats['final_channels']} |
 
 ## 🔗 源加载详情
-| 类型 | 标识 | 状态 | 行数 | 错误信息 |
+| 类型 | 标识 | 状态 | 频道数 | 错误信息 |
 |------|------|------|------|----------|
 """
 
@@ -1030,27 +1094,34 @@ def main() -> None:
     raw_content, source_details = load_sources()
 
     # === 加载黑名单 ===
-    blacklist_hosts = load_blacklist()
+    host_only_blacklist, exact_blacklist = load_blacklist()
 
     # === 解析原始频道并过滤黑名单 ===
     raw_channels = parse_m3u(raw_content)
     logging.info(f"🧹 解析到 {len(raw_channels)} 条原始频道记录")
 
-    # 构建临时 url_to_host 用于过滤
-    temp_url_to_host: Dict[str, str] = {}
-    for ch in raw_channels:
-        if is_valid_url(ch["url"]):
-            if (host := get_host_key(ch["url"])):
-                temp_url_to_host[ch["url"]] = host
-
     # 过滤黑名单
     filtered_raw_channels = []
+    blocked_count = 0
+
     for ch in raw_channels:
-        host = temp_url_to_host.get(ch["url"])
-        if host and host in blacklist_hosts:
-            logging.debug(f"🚫 黑名单跳过: {ch['name']} → {ch['url']}")
+        url = ch["url"]
+        if not is_valid_url(url):
             continue
+            
+        # 智能黑名单检查
+        if is_blocked_by_blacklist(url, host_only_blacklist, exact_blacklist):
+            blocked_count += 1
+            if blocked_count <= 5:  # 只记录前5个，避免日志过多
+                logging.debug(f"🚫 黑名单跳过: {ch['name']} → {url}")
+            continue
+            
         filtered_raw_channels.append(ch)
+
+    if blocked_count > 0:
+        logging.info(f"🛡️  黑名单过滤: 阻止了 {blocked_count} 个频道")
+    else:
+        logging.info("ℹ️  黑名单未匹配到任何频道")
 
     # 分组（去重）
     grouped: DefaultDict[str, List[Dict[str, str]]] = defaultdict(list)
