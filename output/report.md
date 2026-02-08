@@ -1,36 +1,38 @@
 # ✅ IPTV直播源清洗报告
-**生成时间**: 2026-02-08 05:52:16
-**存活率**: 45.6%
+>**生成时间**: 2026-02-08 12:25:59<br>
+>**存活率**: 44.6%
 
 ## 📊 核心统计
 | 项目 | 数量 |
 |------|------|
-| 原始频道 | 1096 |
-| 唯一主机 | 342 |
-| 存活主机 | 156 |
+| 原始频道 | 1091 |
+| 唯一主机 | 336 |
+| 存活主机 | 150 |
 | 最终频道 | 336 |
 
 ## 🔗 源加载详情
-| 类型 | 标识 | 状态 | 行数 | 错误信息 |
+| 类型 | 标识 | 状态 | 频道数 | 错误信息 |
 |------|------|------|------|----------|
-| 远程 | `https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u` | ✅ 成功 | 2709 | - |
-| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
 | 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u` | ✅ 成功 | 202 | - |
+| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
+| 远程 | `https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u` | ✅ 成功 | 2709 | - |
 | 远程 | `https://raw.wangqifei.eu.org/rtp` | ❌ 失败 | 0 | HTTP 404 |
 | 远程 | `https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1` | ✅ 成功 | 65 | - |
-| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 1053 | - |
+| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 947 | - |
 
 ## 📺 分组分布
-- **🎓 教育频道**: 177 个
-- **📺 卫视频道**: 79 个
-- **🇨🇳 央视频道**: 30 个
+- **📺 其他频道**: 115 个
+- **📺 卫视频道**: 76 个
+- **🌍 国际频道**: 75 个
+- **🇨🇳 央视频道**: 27 个
 - **🇭🇰 港澳台频道**: 24 个
-- **🎬 影视频道**: 9 个
-- **🧸 儿童动画**: 8 个
-- **🌍 国际频道**: 8 个
+- **🧸 儿童动画**: 9 个
+- **🎬 影视频道**: 8 个
 - **⚽ 体育频道**: 1 个
+- **🎓 教育频道**: 1 个
 
 ## 📋 可用频道列表
+- 1905电影网
 - 1987年春晚
 - 1988年春晚
 - 1989年春晚
@@ -46,6 +48,7 @@
 - Astro AOD
 - Astro QJ
 - Astro欢喜
+- BBC News
 - Billiard
 - Bloomberg Asia
 - Bravo
@@ -58,7 +61,6 @@
 - CCTV14
 - CCTV15
 - CCTV16
-- CCTV17
 - CCTV2
 - CCTV3
 - CCTV4
@@ -69,10 +71,9 @@
 - CCTV7
 - CCTV8
 - CCTV9
-- CCTV卫生健康
 - CCTV央视台球
 - CCTV女性时尚
-- CCTV电视指南
+- CCTV怀旧剧场
 - CCTV第一剧场
 - CCTV风云剧场
 - CCTV风云足球
@@ -80,9 +81,7 @@
 - CGTN俄语
 - CGTN法语
 - CGTN记录
-- CHC动作电影
 - CHC家庭影院
-- CHC高清电影
 - CNA
 - CNBC
 - CNN
@@ -111,6 +110,7 @@
 - LG 1 Film
 - LG 1 Spotlight
 - Lifetime
+- LiveNow
 - M
 - MLB Network
 - MovieSphere
@@ -142,6 +142,7 @@
 - Showtime Extreme
 - Showtime Next
 - Showtime Women
+- SportsGrid
 - Starz Comedy
 - TBS
 - TRT World
@@ -160,9 +161,8 @@
 - Trace Sports
 - Trace Urban
 - VIU
-- Viu
+- WION
 - Wild Earth
-- WionNews
 - YES Network
 - tvg
 - 七台河新闻综合
@@ -202,14 +202,14 @@
 - 北京卫视
 - 千禧经典
 - 南国都市
-- 南方卫视
 - 厦门卫视
+- 叙州新闻综合
 - 台视新闻
 - 吉林卫视
+- 哈尔滨娱乐
 - 哈尔滨影视
 - 哈尔滨新闻综合
 - 哈尔滨生活
-- 哈尔滨都市咨询
 - 四川卫视
 - 四川科教
 - 四海钓鱼
@@ -221,11 +221,11 @@
 - 安徽卫视
 - 少儿
 - 山东卫视
-- 山东教育
 - 山东教育卫视
 - 山西卫视
 - 广东卫视
 - 广东大湾区
+- 广元公共
 - 广元综合
 - 广安公共
 - 广州新闻
@@ -240,7 +240,6 @@
 - 新视觉
 - 新闻
 - 新闻咨询
-- 旅游卫视
 - 无线新闻
 - 旺苍新闻综合
 - 昌黎综合
@@ -279,6 +278,8 @@
 - 河南法治
 - 河南电视剧
 - 河南都市
+- 河源公共
+- 河源综合
 - 法 时尚
 - 法治
 - 浙江卫视
@@ -370,7 +371,6 @@
 
 ## ❌ 无有效源的频道
 - &Flix
-- 1905电影网
 - 1983年春晚
 - 1984年春晚
 - 1985年春晚
@@ -417,7 +417,6 @@
 - Action Movies
 - Autentic Travel
 - BBC
-- BBC News
 - BRTV体育休闲
 - BRTV国际
 - BRTV影视
@@ -431,7 +430,6 @@
 - CBC News
 - CBN News
 - CCTV 世界地理
-- CCTV 中国天气
 - CCTV 中学生
 - CCTV 兵器科技
 - CCTV 卫生健康
@@ -450,6 +448,7 @@
 - CCTV12社会与法
 - CCTV14少儿
 - CCTV15音乐
+- CCTV17
 - CCTV17农业农村
 - CCTV4中文国际
 - CCTV4欧洲
@@ -476,6 +475,7 @@
 - CGTN阿拉伯语
 - CH5
 - CH8
+- CHC动作电影
 - CHC影迷电影
 - CHU
 - Clarity
@@ -504,14 +504,11 @@
 - Inside Outside
 - J2
 - KBS world
-- LiveNow
 - Love Nature
 - MYTV SUPER
 - NEWSMAX2
 - NHK World
-- NOW NEWS
-- NOW爆谷
-- NOW爆谷星影
+- NOW新闻
 - NOW财经
 - NewTV 东北热剧
 - NewTV 中国功夫
@@ -561,7 +558,6 @@
 - Sony One Comedy HITS
 - Sony One Dragons' Den
 - Sony One FAVES
-- SportsGrid
 - Stadium
 - TVB J1
 - TVBJ1
@@ -581,6 +577,7 @@
 - Universal Monsters
 - VIUTV 6
 - VIUTV1
+- Viu
 - Viu6
 - Wild Planet
 - iHOT 爱体育
@@ -694,13 +691,14 @@
 - 南宁文旅
 - 南宁新闻
 - 南平综合
+- 南方卫视
 - 南方影视
 - 南通新闻综合
 - 卡酷动画
 - 发现之旅
-- 叙州新闻综合
 - 古天乐电影
 - 古装武侠
+- 可乐影院
 - 台湾+
 - 名侦探柯南
 - 周星驰电影
@@ -765,7 +763,7 @@
 - 咪咕赛事播53
 - 哆啦A梦
 - 哈哈炫动
-- 哈尔滨娱乐
+- 哈尔滨都市咨询
 - 哒啵电竞
 - 唐诡之西行
 - 喜羊羊与灰太狼
@@ -815,6 +813,7 @@
 - 小毅主播q
 - 少年包青天第一部
 - 少年包青天第三部
+- 山东教育
 - 山西影视
 - 山西文体生活
 - 山西社会与法治
@@ -832,7 +831,6 @@
 - 广东民生
 - 广东珠江
 - 广东经济科教
-- 广元公共
 - 广州影视
 - 广州法治
 - 庆余年
@@ -875,7 +873,6 @@
 - 星爷房✔原
 - 昭化综合
 - 最强综艺趴
-- 有线新闻
 - 末日电影合集
 - 李连杰电影
 - 林正英电影
@@ -917,8 +914,6 @@
 - 河南国际
 - 河南戏曲
 - 河南民生
-- 河源公共
-- 河源综合
 - 泉州新闻综合
 - 法政先锋
 - 法治天地
@@ -1028,6 +1023,7 @@
 - 纪实科教8K
 - 纬来电影
 - 纬来综合
+- 经典
 - 经典剧集
 - 经典剧集✔原
 - 经典动画大集合
