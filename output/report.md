@@ -1,14 +1,14 @@
 # ✅ IPTV直播源清洗报告
->**生成时间**: 2026-02-08 12:25:59<br>
->**存活率**: 44.6%
+>**生成时间**: 2026-02-09 12:18:01<br>
+>**存活率**: 46.2%
 
 ## 📊 核心统计
 | 项目 | 数量 |
 |------|------|
-| 原始频道 | 1091 |
-| 唯一主机 | 336 |
-| 存活主机 | 150 |
-| 最终频道 | 336 |
+| 原始频道 | 1098 |
+| 唯一主机 | 340 |
+| 存活主机 | 157 |
+| 最终频道 | 342 |
 
 ## 🔗 源加载详情
 | 类型 | 标识 | 状态 | 频道数 | 错误信息 |
@@ -16,23 +16,22 @@
 | 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u` | ✅ 成功 | 202 | - |
 | 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
 | 远程 | `https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u` | ✅ 成功 | 2709 | - |
+| 远程 | `https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1` | ❌ 失败 | 0 | HTTP 403 |
+| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 1125 | - |
 | 远程 | `https://raw.wangqifei.eu.org/rtp` | ❌ 失败 | 0 | HTTP 404 |
-| 远程 | `https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1` | ✅ 成功 | 65 | - |
-| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 947 | - |
 
 ## 📺 分组分布
-- **📺 其他频道**: 115 个
-- **📺 卫视频道**: 76 个
-- **🌍 国际频道**: 75 个
-- **🇨🇳 央视频道**: 27 个
-- **🇭🇰 港澳台频道**: 24 个
+- **📺 其他频道**: 114 个
+- **📺 卫视频道**: 79 个
+- **🌍 国际频道**: 76 个
+- **🇨🇳 央视频道**: 31 个
+- **🇭🇰 港澳台频道**: 23 个
 - **🧸 儿童动画**: 9 个
 - **🎬 影视频道**: 8 个
 - **⚽ 体育频道**: 1 个
 - **🎓 教育频道**: 1 个
 
 ## 📋 可用频道列表
-- 1905电影网
 - 1987年春晚
 - 1988年春晚
 - 1989年春晚
@@ -48,11 +47,11 @@
 - Astro AOD
 - Astro QJ
 - Astro欢喜
+- BBC Earth
 - BBC News
 - Billiard
 - Bloomberg Asia
 - Bravo
-- CCTV
 - CCTV1
 - CCTV10
 - CCTV11
@@ -71,16 +70,22 @@
 - CCTV7
 - CCTV8
 - CCTV9
+- CCTV世界地理
+- CCTV兵器科技
+- CCTV卫生健康
 - CCTV央视台球
+- CCTV央视文化精品
 - CCTV女性时尚
 - CCTV怀旧剧场
+- CCTV电视指南
 - CCTV第一剧场
 - CCTV风云剧场
-- CCTV风云足球
+- CCTV风云音乐
 - CGTN
 - CGTN俄语
 - CGTN法语
 - CGTN记录
+- CHC动作电影
 - CHC家庭影院
 - CNA
 - CNBC
@@ -88,7 +93,6 @@
 - Cooking
 - Discovery
 - ESPNU
-- FS1
 - FX Movie
 - FYI
 - Fashion
@@ -119,6 +123,7 @@
 - NBC
 - NBC News Now
 - NEWSMAX
+- NEWSMAX2
 - NHL Network
 - National Geographic
 - New Kmovies
@@ -147,7 +152,6 @@
 - TBS
 - TRT World
 - TVB Jade
-- TVB Pearl
 - TVB Plus
 - TVBS亚洲
 - TVBS新闻
@@ -188,6 +192,7 @@
 - 倩女幽魂道道道
 - 八大戏剧
 - 公共
+- 兵团卫视
 - 内蒙古卫视
 - 农林卫视
 - 凤凰中文
@@ -200,13 +205,13 @@
 - 剑阁综合
 - 动物星球
 - 北京卫视
+- 北京卫视4K
 - 千禧经典
 - 南国都市
 - 厦门卫视
 - 叙州新闻综合
 - 台视新闻
 - 吉林卫视
-- 哈尔滨娱乐
 - 哈尔滨影视
 - 哈尔滨新闻综合
 - 哈尔滨生活
@@ -218,6 +223,7 @@
 - 天映经典
 - 天津卫视
 - 宁夏卫视
+- 安多卫视
 - 安徽卫视
 - 少儿
 - 山东卫视
@@ -371,6 +377,7 @@
 
 ## ❌ 无有效源的频道
 - &Flix
+- 1905电影网
 - 1983年春晚
 - 1984年春晚
 - 1985年春晚
@@ -429,6 +436,7 @@
 - CAT电影
 - CBC News
 - CBN News
+- CCTV
 - CCTV 世界地理
 - CCTV 中学生
 - CCTV 兵器科技
@@ -475,8 +483,8 @@
 - CGTN阿拉伯语
 - CH5
 - CH8
-- CHC动作电影
 - CHC影迷电影
+- CHC高清电影
 - CHU
 - Clarity
 - Comedy
@@ -506,7 +514,6 @@
 - KBS world
 - Love Nature
 - MYTV SUPER
-- NEWSMAX2
 - NHK World
 - NOW新闻
 - NOW财经
@@ -560,6 +567,7 @@
 - Sony One FAVES
 - Stadium
 - TVB J1
+- TVB Pearl
 - TVBJ1
 - TVBS欢乐
 - TVBS精采
@@ -596,7 +604,6 @@
 - iHOT 爱院线
 - iHOY 爱历史
 - iNews新闻
-- mn静静nm
 - 七彩戏剧
 - 七龙珠
 - 万合出品
@@ -658,7 +665,6 @@
 - 傲娇的超级赛亚人
 - 八度空间
 - 公共新闻
-- 兵团卫视
 - 内蒙农牧
 - 内蒙古少儿
 - 内蒙文体
@@ -698,7 +704,6 @@
 - 发现之旅
 - 古天乐电影
 - 古装武侠
-- 可乐影院
 - 台湾+
 - 名侦探柯南
 - 周星驰电影
@@ -763,6 +768,7 @@
 - 咪咕赛事播53
 - 哆啦A梦
 - 哈哈炫动
+- 哈尔滨娱乐
 - 哈尔滨都市咨询
 - 哒啵电竞
 - 唐诡之西行
@@ -866,6 +872,7 @@
 - 新片放映厅
 - 新白娘子传奇
 - 新闻综合
+- 旅游卫视
 - 无心法师
 - 日本全天新闻
 - 日本女子摔角
