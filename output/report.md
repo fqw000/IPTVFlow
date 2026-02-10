@@ -1,42 +1,42 @@
 # ✅ IPTV直播源清洗报告
->**生成时间**: 2026-02-09 12:18:01<br>
->**存活率**: 46.2%
+>**生成时间**: 2026-02-10 12:23:45<br>
+>**存活率**: 46.0%
 
 ## 📊 核心统计
 | 项目 | 数量 |
 |------|------|
 | 原始频道 | 1098 |
-| 唯一主机 | 340 |
-| 存活主机 | 157 |
-| 最终频道 | 342 |
+| 唯一主机 | 339 |
+| 存活主机 | 156 |
+| 最终频道 | 341 |
 
 ## 🔗 源加载详情
 | 类型 | 标识 | 状态 | 频道数 | 错误信息 |
 |------|------|------|------|----------|
+| 远程 | `https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u` | ✅ 成功 | 2709 | - |
 | 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u` | ✅ 成功 | 202 | - |
 | 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
-| 远程 | `https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u` | ✅ 成功 | 2709 | - |
 | 远程 | `https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1` | ❌ 失败 | 0 | HTTP 403 |
-| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 1125 | - |
 | 远程 | `https://raw.wangqifei.eu.org/rtp` | ❌ 失败 | 0 | HTTP 404 |
+| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 1161 | - |
 
 ## 📺 分组分布
 - **📺 其他频道**: 114 个
-- **📺 卫视频道**: 79 个
-- **🌍 国际频道**: 76 个
-- **🇨🇳 央视频道**: 31 个
-- **🇭🇰 港澳台频道**: 23 个
-- **🧸 儿童动画**: 9 个
-- **🎬 影视频道**: 8 个
-- **⚽ 体育频道**: 1 个
+- **📺 卫视频道**: 78 个
+- **🌍 国际频道**: 70 个
+- **🇨🇳 央视频道**: 30 个
+- **🇭🇰 港澳台频道**: 28 个
+- **🎬 影视频道**: 11 个
+- **🧸 儿童动画**: 8 个
 - **🎓 教育频道**: 1 个
+- **⚽ 体育频道**: 1 个
 
 ## 📋 可用频道列表
+- 1905电影网
 - 1987年春晚
 - 1988年春晚
 - 1989年春晚
 - 2024年春晚
-- ABC News
 - ASTRO AOD
 - Action Hollywood
 - Al Jazeera
@@ -48,10 +48,10 @@
 - Astro QJ
 - Astro欢喜
 - BBC Earth
-- BBC News
 - Billiard
 - Bloomberg Asia
 - Bravo
+- CCTV
 - CCTV1
 - CCTV10
 - CCTV11
@@ -60,13 +60,14 @@
 - CCTV14
 - CCTV15
 - CCTV16
+- CCTV17
 - CCTV2
 - CCTV3
 - CCTV4
-- CCTV4K真
 - CCTV5
 - CCTV5+
 - CCTV6
+- CCTV6电影
 - CCTV7
 - CCTV8
 - CCTV9
@@ -74,12 +75,9 @@
 - CCTV兵器科技
 - CCTV卫生健康
 - CCTV央视台球
-- CCTV央视文化精品
 - CCTV女性时尚
-- CCTV怀旧剧场
 - CCTV电视指南
 - CCTV第一剧场
-- CCTV风云剧场
 - CCTV风云音乐
 - CGTN
 - CGTN俄语
@@ -87,6 +85,8 @@
 - CGTN记录
 - CHC动作电影
 - CHC家庭影院
+- CHC影迷电影
+- CHC高清电影
 - CNA
 - CNBC
 - CNN
@@ -114,7 +114,6 @@
 - LG 1 Film
 - LG 1 Spotlight
 - Lifetime
-- LiveNow
 - M
 - MLB Network
 - MovieSphere
@@ -123,7 +122,6 @@
 - NBC
 - NBC News Now
 - NEWSMAX
-- NEWSMAX2
 - NHL Network
 - National Geographic
 - New Kmovies
@@ -147,16 +145,17 @@
 - Showtime Extreme
 - Showtime Next
 - Showtime Women
-- SportsGrid
 - Starz Comedy
 - TBS
 - TRT World
 - TVB Jade
+- TVB Pearl
 - TVB Plus
 - TVBS亚洲
 - TVBS新闻
 - TVB无线新闻
 - TVB无线星河
+- TVB明珠
 - TVB星河
 - Tastemade
 - Tennis
@@ -165,8 +164,10 @@
 - Trace Sports
 - Trace Urban
 - VIU
-- WION
+- Viu
+- ViuTV6
 - Wild Earth
+- WionNews
 - YES Network
 - tvg
 - 七台河新闻综合
@@ -176,7 +177,6 @@
 - 上海卫视
 - 东南卫视
 - 东方卫视
-- 东森亚洲卫视
 - 东莞新闻综合
 - 东莞生活资讯
 - 中华特产
@@ -186,12 +186,12 @@
 - 云南娱乐
 - 云南都市
 - 云和新闻综合
+- 亚洲新闻
 - 人间卫视
 - 倩女幽魂人间道
 - 倩女幽魂妖魔道
 - 倩女幽魂道道道
 - 八大戏剧
-- 公共
 - 兵团卫视
 - 内蒙古卫视
 - 农林卫视
@@ -212,9 +212,11 @@
 - 叙州新闻综合
 - 台视新闻
 - 吉林卫视
+- 哈尔滨娱乐
 - 哈尔滨影视
 - 哈尔滨新闻综合
 - 哈尔滨生活
+- 哈尔滨都市咨询
 - 四川卫视
 - 四川科教
 - 四海钓鱼
@@ -225,6 +227,7 @@
 - 宁夏卫视
 - 安多卫视
 - 安徽卫视
+- 寰宇新闻
 - 少儿
 - 山东卫视
 - 山东教育卫视
@@ -244,20 +247,18 @@
 - 文物宝库
 - 新疆卫视
 - 新视觉
-- 新闻
 - 新闻咨询
 - 无线新闻
 - 旺苍新闻综合
 - 昌黎综合
 - 星空卫视
 - 星空国际
+- 有线新闻
 - 朝天综合
 - 朝阳新闻综合
 - 梨园
-- 欢腾购物
 - 武术
 - 武术世界
-- 民生
 - 民生休闲
 - 江夏新闻综合
 - 江苏体育休闲
@@ -286,8 +287,6 @@
 - 河南都市
 - 河源公共
 - 河源综合
-- 法 时尚
-- 法治
 - 浙江卫视
 - 浙江国际
 - 浙江少儿
@@ -311,7 +310,7 @@
 - 环球旅游
 - 环球电视
 - 甘肃卫视
-- 电视剧
+- 生命电视
 - 直播中国
 - 睛彩中原
 - 移动戏曲
@@ -342,7 +341,6 @@
 - 辽宁卫视
 - 辽宁影视
 - 辽宁影视剧
-- 辽宁教育青少
 - 辽宁生活
 - 辽宁经济
 - 辽宁都市
@@ -351,13 +349,13 @@
 - 邢台综合
 - 邯郸公共
 - 邯郸科技教育
-- 都市
 - 都市青春
 - 重庆卫视
 - 重温经典
 - 金川乡村
 - 金川新闻综合
 - 钱江都市
+- 长宁综合
 - 长影
 - 陕西卫视
 - 陕西秦腔
@@ -370,6 +368,7 @@
 - 韩国电影1
 - 韩国电影2
 - 香港卫视
+- 香港面包
 - 黄龙
 - 黑龙江卫视
 - 龙泉新闻综合
@@ -377,7 +376,6 @@
 
 ## ❌ 无有效源的频道
 - &Flix
-- 1905电影网
 - 1983年春晚
 - 1984年春晚
 - 1985年春晚
@@ -415,6 +413,7 @@
 - 2023年春晚
 - 2025年春晚
 - 3030相声小品
+- ABC News
 - ABC News Live
 - AMC电影
 - ASTRO AEC
@@ -424,6 +423,7 @@
 - Action Movies
 - Autentic Travel
 - BBC
+- BBC News
 - BRTV体育休闲
 - BRTV国际
 - BRTV影视
@@ -436,8 +436,8 @@
 - CAT电影
 - CBC News
 - CBN News
-- CCTV
 - CCTV 世界地理
+- CCTV 中国天气
 - CCTV 中学生
 - CCTV 兵器科技
 - CCTV 卫生健康
@@ -456,12 +456,11 @@
 - CCTV12社会与法
 - CCTV14少儿
 - CCTV15音乐
-- CCTV17
 - CCTV17农业农村
+- CCTV4K真
 - CCTV4中文国际
 - CCTV4欧洲
 - CCTV4美洲
-- CCTV6电影
 - CCTV7国防军事
 - CCTV8电视剧
 - CCTV9纪录
@@ -483,8 +482,6 @@
 - CGTN阿拉伯语
 - CH5
 - CH8
-- CHC影迷电影
-- CHC高清电影
 - CHU
 - Clarity
 - Comedy
@@ -512,10 +509,12 @@
 - Inside Outside
 - J2
 - KBS world
+- LiveNow
 - Love Nature
 - MYTV SUPER
+- NEWSMAX2
 - NHK World
-- NOW新闻
+- NOW NEWS
 - NOW财经
 - NewTV 东北热剧
 - NewTV 中国功夫
@@ -545,6 +544,7 @@
 - NewTV 金牌综艺
 - NewTV 魅力潇湘
 - NextUp Live Comedy
+- Now星影
 - Now爆谷
 - Phoenix Chinese Channel
 - Phoenix InfoNews Channel
@@ -565,15 +565,14 @@
 - Sony One Comedy HITS
 - Sony One Dragons' Den
 - Sony One FAVES
+- SportsGrid
 - Stadium
 - TVB J1
-- TVB Pearl
 - TVBJ1
 - TVBS欢乐
 - TVBS精采
 - TVB娱乐新闻
 - TVB戏剧
-- TVB明珠
 - TVB武侠
 - TVB生活
 - Talk
@@ -585,7 +584,6 @@
 - Universal Monsters
 - VIUTV 6
 - VIUTV1
-- Viu
 - Viu6
 - Wild Planet
 - iHOT 爱体育
@@ -604,6 +602,7 @@
 - iHOT 爱院线
 - iHOY 爱历史
 - iNews新闻
+- mn静静nm
 - 七彩戏剧
 - 七龙珠
 - 万合出品
@@ -664,6 +663,7 @@
 - 倚天屠龙记
 - 傲娇的超级赛亚人
 - 八度空间
+- 公共
 - 公共新闻
 - 内蒙农牧
 - 内蒙古少儿
@@ -688,7 +688,6 @@
 - 华数
 - 华视新闻
 - 华语影视
-- 华语影视✔原
 - 南京十八
 - 南京少儿
 - 南京教科
@@ -768,8 +767,6 @@
 - 咪咕赛事播53
 - 哆啦A梦
 - 哈哈炫动
-- 哈尔滨娱乐
-- 哈尔滨都市咨询
 - 哒啵电竞
 - 唐诡之西行
 - 喜羊羊与灰太狼
@@ -811,12 +808,10 @@
 - 宿迁新闻综合
 - 寒战
 - 寰宇新聞
-- 寰宇新闻
 - 寻秦记
 - 封神榜
 - 射雕英雄传
 - 小毅主播e
-- 小毅主播q
 - 少年包青天第一部
 - 少年包青天第三部
 - 山东教育
@@ -864,16 +859,17 @@
 - 收藏天下
 - 斗鱼港剧
 - 斗鱼电影HD4
-- 斗鱼音乐MV
 - 新三国
 - 新动力量创一流
 - 新动漫
 - 新水浒传
 - 新片放映厅
 - 新白娘子传奇
+- 新闻
 - 新闻综合
-- 旅游卫视
 - 无心法师
+- 无线娱乐
+- 无线星河
 - 日本全天新闻
 - 日本女子摔角
 - 星光影视
@@ -892,6 +888,7 @@
 - 欢乐综艺
 - 欢乐颂
 - 欢笑剧场
+- 欢腾购物
 - 武侠电影
 - 武汉外语
 - 武汉文体
@@ -899,6 +896,7 @@
 - 武汉电视剧
 - 武汉科技生活
 - 武汉经济
+- 民生
 - 民视
 - 民视台湾
 - 民视影剧
@@ -923,6 +921,7 @@
 - 河南民生
 - 泉州新闻综合
 - 法政先锋
+- 法治
 - 法治天地
 - 泰州新闻综合
 - 洗冤录
@@ -963,7 +962,6 @@
 - 澳门莲花
 - 灌篮高手
 - 热门港剧
-- 热门港剧✔原
 - 熊猫频道01
 - 熊猫频道1
 - 熊猫频道10
@@ -996,6 +994,7 @@
 - 甘肃都市
 - 生态环境
 - 生活时尚
+- 电视剧
 - 番禺综合
 - 番薯
 - 盐城新闻综合
@@ -1077,8 +1076,10 @@
 - 辽宁广播电视台公共
 - 辽宁广播电视台影视剧
 - 辽宁广播电视台生活
+- 辽宁教育青少
 - 连云港新闻综合
 - 邵氏影院
+- 都市
 - 都市剧场
 - 鄂尔多斯新闻
 - 野蛮亲家
@@ -1091,7 +1092,6 @@
 - 铁甲影院
 - 铁齿铜牙纪晓岚
 - 镇江新闻综合
-- 长宁综合
 - 长沙女性
 - 长沙政法
 - 长沙新闻
