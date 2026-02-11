@@ -1,35 +1,34 @@
 # ✅ IPTV直播源清洗报告
->**生成时间**: 2026-02-10 12:23:45<br>
->**存活率**: 46.0%
+>**生成时间**: 2026-02-11 12:21:49<br>
+>**存活率**: 44.5%
 
 ## 📊 核心统计
 | 项目 | 数量 |
 |------|------|
 | 原始频道 | 1098 |
 | 唯一主机 | 339 |
-| 存活主机 | 156 |
-| 最终频道 | 341 |
+| 存活主机 | 151 |
+| 最终频道 | 306 |
 
 ## 🔗 源加载详情
 | 类型 | 标识 | 状态 | 频道数 | 错误信息 |
 |------|------|------|------|----------|
+| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
 | 远程 | `https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u` | ✅ 成功 | 2709 | - |
 | 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u` | ✅ 成功 | 202 | - |
-| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
 | 远程 | `https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1` | ❌ 失败 | 0 | HTTP 403 |
 | 远程 | `https://raw.wangqifei.eu.org/rtp` | ❌ 失败 | 0 | HTTP 404 |
 | 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 1161 | - |
 
 ## 📺 分组分布
-- **📺 其他频道**: 114 个
-- **📺 卫视频道**: 78 个
-- **🌍 国际频道**: 70 个
+- **📺 其他频道**: 107 个
+- **📺 卫视频道**: 80 个
+- **🌍 国际频道**: 42 个
 - **🇨🇳 央视频道**: 30 个
-- **🇭🇰 港澳台频道**: 28 个
-- **🎬 影视频道**: 11 个
-- **🧸 儿童动画**: 8 个
+- **🇭🇰 港澳台频道**: 29 个
+- **🧸 儿童动画**: 9 个
+- **🎬 影视频道**: 8 个
 - **🎓 教育频道**: 1 个
-- **⚽ 体育频道**: 1 个
 
 ## 📋 可用频道列表
 - 1905电影网
@@ -42,15 +41,12 @@
 - Al Jazeera
 - Arirang
 - Arirang K Pop
-- Aspire
-- Astro AEC
 - Astro AOD
 - Astro QJ
 - Astro欢喜
 - BBC Earth
 - Billiard
 - Bloomberg Asia
-- Bravo
 - CCTV
 - CCTV1
 - CCTV10
@@ -64,10 +60,10 @@
 - CCTV2
 - CCTV3
 - CCTV4
+- CCTV4K真
 - CCTV5
 - CCTV5+
 - CCTV6
-- CCTV6电影
 - CCTV7
 - CCTV8
 - CCTV9
@@ -88,24 +84,9 @@
 - CHC影迷电影
 - CHC高清电影
 - CNA
-- CNBC
 - CNN
-- Cooking
-- Discovery
-- ESPNU
-- FX Movie
-- FYI
 - Fashion
-- Fox Business
 - Global News
-- Golf
-- Grit
-- HBO
-- HBO Hits
-- HBO Movies
-- Hallmark
-- Hallmark Family
-- Hallmark Mystery
 - History Hit
 - HollyWire
 - ION Plus
@@ -113,22 +94,15 @@
 - LG 1
 - LG 1 Film
 - LG 1 Spotlight
-- Lifetime
-- M
-- MLB Network
 - MovieSphere
 - Mytime Movie
-- NBA
-- NBC
 - NBC News Now
 - NEWSMAX
 - NHL Network
-- National Geographic
 - New Kmovies
 - Newsmax
 - Newsy
 - Outdoor
-- Paramount+ with Showtime
 - Pulse
 - RT Arabic
 - RT Balkan
@@ -141,12 +115,6 @@
 - Real Madrid
 - Redbull
 - SBS Drama
-- Showtime 2
-- Showtime Extreme
-- Showtime Next
-- Showtime Women
-- Starz Comedy
-- TBS
 - TRT World
 - TVB Jade
 - TVB Pearl
@@ -164,11 +132,9 @@
 - Trace Sports
 - Trace Urban
 - VIU
-- Viu
 - ViuTV6
 - Wild Earth
 - WionNews
-- YES Network
 - tvg
 - 七台河新闻综合
 - 七台河民生社教
@@ -220,6 +186,7 @@
 - 四川卫视
 - 四川科教
 - 四海钓鱼
+- 大湾区卫视
 - 大立电视
 - 天映
 - 天映经典
@@ -230,6 +197,7 @@
 - 寰宇新闻
 - 少儿
 - 山东卫视
+- 山东教育
 - 山东教育卫视
 - 山西卫视
 - 广东卫视
@@ -247,8 +215,9 @@
 - 文物宝库
 - 新疆卫视
 - 新视觉
-- 新闻咨询
+- 无线娱乐
 - 无线新闻
+- 无线星河
 - 旺苍新闻综合
 - 昌黎综合
 - 星空卫视
@@ -260,7 +229,6 @@
 - 武术
 - 武术世界
 - 民生休闲
-- 江夏新闻综合
 - 江苏体育休闲
 - 江苏卫视
 - 江苏城市
@@ -327,8 +295,6 @@
 - 苏州社会经济
 - 荥经综合
 - 萧山综合
-- 西安新闻
-- 西安都市
 - 西藏卫视
 - 象山新闻综合
 - 象视界
@@ -341,6 +307,7 @@
 - 辽宁卫视
 - 辽宁影视
 - 辽宁影视剧
+- 辽宁教育青少
 - 辽宁生活
 - 辽宁经济
 - 辽宁都市
@@ -349,7 +316,6 @@
 - 邢台综合
 - 邯郸公共
 - 邯郸科技教育
-- 都市青春
 - 重庆卫视
 - 重温经典
 - 金川乡村
@@ -358,8 +324,6 @@
 - 长宁综合
 - 长影
 - 陕西卫视
-- 陕西秦腔
-- 陕西银龄
 - 雅安新闻综合
 - 青川综合
 - 青海卫视
@@ -421,6 +385,8 @@
 - ASTRO欢喜
 - AXS TV Now
 - Action Movies
+- Aspire
+- Astro AEC
 - Autentic Travel
 - BBC
 - BBC News
@@ -433,6 +399,7 @@
 - BRTV财经
 - Bloomberg
 - Bloomberg Originals
+- Bravo
 - CAT电影
 - CBC News
 - CBN News
@@ -457,10 +424,10 @@
 - CCTV14少儿
 - CCTV15音乐
 - CCTV17农业农村
-- CCTV4K真
 - CCTV4中文国际
 - CCTV4欧洲
 - CCTV4美洲
+- CCTV6电影
 - CCTV7国防军事
 - CCTV8电视剧
 - CCTV9纪录
@@ -483,9 +450,12 @@
 - CH5
 - CH8
 - CHU
+- CNBC
 - Clarity
 - Comedy
 - Comedy Movies
+- Cooking
+- Discovery
 - Disney International
 - Drama Movies
 - Dubai One
@@ -493,29 +463,47 @@
 - ELEVEN体育2
 - ELEVEN体育3
 - ESPN2
+- ESPNU
 - Eurosport
 - FIFA+
+- FX Movie
+- FYI
 - Fight Network
+- Fox Business
 - Fox LiveNow
 - GB News
 - GoUSA
+- Golf
 - Great British Menu
+- Grit
+- HBO
+- HBO Hits
+- HBO Movies
 - HOY
 - HOY77
 - HOY78
 - HOY资讯
+- Hallmark
+- Hallmark Family
+- Hallmark Mystery
 - ION
 - Icon Film
 - Inside Outside
 - J2
 - KBS world
+- Lifetime
 - LiveNow
 - Love Nature
+- M
+- MLB Network
 - MYTV SUPER
+- NBA
+- NBC
 - NEWSMAX2
 - NHK World
-- NOW NEWS
+- NOW新闻
 - NOW财经
+- National Geographic
 - NewTV 东北热剧
 - NewTV 中国功夫
 - NewTV 军事评论
@@ -546,6 +534,7 @@
 - NextUp Live Comedy
 - Now星影
 - Now爆谷
+- Paramount+ with Showtime
 - Phoenix Chinese Channel
 - Phoenix InfoNews Channel
 - Pop
@@ -560,6 +549,10 @@
 - Romance Movies
 - SKY
 - Sci Fi
+- Showtime 2
+- Showtime Extreme
+- Showtime Next
+- Showtime Women
 - Sky News
 - Sony One Action HITS
 - Sony One Comedy HITS
@@ -567,6 +560,8 @@
 - Sony One FAVES
 - SportsGrid
 - Stadium
+- Starz Comedy
+- TBS
 - TVB J1
 - TVBJ1
 - TVBS欢乐
@@ -584,8 +579,10 @@
 - Universal Monsters
 - VIUTV 6
 - VIUTV1
+- Viu
 - Viu6
 - Wild Planet
+- YES Network
 - iHOT 爱体育
 - iHOT 爱动漫
 - iHOT 爱喜剧
@@ -780,7 +777,6 @@
 - 士兵突击
 - 大唐双龙传
 - 大时代
-- 大湾区卫视
 - 大爱1
 - 大爱2
 - 大秦赋
@@ -814,7 +810,6 @@
 - 小毅主播e
 - 少年包青天第一部
 - 少年包青天第三部
-- 山东教育
 - 山西影视
 - 山西文体生活
 - 山西社会与法治
@@ -866,10 +861,9 @@
 - 新片放映厅
 - 新白娘子传奇
 - 新闻
+- 新闻咨询
 - 新闻综合
 - 无心法师
-- 无线娱乐
-- 无线星河
 - 日本全天新闻
 - 日本女子摔角
 - 星光影视
@@ -909,6 +903,7 @@
 - 求索科学
 - 求索纪录
 - 汉源综合
+- 江夏新闻综合
 - 江苏国际
 - 江苏新闻
 - 江阴新闻综合
@@ -1050,6 +1045,8 @@
 - 蒙语卫视
 - 蒙语文化
 - 蜡笔小新
+- 西安新闻
+- 西安都市
 - 西游记
 - 西游记2
 - 西游记后传
@@ -1076,11 +1073,11 @@
 - 辽宁广播电视台公共
 - 辽宁广播电视台影视剧
 - 辽宁广播电视台生活
-- 辽宁教育青少
 - 连云港新闻综合
 - 邵氏影院
 - 都市
 - 都市剧场
+- 都市青春
 - 鄂尔多斯新闻
 - 野蛮亲家
 - 金庸武侠
@@ -1100,7 +1097,9 @@
 - 陈情令
 - 陕西体育休闲
 - 陕西新闻资讯
+- 陕西秦腔
 - 陕西都市青春
+- 陕西银龄
 - 隋唐英雄传
 - 雪豹
 - 青神综合
