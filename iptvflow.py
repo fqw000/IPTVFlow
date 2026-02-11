@@ -392,7 +392,7 @@ def run_ocr_check(url: str, timeout: int = 15) -> bool:
         text = pytesseract.image_to_string(img, lang='eng+chi_sim').lower()
         blacklist_words = (
             "login", "sign in", "geo-block", "not available", "invalid", "expired",
-            "test stream", "demo", "black screen", "请登录", "区域限制", "套餐", "购买", "403", "unauthorized"
+            "test stream", "demo", "black screen", "请登录", "区域限制", "套餐", "购买", "扫码", "此画面", "服务器","失效", "切换", "403", "unauthorized"
         )
         for word in blacklist_words:
             if word.lower() in text:
