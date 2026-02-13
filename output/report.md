@@ -1,37 +1,36 @@
 # ✅ IPTV直播源清洗报告
->**生成时间**: 2026-02-12 12:14:06<br>
->**存活率**: 46.3%
+>**生成时间**: 2026-02-13 12:04:45<br>
+>**存活率**: 48.7%
 
 ## 📊 核心统计
 | 项目 | 数量 |
 |------|------|
-| 原始频道 | 1047 |
-| 唯一主机 | 337 |
-| 存活主机 | 156 |
-| 最终频道 | 329 |
+| 原始频道 | 1068 |
+| 唯一主机 | 341 |
+| 存活主机 | 166 |
+| 最终频道 | 346 |
 
 ## 🔗 源加载详情
 | 类型 | 标识 | 状态 | 频道数 | 错误信息 |
 |------|------|------|------|----------|
-| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u` | ✅ 成功 | 156 | - |
-| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
+| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u` | ✅ 成功 | 200 | - |
 | 远程 | `https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u` | ✅ 成功 | 2709 | - |
-| 远程 | `https://raw.wangqifei.eu.org/rtp` | ❌ 失败 | 0 | HTTP 404 |
+| 远程 | `https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u` | ✅ 成功 | 160 | - |
 | 远程 | `https://iptv.cqshushu.com/index.php?s=KCSD96SXQAhNg-UhGACf4g&t=hotel&channels=1` | ❌ 失败 | 0 | HTTP 403 |
-| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 1091 | - |
+| 远程 | `https://raw.wangqifei.eu.org/rtp` | ❌ 失败 | 0 | HTTP 404 |
+| 远程 | `https://s.wangqifei.eu.org/live` | ✅ 成功 | 1073 | - |
 
 ## 📺 分组分布
-- **📺 其他频道**: 118 个
-- **📺 卫视频道**: 80 个
-- **🌍 国际频道**: 55 个
-- **🇨🇳 央视频道**: 30 个
-- **🇭🇰 港澳台频道**: 28 个
-- **🧸 儿童动画**: 10 个
-- **🎬 影视频道**: 7 个
+- **📺 其他频道**: 117 个
+- **📺 卫视频道**: 77 个
+- **🌍 国际频道**: 70 个
+- **🇨🇳 央视频道**: 33 个
+- **🇭🇰 港澳台频道**: 27 个
+- **🧸 儿童动画**: 11 个
+- **🎬 影视频道**: 10 个
 - **🎓 教育频道**: 1 个
 
 ## 📋 可用频道列表
-- 1905电影网
 - 1987年春晚
 - 1988年春晚
 - 1989年春晚
@@ -43,8 +42,6 @@
 - Arirang
 - Arirang K Pop
 - Astro AOD
-- Astro QJ
-- Astro欢喜
 - BBC
 - BBC Earth
 - BBC News
@@ -74,11 +71,13 @@
 - CCTV9
 - CCTV世界地理
 - CCTV兵器科技
-- CCTV卫生健康
 - CCTV央视台球
 - CCTV女性时尚
+- CCTV文化精品
 - CCTV电视指南
 - CCTV第一剧场
+- CCTV风云剧场
+- CCTV风云足球
 - CCTV风云音乐
 - CGTN
 - CGTN俄语
@@ -94,15 +93,36 @@
 - Comedy
 - Comedy Central
 - Cooking
+- Discovery
+- Discovery Family
+- Discovery Life
+- Discovery Science
+- Disney
+- Disney XD
+- ESPN
+- ESPN News
+- ESPN U
+- ESPN2
 - Fashion
+- Fox
+- Fox Business
+- Fox News
+- Fox Sports 1
+- Fox Sports 2
 - Global News
+- HBO
+- HBO 2
+- HBO Comedy
+- HBO Family
 - History Hit
 - HollyWire
+- ION
 - ION Plus
 - Kartoon
 - LG 1
 - LG 1 Film
 - LG 1 Spotlight
+- Lifetime Movie Network
 - LiveNow
 - MovieSphere
 - Mytime Movie
@@ -110,6 +130,7 @@
 - NEWSMAX
 - NEWSMAX2
 - NHL Network
+- National Geographic
 - New Kmovies
 - Newsmax
 - Newsy
@@ -134,7 +155,6 @@
 - TVBS亚洲
 - TVBS新闻
 - TVB无线新闻
-- TVB无线星河
 - TVB明珠
 - TVB星河
 - Tastemade
@@ -144,6 +164,7 @@
 - Trace Sports
 - Trace Urban
 - VIU
+- Viu
 - ViuTV6
 - WION
 - Wild Earth
@@ -171,7 +192,6 @@
 - 倩女幽魂道道道
 - 八大戏剧
 - 公共
-- 兵团卫视
 - 内蒙古卫视
 - 农林卫视
 - 凤凰中文
@@ -185,7 +205,6 @@
 - 动物星球
 - 北京卫视
 - 北京卫视4K
-- 千禧经典
 - 南国都市
 - 厦门卫视
 - 叙州新闻综合
@@ -197,11 +216,10 @@
 - 哈尔滨生活
 - 哈尔滨都市咨询
 - 四川卫视
-- 四川科教
 - 四海钓鱼
-- 大湾区卫视
 - 大立电视
 - 天映
+- 天映经典
 - 天津卫视
 - 宁夏卫视
 - 安多卫视
@@ -290,7 +308,6 @@
 - 湖北卫视
 - 湖南卫视
 - 熊猫直播
-- 爱奇艺
 - 环球旅游
 - 环球电视
 - 甘肃卫视
@@ -363,6 +380,7 @@
 
 ## ❌ 无有效源的频道
 - &Flix
+- 1905电影网
 - 1983年春晚
 - 1984年春晚
 - 1985年春晚
@@ -407,6 +425,8 @@
 - AXS TV Now
 - Action Movies
 - Astro AEC
+- Astro QJ
+- Astro欢喜
 - Autentic Travel
 - BRTV体育休闲
 - BRTV国际
@@ -444,6 +464,8 @@
 - CCTV4中文国际
 - CCTV4欧洲
 - CCTV4美洲
+- CCTV5+体育
+- CCTV5+体育赛事
 - CCTV6电影
 - CCTV7国防军事
 - CCTV8电视剧
@@ -466,7 +488,6 @@
 - CGTN阿拉伯语
 - CH5
 - CH8
-- CHC高清电影
 - CHU
 - Clarity
 - Comedy Movies
@@ -476,7 +497,6 @@
 - ELEVEN体育1
 - ELEVEN体育2
 - ELEVEN体育3
-- ESPN2
 - Eurosport
 - FIFA+
 - Fight Network
@@ -484,12 +504,10 @@
 - GB News
 - GoUSA
 - Great British Menu
-- HBO
 - HOY
 - HOY77
 - HOY78
 - HOY资讯
-- ION
 - Icon Film
 - Inside Outside
 - J2
@@ -498,7 +516,7 @@
 - M
 - MYTV SUPER
 - NHK World
-- NOW新闻
+- NOW NEWS
 - NOW财经
 - NewTV 东北热剧
 - NewTV 中国功夫
@@ -557,6 +575,7 @@
 - TVBS精采
 - TVB娱乐新闻
 - TVB戏剧
+- TVB无线星河
 - TVB武侠
 - TVB生活
 - Talk
@@ -568,7 +587,6 @@
 - Universal Monsters
 - VIUTV 6
 - VIUTV1
-- Viu
 - Viu6
 - Wild Planet
 - iHOT 爱体育
@@ -646,6 +664,7 @@
 - 倚天屠龙记
 - 八度空间
 - 公共新闻
+- 兵团卫视
 - 内蒙农牧
 - 内蒙古少儿
 - 内蒙文体
@@ -665,6 +684,7 @@
 - 北京新闻
 - 北京纪实科教8K
 - 十堰新闻
+- 千禧经典
 - 华数
 - 华视新闻
 - 华语影视
@@ -676,7 +696,6 @@
 - 南宁文旅
 - 南宁新闻
 - 南平综合
-- 南方卫视
 - 南方影视
 - 南通新闻综合
 - 卡酷动画
@@ -756,15 +775,16 @@
 - 四川影视文艺
 - 四川文化旅游
 - 四川新闻
+- 四川科教
 - 四川经济
 - 士兵突击
 - 大唐双龙传
 - 大时代
+- 大湾区卫视
 - 大爱1
 - 大爱2
 - 大秦赋
 - 天元围棋
-- 天映经典
 - 天龙八部
 - 如懿传
 - 妙手仁心
@@ -937,6 +957,7 @@
 - 熊猫频道8
 - 熊猫频道9
 - 爱上
+- 爱奇艺
 - 爱情公寓
 - 父母爱情
 - 特种兵之火凤凰
