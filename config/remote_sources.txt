@@ -25,3 +25,5 @@ https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u
 
 # wkyilisha/zubo
 https://raw.githubusercontent.com/wkyilisha/zubo/e063c186e99dcc136ae435b87f9053f24061a5ad/iptv.txt
+
+https://raw.githubusercontent.com/zilong7728/Collect-IPTV/refs/heads/main/best_sorted.m3u
