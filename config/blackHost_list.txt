@@ -3,3 +3,5 @@
 live.catvod.com:443
 bxtv.3a.ink
 23.237.228.134
+epg.pw
+
