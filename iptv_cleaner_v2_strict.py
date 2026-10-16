@@ -45,6 +45,7 @@ import asyncio
 import datetime
 import subprocess
 import math
+import requests
 from urllib.parse import urlparse, urljoin, quote
 from collections import defaultdict
 from typing import List, Dict, Any, Optional, Tuple, Set, DefaultDict
@@ -976,9 +977,10 @@ def generate_outputs(final_channels: List[Dict[str, Any]], stats: Dict[str, Any]
     logging.info(f"✅ 输出已保存: {Config.OUTPUT_FILE}, {Config.REPORT_FILE}")
 
 def send_bark_report(report_path: str, device_key: str) -> None:
-    """读取报告文件并通过 Bark 发送"""
+    """读取报告文件并通过 Bark 发送（支持 Markdown）"""
     if not device_key:
         return
+    
     try:
         with open(report_path, 'r', encoding='utf-8') as f:
             content = f.read()
@@ -986,21 +988,27 @@ def send_bark_report(report_path: str, device_key: str) -> None:
         logging.error(f"读取报告文件失败: {e}")
         return
 
-    # Bark 消息正文有长度限制, 一般建议不超过 2000 字符（实际可到 4000 左右）
-    # 这里取前 1500 字符, 若截断则添加提示
+    # Bark 单条消息受 APNs 限制约 4KB，Markdown 字段同样有长度约束
+    # 取前 1500 字符，截断时添加提示
     max_len = 1500
     if len(content) > max_len:
         content = content[:max_len] + "\n\n... (内容过长, 请查看完整报告)"
-    
-    # 发送请求
-    import requests
+
     title = "IPTV 清洗报告"
-    # 使用 quote 编码标题和内容
-    url = f"https://api.day.app/{device_key}/{title}/{quote(content)}"
+    
+    # 使用 V2 API 的 POST 格式，通过 markdown 字段发送
+    url = "https://api.day.app/push"
+    payload = {
+        "device_key": device_key,
+        "title": title,
+        "markdown": content,  # 使用 markdown 字段替代 body
+        "group": "Report",
+    }
+    
     try:
-        resp = requests.get(url, timeout=10)
+        resp = requests.post(url, json=payload, timeout=10)
         if resp.status_code == 200:
-            logging.info("🔔 Bark 报告已发送")
+            logging.info("🔔 Bark 报告已发送 (Markdown 格式)")
         else:
             logging.warning(f"Bark 发送失败: HTTP {resp.status_code}")
     except Exception as e:
