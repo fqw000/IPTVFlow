@@ -29,6 +29,7 @@ import os
 import re
 import sys
 import time
+import urllib.request
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -89,11 +90,19 @@ class Config:
     SKIP_VOD = os.getenv("IPTV_SKIP_VOD", "1") == "1"
     ALLOW_SAME_HOST_BACKUP = os.getenv("IPTV_ALLOW_SAME_HOST", "0") == "1"
 
-    # --- group-title 优化 ---
-    # 内容细分：把 CCTV-5/5+ 归体育、CCTV-14 归儿童（口径更准）
-    GROUP_FINE_GRAINED = os.getenv("IPTV_GROUP_FINE", "1") == "1"
-    # 画质后缀：group-title 追加频道最优源的画质档位，如 "央视频道·1080P"
-    GROUP_SHOW_QUALITY = os.getenv("IPTV_GROUP_QUALITY", "1") == "1"
+    # --- group-title 分组 ---
+    # 默认关闭细分：所有央视归"央视频道"一组，不再按体育/国际拆开
+    GROUP_FINE_GRAINED = os.getenv("IPTV_GROUP_FINE", "0") == "1"
+    # 默认关闭画质后缀：不再出现"央视频道·480P / ·1080P"多个重名分组
+    # 画质信息仍写在 EXTINF 前的注释行，方便核对但不污染分组
+    GROUP_SHOW_QUALITY = os.getenv("IPTV_GROUP_QUALITY", "0") == "1"
+
+    # --- EPG 节目单 ---
+    # EPG 源（x-tvg-url）。可用多个，逗号分隔。
+    EPG_URLS = os.getenv("IPTV_EPG_URLS", "https://live.fanmingming.com/e.xml")
+    EPG_CACHE_FILE = os.getenv("IPTV_EPG_CACHE", "output/epg_channels.json")
+    EPG_REFRESH_DAYS = int(os.getenv("IPTV_EPG_REFRESH_DAYS", "3"))
+    EPG_FETCH_TIMEOUT = int(os.getenv("IPTV_EPG_TIMEOUT", "20"))
 
     USER_AGENT = "Mozilla/5.0 (compatible; IPTVCleaner/3.0)"
     HLS_EXTENSIONS = (".m3u8", ".m3u")
@@ -290,13 +299,110 @@ def group_title_with_quality(group: str, tier: str, cfg: Config) -> str:
     return f"{group}·{tier}"
 
 
-def make_tvg_id(name: str) -> str:
-    """生成不含中文的 tvg-id，避免 EPG 匹配失败"""
-    m = re.match(r"^(CCTV)-(\d+)", name)
+# EPG id 特殊映射：规范频道名 -> EPG 源里的 channel id（实测 fanmingming e.xml）
+# 规则：CCTV 无横杠；CGTN 用中文全称；中文频道名通常就是 id
+EPG_ID_OVERRIDES: Dict[str, str] = {
+    "CGTN": "CGTN英语",
+    "CGTN 英语": "CGTN英语",
+    "CGTN Documentary": "CGTN纪录",
+    "CGTN 纪录": "CGTN纪录",
+    "CGTN 西语": "CGTN西班牙语",
+    "CGTN 西班牙语": "CGTN西班牙语",
+    "CGTN 法语": "CGTN法语",
+    "CGTN 阿语": "CGTN阿语",
+    "CETV-1": "CETV1",
+    "CETV-2": "CETV2",
+    "凤凰卫视中文台": "凤凰中文",
+    "凤凰卫视资讯台": "凤凰资讯",
+    "凤凰卫视": "凤凰中文",
+}
+
+# 已验证可用的 EPG 源（探测失败会自动跳过，不影响主流程）
+EPG_SOURCES = [
+    "https://live.fanmingming.com/e.xml",
+]
+
+
+def load_epg_channel_ids(cfg: Config) -> Set[str]:
+    """
+    从 EPG 源拉取 channel id 集合，带本地缓存（按天刷新）。
+    失败时返回空集合，不影响主流程。
+    """
+    # 1. 读缓存（未过期）
+    try:
+        if os.path.exists(cfg.EPG_CACHE_FILE):
+            age_days = (time.time() - os.path.getmtime(cfg.EPG_CACHE_FILE)) / 86400
+            if age_days < cfg.EPG_REFRESH_DAYS:
+                with open(cfg.EPG_CACHE_FILE, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                ids = set(data.get("ids", []))
+                if ids:
+                    return ids
+    except Exception:
+        pass
+
+    # 2. 联网拉取
+    ids: Set[str] = set()
+    urls = [u.strip() for u in cfg.EPG_URLS.split(",") if u.strip()] or EPG_SOURCES
+    for url in urls:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": cfg.USER_AGENT})
+            with urllib.request.urlopen(req, timeout=cfg.EPG_FETCH_TIMEOUT) as resp:
+                text = resp.read().decode("utf-8", errors="ignore")
+            found = set(re.findall(r'<channel\s+id="([^"]+)"', text, re.I))
+            if found:
+                ids |= found
+                break  # 第一个成功的源即可
+        except Exception:
+            continue
+
+    # 3. 写缓存
+    if ids:
+        try:
+            os.makedirs(os.path.dirname(cfg.EPG_CACHE_FILE) or ".", exist_ok=True)
+            with open(cfg.EPG_CACHE_FILE, "w", encoding="utf-8") as f:
+                json.dump({"ids": sorted(ids)}, f, ensure_ascii=False)
+        except Exception:
+            pass
+    return ids
+
+
+def make_tvg_id(name: str, epg_ids: Optional[Set[str]] = None) -> str:
+    """
+    生成 tvg-id，优先匹配 EPG 源的真实 channel id：
+    - CCTV-1 综合 -> CCTV1（EPG 源无横杠）
+    - 湖南卫视   -> 湖南卫视（中文名即 id）
+    - 其它       -> 规范名去空格；仍无法匹配则保持原名（不再用 hash）
+    """
+    if not name:
+        return "ch unknown"
+
+    # 1. 显式覆盖
+    if name in EPG_ID_OVERRIDES:
+        return EPG_ID_OVERRIDES[name]
+
+    # 2. CCTV 系列 -> CCTVn / CCTV5+ / CCTV4K
+    m = re.match(r"^CCTV-(\d+)(K|\+)?", name, re.I)
     if m:
-        return f"CCTV-{m.group(2)}"
-    ascii_part = re.sub(r"[^A-Za-z0-9]+", "", name)
-    return ascii_part or ("ch" + hashlib.md5(name.encode("utf-8")).hexdigest()[:8])
+        num, marker = m.group(1), (m.group(2) or "").upper()
+        base = f"CCTV{num}" + ("+" if marker == "+" else ("K" if marker == "K" else ""))
+        if epg_ids is None or base in epg_ids:
+            return base
+        # CCTV-4K 在 EPG 里就是 CCTV4K；无横杠版本优先
+
+    # 3. 规范名去空格（中文频道名通常直接是 EPG id）
+    compact = re.sub(r"\s+", "", name)
+    if epg_ids is None or compact in epg_ids:
+        return compact
+
+    # 4. 用原名紧凑形式（保留中文，EPG 可能用别名）
+    original_compact = re.sub(r"\s+", "", name)
+    if original_compact and (epg_ids is None or original_compact in epg_ids):
+        return original_compact
+
+    # 5. 兜底：仍返回规范化名（中文），让播放器至少能显示名称，不再用无意义 hash
+    return compact or name
+
 
 
 def make_logo_url(name: str, cfg: Config) -> str:
@@ -1127,17 +1233,23 @@ def write_outputs(
     for g, chs in grouped.items():
         ordered_groups.append((g, chs))
 
-    # 每个频道的最优画质档位（该频道所有备份源共用同一后缀，避免频道被拆散）
+    # 加载 EPG channel id 集合，用于生成能匹配节目单的 tvg-id
+    epg_ids = load_epg_channel_ids(cfg)
+    logging.info("EPG channel id 加载: %d 个", len(epg_ids))
+
+    # 每个频道的最优画质档位（用于注释与可选后缀）
     best_tier: Dict[str, str] = {}
     for item in channels:
         name, tier = item["name"], item.get("quality_tier", "")
         if name not in best_tier or tier == "4K":
             best_tier[name] = tier
 
+    epg_header = ",".join(u.strip() for u in cfg.EPG_URLS.split(",") if u.strip())
+
     def write_playlist(path: str, items: List[Dict[str, Any]], *, backups: bool) -> None:
         """backups=False: 主列表每频道仅主源(换台一次到位); True: 全部源"""
         with open(path, "w", encoding="utf-8") as f:
-            f.write('#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"\n')
+            f.write(f'#EXTM3U x-tvg-url="{epg_header}"\n')
             f.write(f"# Generated at {beijing_time_str()} by IPTVCleaner v3.0\n")
             if backups:
                 f.write("# 备份源列表：同频道多线路，播放失败时可手动切换；不影响主列表换台\n")
@@ -1150,7 +1262,7 @@ def write_outputs(
                         continue  # 备份文件只放备源，避免与主列表重复
                     if not backups and idx != 0:
                         continue  # 主列表只放主源
-                    tid = make_tvg_id(item["name"])
+                    tid = make_tvg_id(item["name"], epg_ids)
                     logo = make_logo_url(item["name"], cfg)
                     item_gt = group_title_with_quality(
                         group_name, best_tier.get(item["name"], ""), cfg
