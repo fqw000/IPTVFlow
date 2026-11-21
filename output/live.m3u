@@ -1,837 +1,819 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
-# Generated at 2026-11-22 02:51:04 by IPTVCleaner v3.0
+# Generated at 2026-11-22 03:42:03 by IPTVCleaner v3.0
 # 主列表：每频道仅 1 条最优源，换台一次到位；备份见 live_backup.m3u
-# CCTV-1 综合 | 质量49.5 (480P) | 0.605MB/s | 码率0.84Mbps | 综合46.13
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="🇨🇳 央视频道·480P",CCTV-1 综合
+# CCTV-1 综合 | 质量49.5 (480P) | 0.522MB/s | 码率0.84Mbps | 综合44.61
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="🇨🇳 央视频道",CCTV-1 综合
 http://221.7.175.154:8445/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-2 财经 | 质量49.5 (480P) | 0.714MB/s | 码率0.84Mbps | 综合48.11
-#EXTINF:-1 tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="🇨🇳 央视频道·480P",CCTV-2 财经
-http://124.90.45.52:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-3 综艺 | 质量49.5 (480P) | 0.594MB/s | 码率0.84Mbps | 综合45.95
-#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://live.fanmingming.com/tv/CCTV3.png" group-title="🇨🇳 央视频道·480P",CCTV-3 综艺
+# CCTV-2 财经 | 质量49.5 (480P) | 0.515MB/s | 码率0.84Mbps | 综合44.48
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="🇨🇳 央视频道",CCTV-2 财经
+http://36.136.38.87:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-3 综艺 | 质量49.5 (480P) | 0.513MB/s | 码率0.84Mbps | 综合44.44
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://live.fanmingming.com/tv/CCTV3.png" group-title="🇨🇳 央视频道",CCTV-3 综艺
 http://153.0.171.163:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-6 电影 | 质量49.5 (480P) | 0.72MB/s | 码率0.84Mbps | 综合47.89
-#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" group-title="🇨🇳 央视频道·480P",CCTV-6 电影
-http://124.90.45.52:9901/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-7 国防军事 | 质量49.5 (480P) | 0.615MB/s | 码率0.84Mbps | 综合46.4
-#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://live.fanmingming.com/tv/CCTV7.png" group-title="🇨🇳 央视频道·480P",CCTV-7 国防军事
-http://221.7.175.154:8445/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-8 电视剧 | 质量49.5 (480P) | 0.667MB/s | 码率0.84Mbps | 综合46.44
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://live.fanmingming.com/tv/CCTV8.png" group-title="🇨🇳 央视频道·480P",CCTV-8 电视剧
-http://124.90.45.52:9901/tsfile/live/1018_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-9 纪录 | 质量49.5 (480P) | 0.611MB/s | 码率0.84Mbps | 综合45.21
-#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://live.fanmingming.com/tv/CCTV9.png" group-title="🇨🇳 央视频道·480P",CCTV-9 纪录
-http://221.7.175.154:8445/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-10 科教 | 质量49.5 (480P) | 0.585MB/s | 码率0.84Mbps | 综合44.32
-#EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" group-title="🇨🇳 央视频道·480P",CCTV-10 科教
-http://153.0.171.163:9901/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-11 戏曲 | 质量49.5 (480P) | 0.614MB/s | 码率0.84Mbps | 综合44.74
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="https://live.fanmingming.com/tv/CCTV11.png" group-title="🇨🇳 央视频道·480P",CCTV-11 戏曲
-http://124.90.45.52:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-12 社会与法 | 质量49.5 (480P) | 0.596MB/s | 码率0.84Mbps | 综合45.81
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://live.fanmingming.com/tv/CCTV12.png" group-title="🇨🇳 央视频道·480P",CCTV-12 社会与法
-http://153.0.171.163:9901/tsfile/live/1011_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-13 新闻 | 质量49.5 (480P) | 0.599MB/s | 码率0.84Mbps | 综合44.14
-#EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" group-title="🇨🇳 央视频道·480P",CCTV-13 新闻
-http://153.0.171.163:9901/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-15 音乐 | 质量49.5 (480P) | 0.384MB/s | 码率0.84Mbps | 综合41.61
-#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" group-title="🇨🇳 央视频道·480P",CCTV-15 音乐
-http://49.70.189.149:60001/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-16 奥林匹克 | 质量45.0 (480P) | 0.667MB/s | 码率0.84Mbps | 综合44.2
-#EXTINF:-1 tvg-id="CCTV-16" tvg-name="CCTV-16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" group-title="🇨🇳 央视频道·480P",CCTV-16 奥林匹克
-http://112.27.5.218:9901/tsfile/live/faacts/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-# CCTV-17 农业农村 | 质量40.0 (未知) | 11.539MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" group-title="🇨🇳 央视频道",CCTV-17 农业农村
-https://live.264788.xyz/channel/cctv17?streamid=f9c36f1e95b5b35eac89cc89583e7c0a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# CGTN | 质量45.0 (480P) | 5.072MB/s | 码率1.05Mbps | 综合65.23
-#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://live.fanmingming.com/tv/CGTN.png" group-title="🇨🇳 央视频道·480P",CGTN
-https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
-# CGTN Documentary | 质量45.0 (480P) | 6.244MB/s | 码率1.05Mbps | 综合64.72
-#EXTINF:-1 tvg-id="CGTNDocumentary" tvg-name="CGTNDocumentary" tvg-logo="https://live.fanmingming.com/tv/CGTNDocumentary.png" group-title="🇨🇳 央视频道·480P",CGTN Documentary
-https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
-# CGTN 纪录 | 质量67.5 (720P) | 1.454MB/s | 码率0.0Mbps | 综合71.17
-#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://live.fanmingming.com/tv/CGTN%E7%BA%AA%E5%BD%95.png" group-title="🇨🇳 央视频道·720P",CGTN 纪录
-https://0472.org/hls/cgtnd.m3u8
-# CGTN 英语 | 质量67.5 (720P) | 2.335MB/s | 码率0.0Mbps | 综合79.93
-#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://live.fanmingming.com/tv/CGTN%E8%8B%B1%E8%AF%AD.png" group-title="🇨🇳 央视频道·720P",CGTN 英语
-https://0472.org/hls/cgtn.m3u8
-# CGTN 西语 | 质量82.8 (1080P) | 5.86MB/s | 码率0.0Mbps | 综合89.4
-#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://live.fanmingming.com/tv/CGTN%E8%A5%BF%E8%AF%AD.png" group-title="🇨🇳 央视频道·1080P",CGTN 西语
-https://0472.org/hls/cgtnx.m3u8
-# CGTN 阿语 | 质量82.8 (1080P) | 5.673MB/s | 码率0.0Mbps | 综合89.67
-#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://live.fanmingming.com/tv/CGTN%E9%98%BF%E8%AF%AD.png" group-title="🇨🇳 央视频道·1080P",CGTN 阿语
-https://0472.org/hls/cgtna.m3u8
-# 兵器科技 | 质量40.0 (未知) | 21.587MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch9bde934e" tvg-name="ch9bde934e" tvg-logo="https://live.fanmingming.com/tv/%E5%85%B5%E5%99%A8%E7%A7%91%E6%8A%80.png" group-title="🇨🇳 央视频道",兵器科技
-https://live.264788.xyz/channel/bingqikeji?streamid=530cb4e58bbc48b7fc26f5e0a2e47966&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 怀旧剧场 | 质量40.0 (未知) | 23.866MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="cha9239898" tvg-name="cha9239898" tvg-logo="https://live.fanmingming.com/tv/%E6%80%80%E6%97%A7%E5%89%A7%E5%9C%BA.png" group-title="🇨🇳 央视频道",怀旧剧场
-https://live.264788.xyz/channel/huaijiujuchang?streamid=7e5d1abdddde08f588234f3f640f75ff&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 第一剧场 | 质量40.0 (未知) | 11.945MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch69c83b04" tvg-name="ch69c83b04" tvg-logo="https://live.fanmingming.com/tv/%E7%AC%AC%E4%B8%80%E5%89%A7%E5%9C%BA.png" group-title="🇨🇳 央视频道",第一剧场
-https://live.264788.xyz/channel/diyijuchang?streamid=e9b0fb1ca135a4aeae12944494883794&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 风云音乐 | 质量40.0 (未知) | 26.954MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch2fbd1adc" tvg-name="ch2fbd1adc" tvg-logo="https://live.fanmingming.com/tv/%E9%A3%8E%E4%BA%91%E9%9F%B3%E4%B9%90.png" group-title="🇨🇳 央视频道",风云音乐
-https://live.264788.xyz/channel/fengyunyinyue?streamid=be37d16b874e7ba11dd383d7ecd75752&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 北京卫视 | 质量49.5 (480P) | 0.63MB/s | 码率1.05Mbps | 综合46.01
-#EXTINF:-1 tvg-id="chdb47125b" tvg-name="chdb47125b" tvg-logo="https://live.fanmingming.com/tv/%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",北京卫视
-http://120.211.62.180:8000/hls/35/index.m3u8
-# 湖南卫视 | 质量22.5 (SD) | 23.738MB/s | 码率0.7Mbps | 综合49.27
-#EXTINF:-1 tvg-id="chc39a7a37" tvg-name="chc39a7a37" tvg-logo="https://live.fanmingming.com/tv/%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·SD",湖南卫视
-http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
-# 浙江卫视 | 质量49.5 (480P) | 0.515MB/s | 码率0.84Mbps | 综合43.9
-#EXTINF:-1 tvg-id="ch590e187a" tvg-name="ch590e187a" tvg-logo="https://live.fanmingming.com/tv/%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",浙江卫视
-http://60.187.246.195:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
-# 江苏卫视 | 质量49.5 (480P) | 0.62MB/s | 码率0.84Mbps | 综合44.58
-#EXTINF:-1 tvg-id="ch322fa7b6" tvg-name="ch322fa7b6" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",江苏卫视
-http://221.7.175.154:8445/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
-# 东方卫视 | 质量49.5 (480P) | 0.611MB/s | 码率0.84Mbps | 综合42.83
-#EXTINF:-1 tvg-id="chb0977d8b" tvg-name="chb0977d8b" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",东方卫视
-http://221.7.175.154:8445/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
-# 广东卫视 | 质量40.0 (未知) | 4.904MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="chc8bf387b" tvg-name="chc8bf387b" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",广东卫视
-https://txmov2.a.kwimgs.com/upic/2023/01/26/09/BMjAyMzAxMjYwOTE3NDVfNzM5MzQzNzIyXzk0NjI1OTUwNTA3XzBfMw==_b_B81ddda927d33445d544befd008e60109.mp4
-# 深圳卫视 | 质量49.5 (480P) | 0.514MB/s | 码率0.84Mbps | 综合44.25
-#EXTINF:-1 tvg-id="ch20831bb8" tvg-name="ch20831bb8" tvg-logo="https://live.fanmingming.com/tv/%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",深圳卫视
-http://36.136.38.87:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
-# 山东卫视 | 质量49.5 (480P) | 0.441MB/s | 码率0.84Mbps | 综合42.95
-#EXTINF:-1 tvg-id="ch28502a1b" tvg-name="ch28502a1b" tvg-logo="https://live.fanmingming.com/tv/%E5%B1%B1%E4%B8%9C%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",山东卫视
-http://60.187.246.195:9901/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
-# 河南卫视 | 质量82.8 (1080P) | 20.158MB/s | 码率0.0Mbps | 综合89.01
-#EXTINF:-1 tvg-id="ch2c854868" tvg-name="ch2c854868" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·1080P",河南卫视
-http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=e94af2d78fa268e1f72f0b25a8160f9f&wsTime=1795298643
-# 四川卫视 | 质量40.0 (未知) | 26.379MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="chb82fa408" tvg-name="chb82fa408" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",四川卫视
-https://live.264788.xyz/channel/sichuanweishi4k?streamid=401bf692a1a8b91298f26077d53316d6&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 东南卫视 | 质量49.5 (480P) | 0.337MB/s | 码率0.84Mbps | 综合41.45
-#EXTINF:-1 tvg-id="ch0b54da97" tvg-name="ch0b54da97" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%9C%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",东南卫视
-http://118.193.115.2:9901/tsfile/live/0137_1.m3u8?key=txiptv
-# 云南卫视 | 质量49.5 (480P) | 0.52MB/s | 码率0.84Mbps | 综合43.62
-#EXTINF:-1 tvg-id="chc786da29" tvg-name="chc786da29" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%91%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",云南卫视
-http://36.136.38.87:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
-# 云南娱乐 | 质量49.5 (480P) | 0.718MB/s | 码率1.29Mbps | 综合39.87
-#EXTINF:-1 tvg-id="ch2dfb8ef2" tvg-name="ch2dfb8ef2" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%91%E5%8D%97%E5%A8%B1%E4%B9%90.png" group-title="📺 卫视频道·480P",云南娱乐
-https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
-# 云南都市 | 质量49.5 (480P) | 0.749MB/s | 码率1.38Mbps | 综合39.63
-#EXTINF:-1 tvg-id="ch0f163f81" tvg-name="ch0f163f81" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%91%E5%8D%97%E9%83%BD%E5%B8%82.png" group-title="📺 卫视频道·480P",云南都市
-https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
-# 人间卫视 | 质量55.0 (480P) | 0.315MB/s | 码率0.9Mbps | 综合44.95
-#EXTINF:-1 tvg-id="ch556c539b" tvg-name="ch556c539b" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%BA%E9%97%B4%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",人间卫视
-http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
-# 兵团卫视 | 质量49.5 (480P) | 0.607MB/s | 码率0.84Mbps | 综合45.49
-#EXTINF:-1 tvg-id="ch5ec29920" tvg-name="ch5ec29920" tvg-logo="https://live.fanmingming.com/tv/%E5%85%B5%E5%9B%A2%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",兵团卫视
-http://221.7.175.154:8445/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
-# 内蒙古卫视 | 质量40.0 (未知) | 26.628MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch03295de4" tvg-name="ch03295de4" tvg-logo="https://live.fanmingming.com/tv/%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",内蒙古卫视
-https://live.264788.xyz/channel/neimengguweishi?streamid=81a015dbecf3031d7d847b7a9b059f67&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 北京新闻 | 质量40.0 (未知) | 682.457MB/s | 码率0.0Mbps | 综合59.02
-#EXTINF:-1 tvg-id="cha2149ad6" tvg-name="cha2149ad6" tvg-logo="https://live.fanmingming.com/tv/%E5%8C%97%E4%BA%AC%E6%96%B0%E9%97%BB.png" group-title="📺 卫视频道",北京新闻
-https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8
-# 吉林卫视 | 质量49.5 (480P) | 0.609MB/s | 码率0.84Mbps | 综合43.27
-#EXTINF:-1 tvg-id="ch45392a8b" tvg-name="ch45392a8b" tvg-logo="https://live.fanmingming.com/tv/%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",吉林卫视
-http://221.7.175.154:8445/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
-# 四川科教 | 质量49.5 (480P) | 0.446MB/s | 码率0.84Mbps | 综合43.43
-#EXTINF:-1 tvg-id="cha673b868" tvg-name="cha673b868" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%9B%E5%B7%9D%E7%A7%91%E6%95%99.png" group-title="📺 卫视频道·480P",四川科教
-http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8
-# 天津卫视 | 质量49.5 (480P) | 0.609MB/s | 码率0.84Mbps | 综合43.23
-#EXTINF:-1 tvg-id="ch5927c7a6" tvg-name="ch5927c7a6" tvg-logo="https://live.fanmingming.com/tv/%E5%A4%A9%E6%B4%A5%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",天津卫视
-http://221.7.175.154:8445/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
-# 宁夏卫视 | 质量40.0 (未知) | 26.078MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="cha09ab199" tvg-name="cha09ab199" tvg-logo="https://live.fanmingming.com/tv/%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",宁夏卫视
-https://live.264788.xyz/channel/ningxiaweishi?streamid=1b2952717a920173e66d4a348f9dcb5c&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 安多卫视 | 质量75.0 (720P) | 0.35MB/s | 码率1.83Mbps | 综合54.6
-#EXTINF:-1 tvg-id="ch88a13a02" tvg-name="ch88a13a02" tvg-logo="https://live.fanmingming.com/tv/%E5%AE%89%E5%A4%9A%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·720P",安多卫视
-https://liveout.xntv.tv/a65jur/96iln2.m3u8
-# 安徽卫视 | 质量49.5 (480P) | 0.518MB/s | 码率0.84Mbps | 综合44.83
-#EXTINF:-1 tvg-id="ch5b0447ba" tvg-name="ch5b0447ba" tvg-logo="https://live.fanmingming.com/tv/%E5%AE%89%E5%BE%BD%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",安徽卫视
-http://123.138.216.44:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
-# 山西卫视 | 质量40.0 (未知) | 23.728MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch2aeb585c" tvg-name="ch2aeb585c" tvg-logo="https://live.fanmingming.com/tv/%E5%B1%B1%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",山西卫视
-https://live.264788.xyz/channel/shanxiweishi?streamid=eeb7d60ca6e0db131ea7a092a3cd28d2&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 广西卫视 | 质量82.8 (1080P) | 3.993MB/s | 码率0.0Mbps | 综合88.32
-#EXTINF:-1 tvg-id="ch5cbb108d" tvg-name="ch5cbb108d" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·1080P",广西卫视
-https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
-# 延边卫视 | 质量55.0 (480P) | 1.508MB/s | 码率1.04Mbps | 综合64.48
-#EXTINF:-1 tvg-id="chdc5e5745" tvg-name="chdc5e5745" tvg-logo="https://live.fanmingming.com/tv/%E5%BB%B6%E8%BE%B9%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",延边卫视
-https://stream2.jlntv.cn/jlyb/sd/live.m3u8
-# 新疆卫视 | 质量40.0 (未知) | 26.786MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="chad291a23" tvg-name="chad291a23" tvg-logo="https://live.fanmingming.com/tv/%E6%96%B0%E7%96%86%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",新疆卫视
-https://live.264788.xyz/channel/xinjiangweishi?streamid=4f481f56ae39ce5d24203471de9df635&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 江西卫视 | 质量40.0 (未知) | 25.08MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch535765a1" tvg-name="ch535765a1" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%9F%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",江西卫视
-https://live.264788.xyz/channel/jiangxiweishi?streamid=555198f31caa33506ac6abb70d788959&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 河北卫视 | 质量55.0 (480P) | 0.68MB/s | 码率1.02Mbps | 综合49.04
-#EXTINF:-1 tvg-id="chef1fce69" tvg-name="chef1fce69" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",河北卫视
-http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
-# 河南乡村 | 质量82.8 (1080P) | 20.163MB/s | 码率0.0Mbps | 综合82.16
-#EXTINF:-1 tvg-id="ch59e29869" tvg-name="ch59e29869" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8D%97%E4%B9%A1%E6%9D%91.png" group-title="📺 卫视频道·1080P",河南乡村
-http://tvcdn.stream3.hndt.com/tv/65b8302b017e100019dc540f00000000_transios/playlist.m3u8?wsSecret=9de6685338a3579b92eb1704c1303b4d&wsTime=1795298643
-# 浙江留学 | 质量25.0 (SD) | 0.28MB/s | 码率0.22Mbps | 综合24.78
-#EXTINF:-1 tvg-id="ch0036b78b" tvg-name="ch0036b78b" tvg-logo="https://live.fanmingming.com/tv/%E6%B5%99%E6%B1%9F%E7%95%99%E5%AD%A6.png" group-title="📺 卫视频道·SD",浙江留学
-http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8
-# 浙江遂昌 | 质量22.5 (SD) | 0.616MB/s | 码率0.52Mbps | 综合24.57
-#EXTINF:-1 tvg-id="chc54bbc32" tvg-name="chc54bbc32" tvg-logo="https://live.fanmingming.com/tv/%E6%B5%99%E6%B1%9F%E9%81%82%E6%98%8C.png" group-title="📺 卫视频道·SD",浙江遂昌
-http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8
-# 海南卫视 | 质量49.5 (480P) | 0.214MB/s | 码率0.84Mbps | 综合31.05
-#EXTINF:-1 tvg-id="chc0fc93e3" tvg-name="chc0fc93e3" tvg-logo="https://live.fanmingming.com/tv/%E6%B5%B7%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",海南卫视
-http://fuxin.yunjifei.top:999/tsfile/live/1010_1.m3u8?key=txiptv
-# 湖北卫视 | 质量49.5 (480P) | 0.409MB/s | 码率0.84Mbps | 综合41.57
-#EXTINF:-1 tvg-id="ch55fc65ef" tvg-name="ch55fc65ef" tvg-logo="https://live.fanmingming.com/tv/%E6%B9%96%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",湖北卫视
-http://fuxin.yunjifei.top:999/tsfile/live/0132_1.m3u8?key=txiptv
-# 甘肃卫视 | 质量55.0 (480P) | 0.795MB/s | 码率1.33Mbps | 综合45.3
-#EXTINF:-1 tvg-id="ch5ace8ddc" tvg-name="ch5ace8ddc" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E8%82%83%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",甘肃卫视
-https://live.gstv.com.cn/live/oxfhvoy.m3u8
-# 西藏卫视 | 质量40.0 (未知) | 22.855MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="chfeccf21e" tvg-name="chfeccf21e" tvg-logo="https://live.fanmingming.com/tv/%E8%A5%BF%E8%97%8F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",西藏卫视
-https://live.264788.xyz/channel/xizangweishi?streamid=4b4e8ea919f1cfd5e43deed1d1675251&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 贵州卫视 | 质量40.0 (未知) | 28.275MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch5a7d0166" tvg-name="ch5a7d0166" tvg-logo="https://live.fanmingming.com/tv/%E8%B4%B5%E5%B7%9E%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",贵州卫视
-https://live.264788.xyz/channel/guizhouweishi?streamid=091bd59ea031989839c23459bb8cc9d4&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 辽宁卫视 | 质量49.5 (480P) | 0.51MB/s | 码率0.84Mbps | 综合44.45
-#EXTINF:-1 tvg-id="ch9291c40e" tvg-name="ch9291c40e" tvg-logo="https://live.fanmingming.com/tv/%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",辽宁卫视
-http://111.59.24.227:8181/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
-# 重庆卫视 | 质量49.5 (480P) | 0.623MB/s | 码率0.84Mbps | 综合44.1
-#EXTINF:-1 tvg-id="ch5731a167" tvg-name="ch5731a167" tvg-logo="https://live.fanmingming.com/tv/%E9%87%8D%E5%BA%86%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",重庆卫视
-http://221.7.175.154:8445/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
-# 陕西卫视 | 质量40.0 (未知) | 17.835MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="cheb7330e3" tvg-name="cheb7330e3" tvg-logo="https://live.fanmingming.com/tv/%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",陕西卫视
-https://live.264788.xyz/channel/shaanxiweishi?streamid=9dc887dba8ecb4e4143baf4f2373800c&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 青海卫视 | 质量49.5 (480P) | 0.579MB/s | 码率0.84Mbps | 综合39.77
-#EXTINF:-1 tvg-id="ch4ec095f1" tvg-name="ch4ec095f1" tvg-logo="https://live.fanmingming.com/tv/%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",青海卫视
-http://124.90.45.52:9901/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0
-# 黑龙江卫视 | 质量49.5 (480P) | 0.152MB/s | 码率0.84Mbps | 综合34.18
-#EXTINF:-1 tvg-id="ch1ce026a7" tvg-name="ch1ce026a7" tvg-logo="https://live.fanmingming.com/tv/%E9%BB%91%E9%BE%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道·480P",黑龙江卫视
-http://gfr.x3322.net:9901/tsfile/live/1094_1.m3u8
-# 韩国电影1 | 质量67.5 (720P) | 1.408MB/s | 码率0.0Mbps | 综合69.83
-#EXTINF:-1 tvg-id="1" tvg-name="1" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%A9%E5%9B%BD%E7%94%B5%E5%BD%B11.png" group-title="🎬 影视频道·720P",韩国电影1
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=595
-# 韩国电影2 | 质量67.5 (720P) | 4.321MB/s | 码率0.0Mbps | 综合78.62
-#EXTINF:-1 tvg-id="2" tvg-name="2" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%A9%E5%9B%BD%E7%94%B5%E5%BD%B12.png" group-title="🎬 影视频道·720P",韩国电影2
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=743
-# CCTV-5 体育 | 质量49.5 (480P) | 0.633MB/s | 码率0.84Mbps | 综合45.09
-#EXTINF:-1 tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="⚽ 体育频道·480P",CCTV-5 体育
-http://1.24.39.180:9003/hls/5/index.m3u8
-# CCTV-5+ 体育赛事 | 质量49.5 (480P) | 0.45MB/s | 码率0.84Mbps | 综合42.35
-#EXTINF:-1 tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="⚽ 体育频道·480P",CCTV-5+ 体育赛事
-http://fuxin.yunjifei.top:999/tsfile/live/0016_1.m3u8?key=txiptv
-# CCTV-14 少儿 | 质量45.0 (480P) | 0.75MB/s | 码率1.06Mbps | 综合43.53
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" group-title="🧸 儿童动画·480P",CCTV-14 少儿
-https://event.pull.hebtv.com/jishi/cp2.m3u8
-# 韩国EBS少儿 | 质量31.5 (SD) | 0.826MB/s | 码率0.0Mbps | 综合37.72
-#EXTINF:-1 tvg-id="EBS" tvg-name="EBS" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%A9%E5%9B%BDEBS%E5%B0%91%E5%84%BF.png" group-title="🧸 儿童动画·SD",韩国EBS少儿
-http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
-# ABC News Live | 质量82.8 (1080P) | 18.698MB/s | 码率0.0Mbps | 综合88.42
-#EXTINF:-1 tvg-id="ABCNewsLive" tvg-name="ABCNewsLive" tvg-logo="https://live.fanmingming.com/tv/ABCNewsLive.png" group-title="🌍 国际频道·1080P",ABC News Live
-https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991626
-# Action Hollywood | 质量82.8 (1080P) | 0.903MB/s | 码率0.0Mbps | 综合67.1
-#EXTINF:-1 tvg-id="ActionHollywood" tvg-name="ActionHollywood" tvg-logo="https://live.fanmingming.com/tv/ActionHollywood.png" group-title="🌍 国际频道·1080P",Action Hollywood
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungau/playlist.m3u8
-# Arirang | 质量75.0 (720P) | 0.593MB/s | 码率2.1Mbps | 综合59.06
-#EXTINF:-1 tvg-id="Arirang" tvg-name="Arirang" tvg-logo="https://live.fanmingming.com/tv/Arirang.png" group-title="🌍 国际频道·720P",Arirang
-https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
-# BBC Earth | 质量82.8 (1080P) | 22.496MB/s | 码率0.0Mbps | 综合89.08
-#EXTINF:-1 tvg-id="BBCEarth" tvg-name="BBCEarth" tvg-logo="https://live.fanmingming.com/tv/BBCEarth.png" group-title="🌍 国际频道·1080P",BBC Earth
-https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist.m3u8
-# BBC News | 质量49.5 (480P) | 12.329MB/s | 码率1.1Mbps | 综合66.79
-#EXTINF:-1 tvg-id="BBCNews" tvg-name="BBCNews" tvg-logo="https://live.fanmingming.com/tv/BBCNews.png" group-title="🌍 国际频道·480P",BBC News
-https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
-# Beautiful Life TV | 质量67.5 (720P) | 0.389MB/s | 码率0.0Mbps | 综合52.48
-#EXTINF:-1 tvg-id="BeautifulLifeTV" tvg-name="BeautifulLifeTV" tvg-logo="https://live.fanmingming.com/tv/BeautifulLifeTV.png" group-title="🌍 国际频道·720P",Beautiful Life TV
-https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
-# beIN SPORTS XTRA | 质量22.5 (SD) | 16.781MB/s | 码率0.7Mbps | 综合51.81
-#EXTINF:-1 tvg-id="beINSPORTSXTRA" tvg-name="beINSPORTSXTRA" tvg-logo="https://live.fanmingming.com/tv/beINSPORTSXTRA.png" group-title="🌍 国际频道·SD",beIN SPORTS XTRA
-https://d9ssxzmclhfo4.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t7en7ol3kq3sp/f881b29a-280a-4416-be20-40db0fcc0f07/3.m3u8
-# CBC News | 质量82.8 (1080P) | 2.176MB/s | 码率0.0Mbps | 综合89.32
-#EXTINF:-1 tvg-id="CBCNews" tvg-name="CBCNews" tvg-logo="https://live.fanmingming.com/tv/CBCNews.png" group-title="🌍 国际频道·1080P",CBC News
-https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991276
-# CCTV-4 中文国际 | 质量49.5 (480P) | 0.727MB/s | 码率0.84Mbps | 综合48.28
-#EXTINF:-1 tvg-id="CCTV-4" tvg-name="CCTV-4" tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" group-title="🌍 国际频道·480P",CCTV-4 中文国际
+# CCTV-4 中文国际 | 质量49.5 (480P) | 0.542MB/s | 码率0.84Mbps | 综合45.02
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4" tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" group-title="🇨🇳 央视频道",CCTV-4 中文国际
 http://124.90.45.52:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
-# CNA | 质量49.5 (480P) | 15.472MB/s | 码率1.05Mbps | 综合68.78
-#EXTINF:-1 tvg-id="CNA" tvg-name="CNA" tvg-logo="https://live.fanmingming.com/tv/CNA.png" group-title="🌍 国际频道·480P",CNA
+# CCTV-5 体育 | 质量49.5 (480P) | 0.523MB/s | 码率0.84Mbps | 综合44.75
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="🇨🇳 央视频道",CCTV-5 体育
+http://221.7.175.154:8445/tsfile/live/1018_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-5+ 体育赛事 | 质量49.5 (480P) | 0.435MB/s | 码率0.84Mbps | 综合42.49
+#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="🇨🇳 央视频道",CCTV-5+ 体育赛事
+http://fuxin.yunjifei.top:999/tsfile/live/0016_1.m3u8?key=txiptv
+# CCTV-6 电影 | 质量49.5 (480P) | 0.545MB/s | 码率0.84Mbps | 综合44.6
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" group-title="🇨🇳 央视频道",CCTV-6 电影
+http://124.90.45.52:9901/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-7 国防军事 | 质量49.5 (480P) | 0.539MB/s | 码率0.84Mbps | 综合45.11
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://live.fanmingming.com/tv/CCTV7.png" group-title="🇨🇳 央视频道",CCTV-7 国防军事
+http://124.90.45.52:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-8 电视剧 | 质量49.5 (480P) | 0.525MB/s | 码率0.84Mbps | 综合43.89
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://live.fanmingming.com/tv/CCTV8.png" group-title="🇨🇳 央视频道",CCTV-8 电视剧
+http://153.0.171.163:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-9 纪录 | 质量49.5 (480P) | 0.529MB/s | 码率0.84Mbps | 综合42.99
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9" tvg-logo="https://live.fanmingming.com/tv/CCTV9.png" group-title="🇨🇳 央视频道",CCTV-9 纪录
+http://221.7.175.154:8445/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-10 科教 | 质量49.5 (480P) | 0.537MB/s | 码率0.84Mbps | 综合42.42
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" group-title="🇨🇳 央视频道",CCTV-10 科教
+http://124.90.45.52:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-11 戏曲 | 质量49.5 (480P) | 0.499MB/s | 码率0.84Mbps | 综合43.55
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://live.fanmingming.com/tv/CCTV11.png" group-title="🇨🇳 央视频道",CCTV-11 戏曲
+http://1.24.39.180:9003/hls/11/index.m3u8
+# CCTV-12 社会与法 | 质量49.5 (480P) | 0.528MB/s | 码率0.84Mbps | 综合43.31
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12" tvg-logo="https://live.fanmingming.com/tv/CCTV12.png" group-title="🇨🇳 央视频道",CCTV-12 社会与法
+http://221.7.175.154:8445/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-13 新闻 | 质量45.0 (480P) | 0.763MB/s | 码率1.06Mbps | 综合43.27
+#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" group-title="🇨🇳 央视频道",CCTV-13 新闻
+https://event.pull.hebtv.com/jishi/cp1.m3u8
+# CCTV-15 音乐 | 质量49.5 (480P) | 0.445MB/s | 码率0.84Mbps | 综合41.23
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" group-title="🇨🇳 央视频道",CCTV-15 音乐
+http://49.70.189.149:60001/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-16 奥林匹克 | 质量45.0 (480P) | 0.678MB/s | 码率0.84Mbps | 综合44.41
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" group-title="🇨🇳 央视频道",CCTV-16 奥林匹克
+http://112.27.5.218:9901/tsfile/live/faacts/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+# CCTV-17 农业农村 | 质量40.0 (未知) | 27.964MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" group-title="🇨🇳 央视频道",CCTV-17 农业农村
+https://live.264788.xyz/channel/cctv17?streamid=f9c36f1e95b5b35eac89cc89583e7c0a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# CGTN | 质量45.0 (480P) | 7.088MB/s | 码率1.05Mbps | 综合65.97
+#EXTINF:-1 tvg-id="CGTN英语" tvg-name="CGTN英语" tvg-logo="https://live.fanmingming.com/tv/CGTN.png" group-title="🇨🇳 央视频道",CGTN
+https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
+# CGTN Documentary | 质量45.0 (480P) | 6.511MB/s | 码率1.05Mbps | 综合66.02
+#EXTINF:-1 tvg-id="CGTN纪录" tvg-name="CGTN纪录" tvg-logo="https://live.fanmingming.com/tv/CGTNDocumentary.png" group-title="🇨🇳 央视频道",CGTN Documentary
+https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
+# CGTN 纪录 | 质量67.5 (720P) | 1.56MB/s | 码率0.0Mbps | 综合72.48
+#EXTINF:-1 tvg-id="CGTN纪录" tvg-name="CGTN纪录" tvg-logo="https://live.fanmingming.com/tv/CGTN%E7%BA%AA%E5%BD%95.png" group-title="🇨🇳 央视频道",CGTN 纪录
+https://0472.org/hls/cgtnd.m3u8
+# CGTN 英语 | 质量67.5 (720P) | 3.835MB/s | 码率0.0Mbps | 综合79.65
+#EXTINF:-1 tvg-id="CGTN英语" tvg-name="CGTN英语" tvg-logo="https://live.fanmingming.com/tv/CGTN%E8%8B%B1%E8%AF%AD.png" group-title="🇨🇳 央视频道",CGTN 英语
+https://0472.org/hls/cgtn.m3u8
+# CGTN 西语 | 质量82.8 (1080P) | 6.19MB/s | 码率0.0Mbps | 综合89.58
+#EXTINF:-1 tvg-id="CGTN西班牙语" tvg-name="CGTN西班牙语" tvg-logo="https://live.fanmingming.com/tv/CGTN%E8%A5%BF%E8%AF%AD.png" group-title="🇨🇳 央视频道",CGTN 西语
+https://0472.org/hls/cgtnx.m3u8
+# CGTN 阿语 | 质量82.8 (1080P) | 6.486MB/s | 码率0.0Mbps | 综合89.63
+#EXTINF:-1 tvg-id="CGTN阿语" tvg-name="CGTN阿语" tvg-logo="https://live.fanmingming.com/tv/CGTN%E9%98%BF%E8%AF%AD.png" group-title="🇨🇳 央视频道",CGTN 阿语
+https://0472.org/hls/cgtna.m3u8
+# 兵器科技 | 质量40.0 (未知) | 21.551MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="兵器科技" tvg-name="兵器科技" tvg-logo="https://live.fanmingming.com/tv/%E5%85%B5%E5%99%A8%E7%A7%91%E6%8A%80.png" group-title="🇨🇳 央视频道",兵器科技
+https://live.264788.xyz/channel/bingqikeji?streamid=530cb4e58bbc48b7fc26f5e0a2e47966&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 怀旧剧场 | 质量40.0 (未知) | 23.687MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://live.fanmingming.com/tv/%E6%80%80%E6%97%A7%E5%89%A7%E5%9C%BA.png" group-title="🇨🇳 央视频道",怀旧剧场
+https://live.264788.xyz/channel/huaijiujuchang?streamid=7e5d1abdddde08f588234f3f640f75ff&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 第一剧场 | 质量40.0 (未知) | 29.662MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="第一剧场" tvg-name="第一剧场" tvg-logo="https://live.fanmingming.com/tv/%E7%AC%AC%E4%B8%80%E5%89%A7%E5%9C%BA.png" group-title="🇨🇳 央视频道",第一剧场
+https://live.264788.xyz/channel/diyijuchang?streamid=e9b0fb1ca135a4aeae12944494883794&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 风云音乐 | 质量40.0 (未知) | 31.327MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="风云音乐" tvg-name="风云音乐" tvg-logo="https://live.fanmingming.com/tv/%E9%A3%8E%E4%BA%91%E9%9F%B3%E4%B9%90.png" group-title="🇨🇳 央视频道",风云音乐
+https://live.264788.xyz/channel/fengyunyinyue?streamid=1b41fb9153cba3ee19bd5d1b323da27e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 北京卫视 | 质量49.5 (480P) | 0.62MB/s | 码率1.05Mbps | 综合45.04
+#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",北京卫视
+http://120.211.62.180:8000/hls/35/index.m3u8
+# 湖南卫视 | 质量22.5 (SD) | 20.105MB/s | 码率0.7Mbps | 综合52.01
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",湖南卫视
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+# 浙江卫视 | 质量49.5 (480P) | 0.256MB/s | 码率0.84Mbps | 综合35.28
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",浙江卫视
+http://60.187.246.195:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
+# 江苏卫视 | 质量49.5 (480P) | 0.336MB/s | 码率0.84Mbps | 综合40.83
+#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",江苏卫视
+http://gfr.x3322.net:9901/tsfile/live/1086_1.m3u8
+# 东方卫视 | 质量45.0 (480P) | 0.545MB/s | 码率1.4Mbps | 综合41.38
+#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",东方卫视
+http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+# 广东卫视 | 质量40.0 (未知) | 5.014MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",广东卫视
+https://txmov2.a.kwimgs.com/upic/2023/01/26/09/BMjAyMzAxMjYwOTE3NDVfNzM5MzQzNzIyXzk0NjI1OTUwNTA3XzBfMw==_b_B81ddda927d33445d544befd008e60109.mp4
+# 深圳卫视 | 质量49.5 (480P) | 0.478MB/s | 码率0.84Mbps | 综合43.89
+#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",深圳卫视
+http://36.136.38.87:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
+# 山东卫视 | 质量49.5 (480P) | 0.277MB/s | 码率0.84Mbps | 综合40.3
+#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%B1%B1%E4%B8%9C%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",山东卫视
+http://222.169.85.8:9901/tsfile/live/0131_1.m3u8
+# 河南卫视 | 质量82.8 (1080P) | 20.482MB/s | 码率0.0Mbps | 综合88.74
+#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",河南卫视
+http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=6caff80f6b52421070242f9d94bb5b48&wsTime=1795302266
+# 四川卫视 | 质量40.0 (未知) | 27.336MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",四川卫视
+https://live.264788.xyz/channel/sichuanweishi4k?streamid=21be5901ee81559c827dc84e46f26452&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 东南卫视 | 质量49.5 (480P) | 0.235MB/s | 码率0.84Mbps | 综合39.43
+#EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%9C%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",东南卫视
+http://118.193.115.2:9901/tsfile/live/0137_1.m3u8?key=txiptv
+# 云南卫视 | 质量49.5 (480P) | 0.221MB/s | 码率0.84Mbps | 综合39.5
+#EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%91%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",云南卫视
+http://36.136.38.87:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
+# 云南娱乐 | 质量49.5 (480P) | 0.67MB/s | 码率1.37Mbps | 综合44.74
+#EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%91%E5%8D%97%E5%A8%B1%E4%B9%90.png" group-title="📺 卫视频道",云南娱乐
+https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
+# 云南都市 | 质量49.5 (480P) | 0.677MB/s | 码率1.34Mbps | 综合45.21
+#EXTINF:-1 tvg-id="云南都市" tvg-name="云南都市" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%91%E5%8D%97%E9%83%BD%E5%B8%82.png" group-title="📺 卫视频道",云南都市
+https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
+# 人间卫视 | 质量49.5 (480P) | 0.294MB/s | 码率0.9Mbps | 综合40.35
+#EXTINF:-1 tvg-id="人间卫视" tvg-name="人间卫视" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%BA%E9%97%B4%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",人间卫视
+http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
+# 兵团卫视 | 质量49.5 (480P) | 0.545MB/s | 码率0.84Mbps | 综合44.47
+#EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%85%B5%E5%9B%A2%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",兵团卫视
+http://222.71.55.147:9901/tsfile/live/0115_1.m3u8?key=txiptv&playlive=0&authid=0
+# 内蒙古卫视 | 质量40.0 (未知) | 30.199MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",内蒙古卫视
+https://live.264788.xyz/channel/neimengguweishi?streamid=81a015dbecf3031d7d847b7a9b059f67&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 北京新闻 | 质量40.0 (未知) | 61.781MB/s | 码率0.0Mbps | 综合61.09
+#EXTINF:-1 tvg-id="北京新闻" tvg-name="北京新闻" tvg-logo="https://live.fanmingming.com/tv/%E5%8C%97%E4%BA%AC%E6%96%B0%E9%97%BB.png" group-title="📺 卫视频道",北京新闻
+https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8
+# 吉林卫视 | 质量49.5 (480P) | 0.509MB/s | 码率0.84Mbps | 综合42.99
+#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",吉林卫视
+http://36.136.38.87:9901/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0
+# 四川科教 | 质量49.5 (480P) | 0.451MB/s | 码率0.84Mbps | 综合43.13
+#EXTINF:-1 tvg-id="四川科教" tvg-name="四川科教" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%9B%E5%B7%9D%E7%A7%91%E6%95%99.png" group-title="📺 卫视频道",四川科教
+http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8
+# 天津卫视 | 质量49.5 (480P) | 0.282MB/s | 码率0.84Mbps | 综合40.36
+#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%A4%A9%E6%B4%A5%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",天津卫视
+http://120.237.39.10:9901/tsfile/live/1067_1.m3u8?key=txiptv&playlive=1&down=1
+# 宁夏卫视 | 质量40.0 (未知) | 28.26MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",宁夏卫视
+https://live.264788.xyz/channel/ningxiaweishi?streamid=1b2952717a920173e66d4a348f9dcb5c&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 安多卫视 | 质量75.0 (720P) | 0.347MB/s | 码率1.83Mbps | 综合52.11
+#EXTINF:-1 tvg-id="安多卫视" tvg-name="安多卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%AE%89%E5%A4%9A%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",安多卫视
+https://liveout.xntv.tv/a65jur/96iln2.m3u8
+# 安徽卫视 | 质量49.5 (480P) | 0.37MB/s | 码率0.84Mbps | 综合42.25
+#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%AE%89%E5%BE%BD%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",安徽卫视
+http://123.138.216.44:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
+# 山西卫视 | 质量40.0 (未知) | 26.418MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%B1%B1%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",山西卫视
+https://live.264788.xyz/channel/shanxiweishi?streamid=eeb7d60ca6e0db131ea7a092a3cd28d2&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 广西卫视 | 质量82.8 (1080P) | 7.028MB/s | 码率0.0Mbps | 综合86.83
+#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",广西卫视
+https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
+# 延边卫视 | 质量55.0 (480P) | 1.227MB/s | 码率1.04Mbps | 综合59.96
+#EXTINF:-1 tvg-id="延边卫视" tvg-name="延边卫视" tvg-logo="https://live.fanmingming.com/tv/%E5%BB%B6%E8%BE%B9%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",延边卫视
+https://stream2.jlntv.cn/jlyb/sd/live.m3u8
+# 新疆卫视 | 质量40.0 (未知) | 28.603MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%96%B0%E7%96%86%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",新疆卫视
+https://live.264788.xyz/channel/xinjiangweishi?streamid=4f481f56ae39ce5d24203471de9df635&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 江西卫视 | 质量40.0 (未知) | 27.747MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%9F%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",江西卫视
+https://live.264788.xyz/channel/jiangxiweishi?streamid=555198f31caa33506ac6abb70d788959&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 河北卫视 | 质量55.0 (480P) | 0.675MB/s | 码率1.11Mbps | 综合49.35
+#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",河北卫视
+http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
+# 河南乡村 | 质量40.0 (未知) | 171.96MB/s | 码率0.0Mbps | 综合56.19
+#EXTINF:-1 tvg-id="河南乡村" tvg-name="河南乡村" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8D%97%E4%B9%A1%E6%9D%91.png" group-title="📺 卫视频道",河南乡村
+http://tvcdn.stream3.hndt.com/tv/65b8302b017e100019dc540f00000000_transios/playlist.m3u8?wsSecret=bd67952abc25500fec10ef379d99c03c&wsTime=1795302266
+# 浙江遂昌 | 质量22.5 (SD) | 0.831MB/s | 码率0.52Mbps | 综合29.31
+#EXTINF:-1 tvg-id="浙江遂昌" tvg-name="浙江遂昌" tvg-logo="https://live.fanmingming.com/tv/%E6%B5%99%E6%B1%9F%E9%81%82%E6%98%8C.png" group-title="📺 卫视频道",浙江遂昌
+http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8
+# 海南卫视 | 质量22.5 (SD) | 0.464MB/s | 码率0.56Mbps | 综合26.63
+#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B5%B7%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",海南卫视
+http://fuxin.yunjifei.top:999/tsfile/live/1010_1.m3u8?key=txiptv
+# 湖北卫视 | 质量49.5 (480P) | 0.29MB/s | 码率0.84Mbps | 综合37.8
+#EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" tvg-logo="https://live.fanmingming.com/tv/%E6%B9%96%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",湖北卫视
+http://gfr.x3322.net:9901/tsfile/live/1088_1.m3u8
+# 甘肃卫视 | 质量55.0 (480P) | 1.171MB/s | 码率1.37Mbps | 综合51.56
+#EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E8%82%83%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",甘肃卫视
+https://live.gstv.com.cn/live/oxfhvoy.m3u8
+# 西藏卫视 | 质量40.0 (未知) | 28.499MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://live.fanmingming.com/tv/%E8%A5%BF%E8%97%8F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",西藏卫视
+https://live.264788.xyz/channel/xizangweishi?streamid=4b4e8ea919f1cfd5e43deed1d1675251&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 贵州卫视 | 质量40.0 (未知) | 25.804MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://live.fanmingming.com/tv/%E8%B4%B5%E5%B7%9E%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",贵州卫视
+https://live.264788.xyz/channel/guizhouweishi?streamid=091bd59ea031989839c23459bb8cc9d4&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 辽宁卫视 | 质量49.5 (480P) | 0.524MB/s | 码率0.84Mbps | 综合43.33
+#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://live.fanmingming.com/tv/%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",辽宁卫视
+http://221.7.175.154:8445/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
+# 重庆卫视 | 质量49.5 (480P) | 0.525MB/s | 码率0.84Mbps | 综合42.1
+#EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.com/tv/%E9%87%8D%E5%BA%86%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",重庆卫视
+http://221.7.175.154:8445/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
+# 陕西卫视 | 质量40.0 (未知) | 26.827MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://live.fanmingming.com/tv/%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",陕西卫视
+https://live.264788.xyz/channel/shaanxiweishi?streamid=9dc887dba8ecb4e4143baf4f2373800c&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 青海卫视 | 质量49.5 (480P) | 0.157MB/s | 码率0.84Mbps | 综合33.43
+#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://live.fanmingming.com/tv/%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",青海卫视
+http://124.90.45.52:9901/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0
+# 黑龙江卫视 | 质量22.5 (SD) | 0.569MB/s | 码率0.28Mbps | 综合29.26
+#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://live.fanmingming.com/tv/%E9%BB%91%E9%BE%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png" group-title="📺 卫视频道",黑龙江卫视
+http://218.13.139.26:9901/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0
+# 韩国电影1 | 质量67.5 (720P) | 3.228MB/s | 码率0.0Mbps | 综合79.83
+#EXTINF:-1 tvg-id="韩国电影1" tvg-name="韩国电影1" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%A9%E5%9B%BD%E7%94%B5%E5%BD%B11.png" group-title="🎬 影视频道",韩国电影1
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=595
+# 韩国电影2 | 质量67.5 (720P) | 3.801MB/s | 码率0.0Mbps | 综合79.63
+#EXTINF:-1 tvg-id="韩国电影2" tvg-name="韩国电影2" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%A9%E5%9B%BD%E7%94%B5%E5%BD%B12.png" group-title="🎬 影视频道",韩国电影2
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=743
+# CCTV-14 少儿 | 质量49.5 (480P) | 0.424MB/s | 码率0.84Mbps | 综合42.9
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" group-title="🧸 儿童动画",CCTV-14 少儿
+http://49.70.189.149:60001/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
+# 韩国EBS少儿 | 质量31.5 (SD) | 0.832MB/s | 码率0.0Mbps | 综合37.75
+#EXTINF:-1 tvg-id="韩国EBS少儿" tvg-name="韩国EBS少儿" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%A9%E5%9B%BDEBS%E5%B0%91%E5%84%BF.png" group-title="🧸 儿童动画",韩国EBS少儿
+http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
+# ABC News Live | 质量82.8 (1080P) | 15.094MB/s | 码率0.0Mbps | 综合88.74
+#EXTINF:-1 tvg-id="ABCNewsLive" tvg-name="ABCNewsLive" tvg-logo="https://live.fanmingming.com/tv/ABCNewsLive.png" group-title="🌍 国际频道",ABC News Live
+https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991626
+# Action Hollywood | 质量82.8 (1080P) | 0.894MB/s | 码率0.0Mbps | 综合68.06
+#EXTINF:-1 tvg-id="ActionHollywood" tvg-name="ActionHollywood" tvg-logo="https://live.fanmingming.com/tv/ActionHollywood.png" group-title="🌍 国际频道",Action Hollywood
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungau/playlist.m3u8
+# Arirang | 质量75.0 (720P) | 0.703MB/s | 码率2.1Mbps | 综合61.93
+#EXTINF:-1 tvg-id="Arirang" tvg-name="Arirang" tvg-logo="https://live.fanmingming.com/tv/Arirang.png" group-title="🌍 国际频道",Arirang
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+# BBC Earth | 质量82.8 (1080P) | 24.433MB/s | 码率0.0Mbps | 综合88.94
+#EXTINF:-1 tvg-id="BBCEarth" tvg-name="BBCEarth" tvg-logo="https://live.fanmingming.com/tv/BBCEarth.png" group-title="🌍 国际频道",BBC Earth
+https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist.m3u8
+# BBC News | 质量49.5 (480P) | 0.932MB/s | 码率1.1Mbps | 综合50.22
+#EXTINF:-1 tvg-id="BBCNews" tvg-name="BBCNews" tvg-logo="https://live.fanmingming.com/tv/BBCNews.png" group-title="🌍 国际频道",BBC News
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+# Beautiful Life TV | 质量67.5 (720P) | 0.389MB/s | 码率0.0Mbps | 综合52.26
+#EXTINF:-1 tvg-id="BeautifulLifeTV" tvg-name="BeautifulLifeTV" tvg-logo="https://live.fanmingming.com/tv/BeautifulLifeTV.png" group-title="🌍 国际频道",Beautiful Life TV
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
+# beIN SPORTS XTRA | 质量22.5 (SD) | 15.552MB/s | 码率0.7Mbps | 综合52.77
+#EXTINF:-1 tvg-id="beINSPORTSXTRA" tvg-name="beINSPORTSXTRA" tvg-logo="https://live.fanmingming.com/tv/beINSPORTSXTRA.png" group-title="🌍 国际频道",beIN SPORTS XTRA
+https://d9ssxzmclhfo4.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t7en7ol3kq3sp/f881b29a-280a-4416-be20-40db0fcc0f07/3.m3u8
+# CBC News | 质量82.8 (1080P) | 15.444MB/s | 码率0.0Mbps | 综合88.54
+#EXTINF:-1 tvg-id="CBCNews" tvg-name="CBCNews" tvg-logo="https://live.fanmingming.com/tv/CBCNews.png" group-title="🌍 国际频道",CBC News
+https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991276
+# CNA | 质量49.5 (480P) | 14.801MB/s | 码率1.05Mbps | 综合69.57
+#EXTINF:-1 tvg-id="CNA" tvg-name="CNA" tvg-logo="https://live.fanmingming.com/tv/CNA.png" group-title="🌍 国际频道",CNA
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
-# Comedy TV | 质量82.8 (1080P) | 23.826MB/s | 码率0.0Mbps | 综合87.32
-#EXTINF:-1 tvg-id="ComedyTV" tvg-name="ComedyTV" tvg-logo="https://live.fanmingming.com/tv/ComedyTV.png" group-title="🌍 国际频道·1080P",Comedy TV
+# Comedy TV | 质量82.8 (1080P) | 23.322MB/s | 码率0.0Mbps | 综合89.43
+#EXTINF:-1 tvg-id="ComedyTV" tvg-name="ComedyTV" tvg-logo="https://live.fanmingming.com/tv/ComedyTV.png" group-title="🌍 国际频道",Comedy TV
 https://ec613694ee5049d3b8f30913b619662e.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-804-UK-SONYONECOMEDYTV-LG_UK/playlist.m3u8
-# CW Forever | 质量22.5 (SD) | 14.898MB/s | 码率0.7Mbps | 综合51.28
-#EXTINF:-1 tvg-id="CWForever" tvg-name="CWForever" tvg-logo="https://live.fanmingming.com/tv/CWForever.png" group-title="🌍 国际频道·SD",CW Forever
+# CW Forever | 质量22.5 (SD) | 14.311MB/s | 码率0.7Mbps | 综合51.88
+#EXTINF:-1 tvg-id="CWForever" tvg-name="CWForever" tvg-logo="https://live.fanmingming.com/tv/CWForever.png" group-title="🌍 国际频道",CW Forever
 https://d1sknsnbkyvie.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-sbcl5hxexbihh/38ec3205-dcc5-4c0f-a047-917eb2054891/0.m3u8
-# CW Gold | 质量22.5 (SD) | 14.723MB/s | 码率0.7Mbps | 综合52.2
-#EXTINF:-1 tvg-id="CWGold" tvg-name="CWGold" tvg-logo="https://live.fanmingming.com/tv/CWGold.png" group-title="🌍 国际频道·SD",CW Gold
+# CW Gold | 质量22.5 (SD) | 15.517MB/s | 码率0.7Mbps | 综合51.67
+#EXTINF:-1 tvg-id="CWGold" tvg-name="CWGold" tvg-logo="https://live.fanmingming.com/tv/CWGold.png" group-title="🌍 国际频道",CW Gold
 https://d1d726ny1vain2.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-femoe55fvrdvc/3bef8470-bcb1-49b1-a816-0737fa4c27cd/0.m3u8
-# Family | 质量92.0 (1080P) | 30.139MB/s | 码率4.2Mbps | 综合93.4
-#EXTINF:-1 tvg-id="Family" tvg-name="Family" tvg-logo="https://live.fanmingming.com/tv/Family.png" group-title="🌍 国际频道·1080P",Family
-https://family-rakuten-tv-uk.fast.rakuten.tv/v1/manifest/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6203/0426b7a3-6dd5-4a24-ac4c-22227a2b2f9d/4.m3u8
-# GB News | 质量82.8 (1080P) | 15.396MB/s | 码率0.0Mbps | 综合88.86
-#EXTINF:-1 tvg-id="GBNews" tvg-name="GBNews" tvg-logo="https://live.fanmingming.com/tv/GBNews.png" group-title="🌍 国际频道·1080P",GB News
+# GB News | 质量82.8 (1080P) | 13.909MB/s | 码率0.0Mbps | 综合88.87
+#EXTINF:-1 tvg-id="GBNews" tvg-name="GBNews" tvg-logo="https://live.fanmingming.com/tv/GBNews.png" group-title="🌍 国际频道",GB News
 https://rakutenaa-lightning-gbnews-rakuten-ccoa9.amagi.tv/playlist/rakutenAA-lightning-gbnews-rakuten/playlist.m3u8
-# Global News | 质量67.5 (720P) | 25.028MB/s | 码率0.0Mbps | 综合79.63
-#EXTINF:-1 tvg-id="GlobalNews" tvg-name="GlobalNews" tvg-logo="https://live.fanmingming.com/tv/GlobalNews.png" group-title="🌍 国际频道·720P",Global News
+# Global News | 质量67.5 (720P) | 21.2MB/s | 码率0.0Mbps | 综合80.14
+#EXTINF:-1 tvg-id="GlobalNews" tvg-name="GlobalNews" tvg-logo="https://live.fanmingming.com/tv/GlobalNews.png" group-title="🌍 国际频道",Global News
 https://live.corusdigitaldev.com/groupb/live/3062d0e3-ed4c-4f47-8482-95648250f4b8/live.isml/.m3u8
-# Good | 质量82.8 (1080P) | 0.968MB/s | 码率0.0Mbps | 综合71.6
-#EXTINF:-1 tvg-id="Good" tvg-name="Good" tvg-logo="https://live.fanmingming.com/tv/Good.png" group-title="🌍 国际频道·1080P",Good
+# Good | 质量82.8 (1080P) | 0.958MB/s | 码率0.0Mbps | 综合71.47
+#EXTINF:-1 tvg-id="Good" tvg-name="Good" tvg-logo="https://live.fanmingming.com/tv/Good.png" group-title="🌍 国际频道",Good
 https://live.streamingfast.net/osmflivech1.m3u8
-# Good 2 | 质量82.8 (1080P) | 0.969MB/s | 码率0.0Mbps | 综合71.64
-#EXTINF:-1 tvg-id="Good2" tvg-name="Good2" tvg-logo="https://live.fanmingming.com/tv/Good2.png" group-title="🌍 国际频道·1080P",Good 2
+# Good 2 | 质量82.8 (1080P) | 0.956MB/s | 码率0.0Mbps | 综合71.61
+#EXTINF:-1 tvg-id="Good2" tvg-name="Good2" tvg-logo="https://live.fanmingming.com/tv/Good2.png" group-title="🌍 国际频道",Good 2
 https://live.streamingfast.net/osmflivech2.m3u8
-# History Hit | 质量67.5 (720P) | 2.15MB/s | 码率0.0Mbps | 综合76.49
-#EXTINF:-1 tvg-id="HistoryHit" tvg-name="HistoryHit" tvg-logo="https://live.fanmingming.com/tv/HistoryHit.png" group-title="🌍 国际频道·720P",History Hit
+# History Hit | 质量67.5 (720P) | 1.952MB/s | 码率0.0Mbps | 综合75.24
+#EXTINF:-1 tvg-id="HistoryHit" tvg-name="HistoryHit" tvg-logo="https://live.fanmingming.com/tv/HistoryHit.png" group-title="🌍 国际频道",History Hit
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/ldsAAAAAA-timeline-samsungau/playlist.m3u8
-# Inside Outside | 质量67.5 (720P) | 3.176MB/s | 码率0.0Mbps | 综合79.42
-#EXTINF:-1 tvg-id="InsideOutside" tvg-name="InsideOutside" tvg-logo="https://live.fanmingming.com/tv/InsideOutside.png" group-title="🌍 国际频道·720P",Inside Outside
+# Inside Outside | 质量67.5 (720P) | 2.277MB/s | 码率0.0Mbps | 综合79.68
+#EXTINF:-1 tvg-id="InsideOutside" tvg-name="InsideOutside" tvg-logo="https://live.fanmingming.com/tv/InsideOutside.png" group-title="🌍 国际频道",Inside Outside
 https://52405cd167dc41c68edcaa842b916ccd.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/LG-au_InsideOutside/playlist.m3u8
-# ION Plus | 质量82.8 (1080P) | 23.247MB/s | 码率0.0Mbps | 综合87.7
-#EXTINF:-1 tvg-id="IONPlus" tvg-name="IONPlus" tvg-logo="https://live.fanmingming.com/tv/IONPlus.png" group-title="🌍 国际频道·1080P",ION Plus
+# ION Plus | 质量82.8 (1080P) | 26.002MB/s | 码率0.0Mbps | 综合86.49
+#EXTINF:-1 tvg-id="IONPlus" tvg-name="IONPlus" tvg-logo="https://live.fanmingming.com/tv/IONPlus.png" group-title="🌍 国际频道",ION Plus
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-ionplus-tablo/playlist.m3u8
-# Kartoon Channel | 质量82.8 (1080P) | 0.9MB/s | 码率0.0Mbps | 综合69.02
-#EXTINF:-1 tvg-id="KartoonChannel" tvg-name="KartoonChannel" tvg-logo="https://live.fanmingming.com/tv/KartoonChannel.png" group-title="🌍 国际频道·1080P",Kartoon Channel
+# Kartoon Channel | 质量82.8 (1080P) | 0.898MB/s | 码率0.0Mbps | 综合69.38
+#EXTINF:-1 tvg-id="KartoonChannel" tvg-name="KartoonChannel" tvg-logo="https://live.fanmingming.com/tv/KartoonChannel.png" group-title="🌍 国际频道",Kartoon Channel
 https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8
-# LG 1 | 质量82.8 (1080P) | 15.199MB/s | 码率0.0Mbps | 综合88.01
-#EXTINF:-1 tvg-id="LG1" tvg-name="LG1" tvg-logo="https://live.fanmingming.com/tv/LG1.png" group-title="🌍 国际频道·1080P",LG 1
+# LG 1 | 质量82.8 (1080P) | 15.66MB/s | 码率0.0Mbps | 综合86.95
+#EXTINF:-1 tvg-id="LG1" tvg-name="LG1" tvg-logo="https://live.fanmingming.com/tv/LG1.png" group-title="🌍 国际频道",LG 1
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=10957&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]&app_store_url=[APP_STOREURL]&app_name=[APP_NAME]&custom_targeting=html5&custom_4=lg_channels_uk&player_height=720&player_width=1280&content_channel=lg_channels&content_dist_name=lg_channels&device_make=[DEVICE_MAKE]&device_model=[DEVICE_MODEL]&device_os=html5&consent=[GDPR_CONSENT]&gdpr=[GDPR]&gender=not_specified&yob=0&livestream=1&custom_param_0=[DEVICE_MODEL]&custom_param_1=tv&custom_param_2=[DEVICE_MAKE]&custom_param_3=[DEVICE_ID]&custom_param_4=lg_channels&custom_param_5=html5&fck=[FCK]&viewsize=[VIEWSIZE]
-# LG 1 Film | 质量82.8 (1080P) | 9.918MB/s | 码率0.0Mbps | 综合87.96
-#EXTINF:-1 tvg-id="LG1Film" tvg-name="LG1Film" tvg-logo="https://live.fanmingming.com/tv/LG1Film.png" group-title="🌍 国际频道·1080P",LG 1 Film
+# LG 1 Film | 质量82.8 (1080P) | 15.022MB/s | 码率0.0Mbps | 综合87.57
+#EXTINF:-1 tvg-id="LG1Film" tvg-name="LG1Film" tvg-logo="https://live.fanmingming.com/tv/LG1Film.png" group-title="🌍 国际频道",LG 1 Film
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15465&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]&app_store_url=[APP_STOREURL]&app_name=[APP_NAME]&custom_targeting=html5&custom_4=lg_channels_uk&player_height=720&player_width=1280&content_channel=lg_channels&content_dist_name=lg_channels&device_make=[DEVICE_MAKE]&device_model=[DEVICE_MODEL]&device_os=html5&consent=[GDPR_CONSENT]&gdpr=[GDPR]&gender=not_specified&yob=0&livestream=1&custom_param_0=[DEVICE_MODEL]&custom_param_1=tv&custom_param_2=[DEVICE_MAKE]&custom_param_3=[DEVICE_ID]&custom_param_4=lg_channels&custom_param_5=html5&fck=[FCK]&viewsize=[VIEWSIZE]
-# LG 1 Spotlight | 质量82.8 (1080P) | 14.558MB/s | 码率0.0Mbps | 综合88.3
-#EXTINF:-1 tvg-id="LG1Spotlight" tvg-name="LG1Spotlight" tvg-logo="https://live.fanmingming.com/tv/LG1Spotlight.png" group-title="🌍 国际频道·1080P",LG 1 Spotlight
+# LG 1 Spotlight | 质量82.8 (1080P) | 15.558MB/s | 码率0.0Mbps | 综合87.27
+#EXTINF:-1 tvg-id="LG1Spotlight" tvg-name="LG1Spotlight" tvg-logo="https://live.fanmingming.com/tv/LG1Spotlight.png" group-title="🌍 国际频道",LG 1 Spotlight
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=13959&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]&app_store_url=[APP_STOREURL]&app_name=[APP_NAME]&custom_targeting=html5&custom_4=lg_channels_uk&player_height=720&player_width=1280&content_channel=lg_channels&content_dist_name=lg_channels&device_make=[DEVICE_MAKE]&device_model=[DEVICE_MODEL]&device_os=html5&consent=[GDPR_CONSENT]&gdpr=[GDPR]&gender=not_specified&yob=0&livestream=1&custom_param_0=[DEVICE_MODEL]&custom_param_1=tv&custom_param_2=[DEVICE_MAKE]&custom_param_3=[DEVICE_ID]&custom_param_4=lg_channels&custom_param_5=html5&fck=[FCK]&viewsize=[VIEWSIZE]
-# MovieSphere | 质量82.8 (1080P) | 2.148MB/s | 码率0.0Mbps | 综合88.02
-#EXTINF:-1 tvg-id="MovieSphere" tvg-name="MovieSphere" tvg-logo="https://live.fanmingming.com/tv/MovieSphere.png" group-title="🌍 国际频道·1080P",MovieSphere
+# MovieSphere | 质量82.8 (1080P) | 14.736MB/s | 码率0.0Mbps | 综合88.71
+#EXTINF:-1 tvg-id="MovieSphere" tvg-name="MovieSphere" tvg-logo="https://live.fanmingming.com/tv/MovieSphere.png" group-title="🌍 国际频道",MovieSphere
 https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
-# Mytime Movie | 质量82.8 (1080P) | 1.93MB/s | 码率0.0Mbps | 综合87.62
-#EXTINF:-1 tvg-id="MytimeMovie" tvg-name="MytimeMovie" tvg-logo="https://live.fanmingming.com/tv/MytimeMovie.png" group-title="🌍 国际频道·1080P",Mytime Movie
+# Mytime Movie | 质量82.8 (1080P) | 1.956MB/s | 码率0.0Mbps | 综合88.09
+#EXTINF:-1 tvg-id="MytimeMovie" tvg-name="MytimeMovie" tvg-logo="https://live.fanmingming.com/tv/MytimeMovie.png" group-title="🌍 国际频道",Mytime Movie
 https://appletree-mytimeau-samsung.amagi.tv/playlist.m3u8
-# NBC News Now | 质量82.8 (1080P) | 15.038MB/s | 码率0.0Mbps | 综合89.16
-#EXTINF:-1 tvg-id="NBCNewsNow" tvg-name="NBCNewsNow" tvg-logo="https://live.fanmingming.com/tv/NBCNewsNow.png" group-title="🌍 国际频道·1080P",NBC News Now
+# NBC News Now | 质量82.8 (1080P) | 12.309MB/s | 码率0.0Mbps | 综合88.91
+#EXTINF:-1 tvg-id="NBCNewsNow" tvg-name="NBCNewsNow" tvg-logo="https://live.fanmingming.com/tv/NBCNewsNow.png" group-title="🌍 国际频道",NBC News Now
 https://livehub-voidnet.onrender.com/cluster/streamcore/us/NBC_REDIS.m3u8
-# New Kmovies | 质量67.5 (720P) | 2.579MB/s | 码率0.0Mbps | 综合75.42
-#EXTINF:-1 tvg-id="NewKmovies" tvg-name="NewKmovies" tvg-logo="https://live.fanmingming.com/tv/NewKmovies.png" group-title="🌍 国际频道·720P",New Kmovies
+# New Kmovies | 质量67.5 (720P) | 2.059MB/s | 码率0.0Mbps | 综合76.86
+#EXTINF:-1 tvg-id="NewKmovies" tvg-name="NewKmovies" tvg-logo="https://live.fanmingming.com/tv/NewKmovies.png" group-title="🌍 国际频道",New Kmovies
 https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=newkmovies&channel_id=newid_219&mpf=adfc204d-39af1962-13a2f01a&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=b62c2c8b-8316a771-295eba28-f4663ddd&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]
-# Newsmax | 质量82.8 (1080P) | 1.701MB/s | 码率0.0Mbps | 综合82.66
-#EXTINF:-1 tvg-id="Newsmax" tvg-name="Newsmax" tvg-logo="https://live.fanmingming.com/tv/Newsmax.png" group-title="🌍 国际频道·1080P",Newsmax
+# Newsmax | 质量82.8 (1080P) | 27.742MB/s | 码率0.0Mbps | 综合86.81
+#EXTINF:-1 tvg-id="Newsmax" tvg-name="Newsmax" tvg-logo="https://live.fanmingming.com/tv/Newsmax.png" group-title="🌍 国际频道",Newsmax
 http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
-# Newsy | 质量22.5 (SD) | 1.541MB/s | 码率0.7Mbps | 综合44.48
-#EXTINF:-1 tvg-id="Newsy" tvg-name="Newsy" tvg-logo="https://live.fanmingming.com/tv/Newsy.png" group-title="🌍 国际频道·SD",Newsy
+# Newsy | 质量22.5 (SD) | 1.798MB/s | 码率0.7Mbps | 综合48.14
+#EXTINF:-1 tvg-id="Newsy" tvg-name="Newsy" tvg-logo="https://live.fanmingming.com/tv/Newsy.png" group-title="🌍 国际频道",Newsy
 https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/e3e6e29095844c4ba7d887f01e44a5ef/index_8.m3u8
-# One American News | 质量22.5 (SD) | 1.988MB/s | 码率0.7Mbps | 综合51.91
-#EXTINF:-1 tvg-id="OneAmericanNews" tvg-name="OneAmericanNews" tvg-logo="https://live.fanmingming.com/tv/OneAmericanNews.png" group-title="🌍 国际频道·SD",One American News
+# One American News | 质量22.5 (SD) | 2.04MB/s | 码率0.7Mbps | 综合51.65
+#EXTINF:-1 tvg-id="OneAmericanNews" tvg-name="OneAmericanNews" tvg-logo="https://live.fanmingming.com/tv/OneAmericanNews.png" group-title="🌍 国际频道",One American News
 https://oneamericanews-roku-us.amagi.tv/playlistR1080p.m3u8
-# Outdoor Channel | 质量82.8 (1080P) | 1.912MB/s | 码率0.0Mbps | 综合83.48
-#EXTINF:-1 tvg-id="OutdoorChannel" tvg-name="OutdoorChannel" tvg-logo="https://live.fanmingming.com/tv/OutdoorChannel.png" group-title="🌍 国际频道·1080P",Outdoor Channel
+# Outdoor Channel | 质量82.8 (1080P) | 2.035MB/s | 码率0.0Mbps | 综合85.19
+#EXTINF:-1 tvg-id="OutdoorChannel" tvg-name="OutdoorChannel" tvg-logo="https://live.fanmingming.com/tv/OutdoorChannel.png" group-title="🌍 国际频道",Outdoor Channel
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
-# Pet Club TV | 质量82.8 (1080P) | 0.894MB/s | 码率0.0Mbps | 综合69.71
-#EXTINF:-1 tvg-id="PetClubTV" tvg-name="PetClubTV" tvg-logo="https://live.fanmingming.com/tv/PetClubTV.png" group-title="🌍 国际频道·1080P",Pet Club TV
+# Pet Club TV | 质量82.8 (1080P) | 0.898MB/s | 码率0.0Mbps | 综合69.27
+#EXTINF:-1 tvg-id="PetClubTV" tvg-name="PetClubTV" tvg-logo="https://live.fanmingming.com/tv/PetClubTV.png" group-title="🌍 国际频道",Pet Club TV
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8
-# Redbull | 质量22.5 (SD) | 20.042MB/s | 码率0.7Mbps | 综合52.37
-#EXTINF:-1 tvg-id="Redbull" tvg-name="Redbull" tvg-logo="https://live.fanmingming.com/tv/Redbull.png" group-title="🌍 国际频道·SD",Redbull
+# Redbull | 质量22.5 (SD) | 19.978MB/s | 码率0.7Mbps | 综合52.66
+#EXTINF:-1 tvg-id="Redbull" tvg-name="Redbull" tvg-logo="https://live.fanmingming.com/tv/Redbull.png" group-title="🌍 国际频道",Redbull
 http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
-# Reuters | 质量22.5 (SD) | 15.0MB/s | 码率0.7Mbps | 综合52.98
-#EXTINF:-1 tvg-id="Reuters" tvg-name="Reuters" tvg-logo="https://live.fanmingming.com/tv/Reuters.png" group-title="🌍 国际频道·SD",Reuters
+# Reuters | 质量22.5 (SD) | 15.337MB/s | 码率0.7Mbps | 综合53.5
+#EXTINF:-1 tvg-id="Reuters" tvg-name="Reuters" tvg-logo="https://live.fanmingming.com/tv/Reuters.png" group-title="🌍 国际频道",Reuters
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/e7493ea5-5c1c-4d7a-a3f7-e95516048ad8/3.m3u8
-# RT Arabic | 质量49.5 (480P) | 0.728MB/s | 码率1.06Mbps | 综合40.11
-#EXTINF:-1 tvg-id="RTArabic" tvg-name="RTArabic" tvg-logo="https://live.fanmingming.com/tv/RTArabic.png" group-title="🌍 国际频道·480P",RT Arabic
+# RT Arabic | 质量49.5 (480P) | 0.793MB/s | 码率1.06Mbps | 综合44.67
+#EXTINF:-1 tvg-id="RTArabic" tvg-name="RTArabic" tvg-logo="https://live.fanmingming.com/tv/RTArabic.png" group-title="🌍 国际频道",RT Arabic
 https://rt-arb.rttv.com/dvr/rtarab/playlist_4500Kb.m3u8
-# RT Balkan | 质量49.5 (480P) | 0.73MB/s | 码率1.06Mbps | 综合45.1
-#EXTINF:-1 tvg-id="RTBalkan" tvg-name="RTBalkan" tvg-logo="https://live.fanmingming.com/tv/RTBalkan.png" group-title="🌍 国际频道·480P",RT Balkan
+# RT Balkan | 质量49.5 (480P) | 0.703MB/s | 码率1.06Mbps | 综合40.81
+#EXTINF:-1 tvg-id="RTBalkan" tvg-name="RTBalkan" tvg-logo="https://live.fanmingming.com/tv/RTBalkan.png" group-title="🌍 国际频道",RT Balkan
 https://rt-srb.rttv.com/dvr/rtbalkan/playlist_4500Kb.m3u8
-# RT DE | 质量49.5 (480P) | 0.802MB/s | 码率1.06Mbps | 综合43.91
-#EXTINF:-1 tvg-id="RTDE" tvg-name="RTDE" tvg-logo="https://live.fanmingming.com/tv/RTDE.png" group-title="🌍 国际频道·480P",RT DE
+# RT DE | 质量49.5 (480P) | 0.775MB/s | 码率1.06Mbps | 综合41.83
+#EXTINF:-1 tvg-id="RTDE" tvg-name="RTDE" tvg-logo="https://live.fanmingming.com/tv/RTDE.png" group-title="🌍 国际频道",RT DE
 https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
-# RT Documentary | 质量22.5 (SD) | 0.748MB/s | 码率0.7Mbps | 综合31.18
-#EXTINF:-1 tvg-id="RTDocumentary" tvg-name="RTDocumentary" tvg-logo="https://live.fanmingming.com/tv/RTDocumentary.png" group-title="🌍 国际频道·SD",RT Documentary
-https://rt-rtd.rttv.com/live/rtdoc/playlist_4500Kb.m3u8
-# RT News | 质量49.5 (480P) | 0.725MB/s | 码率1.06Mbps | 综合43.4
-#EXTINF:-1 tvg-id="RTNews" tvg-name="RTNews" tvg-logo="https://live.fanmingming.com/tv/RTNews.png" group-title="🌍 国际频道·480P",RT News
-https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
-# SBS Drama | 质量67.5 (720P) | 4.287MB/s | 码率0.0Mbps | 综合75.44
-#EXTINF:-1 tvg-id="SBSDrama" tvg-name="SBSDrama" tvg-logo="https://live.fanmingming.com/tv/SBSDrama.png" group-title="🌍 国际频道·720P",SBS Drama
+# RT Documentary | 质量49.5 (480P) | 0.727MB/s | 码率1.06Mbps | 综合43.08
+#EXTINF:-1 tvg-id="RTDocumentary" tvg-name="RTDocumentary" tvg-logo="https://live.fanmingming.com/tv/RTDocumentary.png" group-title="🌍 国际频道",RT Documentary
+https://rt-rtd.rttv.com/dvr/rtdoc/playlist_4500Kb.m3u8
+# SBS Drama | 质量67.5 (720P) | 4.103MB/s | 码率0.0Mbps | 综合76.8
+#EXTINF:-1 tvg-id="SBSDrama" tvg-name="SBSDrama" tvg-logo="https://live.fanmingming.com/tv/SBSDrama.png" group-title="🌍 国际频道",SBS Drama
 https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=sbsk-drama&channel_id=newid_008&mpf=c064f5f4-39af1962-7c36be2c&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=474ab4cb-5d47aa0a-84d0cbca-2a3730a6&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]
-# Sky News | 质量67.5 (720P) | 3.075MB/s | 码率0.0Mbps | 综合77.99
-#EXTINF:-1 tvg-id="SkyNews" tvg-name="SkyNews" tvg-logo="https://live.fanmingming.com/tv/SkyNews.png" group-title="🌍 国际频道·720P",Sky News
+# Sky News | 质量67.5 (720P) | 3.074MB/s | 码率0.0Mbps | 综合78.77
+#EXTINF:-1 tvg-id="SkyNews" tvg-name="SkyNews" tvg-logo="https://live.fanmingming.com/tv/SkyNews.png" group-title="🌍 国际频道",Sky News
 https://d39chvnxm26pgp.cloudfront.net/v1/master/72588bff830dec7b26d7cbbf5f3c24928aec5c03/cc-sthen6ms4vxgv-stage/WNSFO/ABR.m3u8
-# Sony One Action HITS | 质量82.8 (1080P) | 23.658MB/s | 码率0.0Mbps | 综合89.18
-#EXTINF:-1 tvg-id="SonyOneActionHITS" tvg-name="SonyOneActionHITS" tvg-logo="https://live.fanmingming.com/tv/SonyOneActionHITS.png" group-title="🌍 国际频道·1080P",Sony One Action HITS
+# Sony One Action HITS | 质量82.8 (1080P) | 22.893MB/s | 码率0.0Mbps | 综合88.14
+#EXTINF:-1 tvg-id="SonyOneActionHITS" tvg-name="SonyOneActionHITS" tvg-logo="https://live.fanmingming.com/tv/SonyOneActionHITS.png" group-title="🌍 国际频道",Sony One Action HITS
 https://89514e758f814907be6d14bbc0aa66b7.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-800-UK-SONYONEACTIONHITS-LG_UK/playlist.m3u8
-# Sony One Comedy HITS | 质量82.8 (1080P) | 21.423MB/s | 码率0.0Mbps | 综合88.14
-#EXTINF:-1 tvg-id="SonyOneComedyHITS" tvg-name="SonyOneComedyHITS" tvg-logo="https://live.fanmingming.com/tv/SonyOneComedyHITS.png" group-title="🌍 国际频道·1080P",Sony One Comedy HITS
+# Sony One Comedy HITS | 质量82.8 (1080P) | 19.519MB/s | 码率0.0Mbps | 综合87.69
+#EXTINF:-1 tvg-id="SonyOneComedyHITS" tvg-name="SonyOneComedyHITS" tvg-logo="https://live.fanmingming.com/tv/SonyOneComedyHITS.png" group-title="🌍 国际频道",Sony One Comedy HITS
 https://9f8e2ffcd87f4c469be7194e48f84874.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-802-UK-SONYONECOMEDYHITS-LG_UK/playlist.m3u8
-# Sony One Dragons' Den | 质量82.8 (1080P) | 23.443MB/s | 码率0.0Mbps | 综合88.92
-#EXTINF:-1 tvg-id="SonyOneDragonsDen" tvg-name="SonyOneDragonsDen" tvg-logo="https://live.fanmingming.com/tv/SonyOneDragons%27Den.png" group-title="🌍 国际频道·1080P",Sony One Dragons' Den
+# Sony One Dragons' Den | 质量82.8 (1080P) | 24.573MB/s | 码率0.0Mbps | 综合89.4
+#EXTINF:-1 tvg-id="SonyOneDragons'Den" tvg-name="SonyOneDragons'Den" tvg-logo="https://live.fanmingming.com/tv/SonyOneDragons%27Den.png" group-title="🌍 国际频道",Sony One Dragons' Den
 https://5dae1f2dfec54d8f9992b7d2ac0bc627.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-810-UK-SONYONEDRAGONSDEN-LG_UK/playlist.m3u8
-# Sony One FAVES | 质量82.8 (1080P) | 20.651MB/s | 码率0.0Mbps | 综合87.75
-#EXTINF:-1 tvg-id="SonyOneFAVES" tvg-name="SonyOneFAVES" tvg-logo="https://live.fanmingming.com/tv/SonyOneFAVES.png" group-title="🌍 国际频道·1080P",Sony One FAVES
+# Sony One FAVES | 质量82.8 (1080P) | 21.301MB/s | 码率0.0Mbps | 综合88.76
+#EXTINF:-1 tvg-id="SonyOneFAVES" tvg-name="SonyOneFAVES" tvg-logo="https://live.fanmingming.com/tv/SonyOneFAVES.png" group-title="🌍 国际频道",Sony One FAVES
 https://8a4805800dac428ebbf1d3cde0cdcf87.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-806-UK-SONYONEFAVES-LG_UK/playlist.m3u8
-# Supreme Master TV | 质量67.5 (720P) | 3.95MB/s | 码率0.0Mbps | 综合79.26
-#EXTINF:-1 tvg-id="SupremeMasterTV" tvg-name="SupremeMasterTV" tvg-logo="https://live.fanmingming.com/tv/SupremeMasterTV.png" group-title="🌍 国际频道·720P",Supreme Master TV
+# Supreme Master TV | 质量67.5 (720P) | 4.59MB/s | 码率0.0Mbps | 综合80.21
+#EXTINF:-1 tvg-id="SupremeMasterTV" tvg-name="SupremeMasterTV" tvg-logo="https://live.fanmingming.com/tv/SupremeMasterTV.png" group-title="🌍 国际频道",Supreme Master TV
 https://lbs-us1.suprememastertv.com/720p.m3u8
-# Tennis Channel | 质量82.8 (1080P) | 2.005MB/s | 码率0.0Mbps | 综合88.46
-#EXTINF:-1 tvg-id="TennisChannel" tvg-name="TennisChannel" tvg-logo="https://live.fanmingming.com/tv/TennisChannel.png" group-title="🌍 国际频道·1080P",Tennis Channel
+# Tennis Channel | 质量82.8 (1080P) | 1.927MB/s | 码率0.0Mbps | 综合86.84
+#EXTINF:-1 tvg-id="TennisChannel" tvg-name="TennisChannel" tvg-logo="https://live.fanmingming.com/tv/TennisChannel.png" group-title="🌍 国际频道",Tennis Channel
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]
-# The First | 质量82.8 (1080P) | 2.429MB/s | 码率0.0Mbps | 综合88.66
-#EXTINF:-1 tvg-id="TheFirst" tvg-name="TheFirst" tvg-logo="https://live.fanmingming.com/tv/TheFirst.png" group-title="🌍 国际频道·1080P",The First
+# The First | 质量82.8 (1080P) | 2.209MB/s | 码率0.0Mbps | 综合88.81
+#EXTINF:-1 tvg-id="TheFirst" tvg-name="TheFirst" tvg-logo="https://live.fanmingming.com/tv/TheFirst.png" group-title="🌍 国际频道",The First
 https://thefirst-oando.amagi.tv/playlist.m3u8
-# Thriller TV | 质量82.8 (1080P) | 15.438MB/s | 码率0.0Mbps | 综合88.16
-#EXTINF:-1 tvg-id="ThrillerTV" tvg-name="ThrillerTV" tvg-logo="https://live.fanmingming.com/tv/ThrillerTV.png" group-title="🌍 国际频道·1080P",Thriller TV
+# Thriller TV | 质量82.8 (1080P) | 24.198MB/s | 码率0.0Mbps | 综合88.63
+#EXTINF:-1 tvg-id="ThrillerTV" tvg-name="ThrillerTV" tvg-logo="https://live.fanmingming.com/tv/ThrillerTV.png" group-title="🌍 国际频道",Thriller TV
 https://52aad07d9d4f4d479d9b27e08ddf9e8b.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-808-UK-SONYONETHRILLERTV-LG_UK/playlist.m3u8
-# Trace Sport Stars | 质量82.8 (1080P) | 1.53MB/s | 码率0.0Mbps | 综合80.8
-#EXTINF:-1 tvg-id="TraceSportStars" tvg-name="TraceSportStars" tvg-logo="https://live.fanmingming.com/tv/TraceSportStars.png" group-title="🌍 国际频道·1080P",Trace Sport Stars
+# Trace Sport Stars | 质量82.8 (1080P) | 1.066MB/s | 码率0.0Mbps | 综合73.7
+#EXTINF:-1 tvg-id="TraceSportStars" tvg-name="TraceSportStars" tvg-logo="https://live.fanmingming.com/tv/TraceSportStars.png" group-title="🌍 国际频道",Trace Sport Stars
 https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
-# Trace Sports | 质量22.5 (SD) | 0.861MB/s | 码率0.73Mbps | 综合33.06
-#EXTINF:-1 tvg-id="TraceSports" tvg-name="TraceSports" tvg-logo="https://live.fanmingming.com/tv/TraceSports.png" group-title="🌍 国际频道·SD",Trace Sports
+# Trace Sports | 质量22.5 (SD) | 1.059MB/s | 码率0.7Mbps | 综合36.07
+#EXTINF:-1 tvg-id="TraceSports" tvg-name="TraceSports" tvg-logo="https://live.fanmingming.com/tv/TraceSports.png" group-title="🌍 国际频道",Trace Sports
 https://lightning-tracesport-samsungau.amagi.tv/playlist1080p.m3u8
-# TRT World | 质量22.5 (SD) | 6.782MB/s | 码率0.7Mbps | 综合49.75
-#EXTINF:-1 tvg-id="TRTWorld" tvg-name="TRTWorld" tvg-logo="https://live.fanmingming.com/tv/TRTWorld.png" group-title="🌍 国际频道·SD",TRT World
+# TRT World | 质量22.5 (SD) | 1.389MB/s | 码率0.7Mbps | 综合41.06
+#EXTINF:-1 tvg-id="TRTWorld" tvg-name="TRTWorld" tvg-logo="https://live.fanmingming.com/tv/TRTWorld.png" group-title="🌍 国际频道",TRT World
 https://tv-trtworld.medya.trt.com.tr/master_1080.m3u8
-# Universal Action | 质量22.5 (SD) | 12.833MB/s | 码率0.7Mbps | 综合52.77
-#EXTINF:-1 tvg-id="UniversalAction" tvg-name="UniversalAction" tvg-logo="https://live.fanmingming.com/tv/UniversalAction.png" group-title="🌍 国际频道·SD",Universal Action
+# Universal Action | 质量22.5 (SD) | 15.069MB/s | 码率0.7Mbps | 综合51.68
+#EXTINF:-1 tvg-id="UniversalAction" tvg-name="UniversalAction" tvg-logo="https://live.fanmingming.com/tv/UniversalAction.png" group-title="🌍 国际频道",Universal Action
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/fd4a4071-8a85-4989-9e8b-446ace3b7127/4.m3u8
-# Universal Crime | 质量22.5 (SD) | 13.783MB/s | 码率0.7Mbps | 综合52.78
-#EXTINF:-1 tvg-id="UniversalCrime" tvg-name="UniversalCrime" tvg-logo="https://live.fanmingming.com/tv/UniversalCrime.png" group-title="🌍 国际频道·SD",Universal Crime
+# Universal Crime | 质量22.5 (SD) | 14.732MB/s | 码率0.7Mbps | 综合49.84
+#EXTINF:-1 tvg-id="UniversalCrime" tvg-name="UniversalCrime" tvg-logo="https://live.fanmingming.com/tv/UniversalCrime.png" group-title="🌍 国际频道",Universal Crime
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/8c099bf8-0c15-481f-a109-1a3162361da8/4.m3u8
-# Universal Monsters | 质量22.5 (SD) | 15.83MB/s | 码率0.7Mbps | 综合53.48
-#EXTINF:-1 tvg-id="UniversalMonsters" tvg-name="UniversalMonsters" tvg-logo="https://live.fanmingming.com/tv/UniversalMonsters.png" group-title="🌍 国际频道·SD",Universal Monsters
+# Universal Monsters | 质量22.5 (SD) | 14.913MB/s | 码率0.7Mbps | 综合53.22
+#EXTINF:-1 tvg-id="UniversalMonsters" tvg-name="UniversalMonsters" tvg-logo="https://live.fanmingming.com/tv/UniversalMonsters.png" group-title="🌍 国际频道",Universal Monsters
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/b0f73b6d-7181-4046-ad5f-62f4efa641c3/4.m3u8
-# Universal Movies | 质量22.5 (SD) | 14.787MB/s | 码率0.7Mbps | 综合52.49
-#EXTINF:-1 tvg-id="UniversalMovies" tvg-name="UniversalMovies" tvg-logo="https://live.fanmingming.com/tv/UniversalMovies.png" group-title="🌍 国际频道·SD",Universal Movies
+# Universal Movies | 质量22.5 (SD) | 14.655MB/s | 码率0.7Mbps | 综合52.23
+#EXTINF:-1 tvg-id="UniversalMovies" tvg-name="UniversalMovies" tvg-logo="https://live.fanmingming.com/tv/UniversalMovies.png" group-title="🌍 国际频道",Universal Movies
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/e7275bfb-fb8d-49d8-969f-854481fa7e71/4.m3u8
-# Universal Western | 质量22.5 (SD) | 15.201MB/s | 码率0.7Mbps | 综合52.22
-#EXTINF:-1 tvg-id="UniversalWestern" tvg-name="UniversalWestern" tvg-logo="https://live.fanmingming.com/tv/UniversalWestern.png" group-title="🌍 国际频道·SD",Universal Western
+# Universal Western | 质量22.5 (SD) | 14.129MB/s | 码率0.7Mbps | 综合50.95
+#EXTINF:-1 tvg-id="UniversalWestern" tvg-name="UniversalWestern" tvg-logo="https://live.fanmingming.com/tv/UniversalWestern.png" group-title="🌍 国际频道",Universal Western
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/a121f0f1-6195-47d3-aaeb-aebe124b0511/4.m3u8
-# Wild Earth | 质量22.5 (SD) | 3.393MB/s | 码率0.7Mbps | 综合50.57
-#EXTINF:-1 tvg-id="WildEarth" tvg-name="WildEarth" tvg-logo="https://live.fanmingming.com/tv/WildEarth.png" group-title="🌍 国际频道·SD",Wild Earth
+# Wild Earth | 质量22.5 (SD) | 1.596MB/s | 码率0.7Mbps | 综合43.97
+#EXTINF:-1 tvg-id="WildEarth" tvg-name="WildEarth" tvg-logo="https://live.fanmingming.com/tv/WildEarth.png" group-title="🌍 国际频道",Wild Earth
 https://wildearth-plex.amagi.tv/masterR1080p.m3u8
-# WionNews | 质量22.5 (SD) | 0.787MB/s | 码率0.7Mbps | 综合32.91
-#EXTINF:-1 tvg-id="WionNews" tvg-name="WionNews" tvg-logo="https://live.fanmingming.com/tv/WionNews.png" group-title="🌍 国际频道·SD",WionNews
+# WionNews | 质量22.5 (SD) | 0.531MB/s | 码率0.7Mbps | 综合25.51
+#EXTINF:-1 tvg-id="WionNews" tvg-name="WionNews" tvg-logo="https://live.fanmingming.com/tv/WionNews.png" group-title="🌍 国际频道",WionNews
 https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
-# 上海教育 | 质量45.0 (480P) | 0.781MB/s | 码率0.84Mbps | 综合43.5
-#EXTINF:-1 tvg-id="ch95c59f8e" tvg-name="ch95c59f8e" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%8A%E6%B5%B7%E6%95%99%E8%82%B2.png" group-title="🎓 教育频道·480P",上海教育
+# 上海教育 | 质量45.0 (480P) | 0.666MB/s | 码率0.84Mbps | 综合41.95
+#EXTINF:-1 tvg-id="上海教育" tvg-name="上海教育" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%8A%E6%B5%B7%E6%95%99%E8%82%B2.png" group-title="🎓 教育频道",上海教育
 http://tencent-live.setv.sh.cn/live/programme_setvweb.m3u8?txSecret=fd19aacaed289e44e3f6d8baa5485a41&txTime=82DF98A7
-# 国学 | 质量40.0 (未知) | 19.941MB/s | 码率0.0Mbps | 综合59.93
-#EXTINF:-1 tvg-id="ch7fa695e5" tvg-name="ch7fa695e5" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%BD%E5%AD%A6.png" group-title="🎓 教育频道",国学
-http://tvcdn.stream3.hndt.com/tv/647f9277018410008cf925e200000000_transios/playlist.m3u8?wsSecret=5847a551154125680409bbfa28a48810&wsTime=1795298643
-# TVBS Asia | 质量82.8 (1080P) | 3.088MB/s | 码率0.0Mbps | 综合89.68
-#EXTINF:-1 tvg-id="TVBSAsia" tvg-name="TVBSAsia" tvg-logo="https://live.fanmingming.com/tv/TVBSAsia.png" group-title="🇭🇰 港澳台频道·1080P",TVBS Asia
+# 国学 | 质量40.0 (未知) | 32.438MB/s | 码率0.0Mbps | 综合59.62
+#EXTINF:-1 tvg-id="国学" tvg-name="国学" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%BD%E5%AD%A6.png" group-title="🎓 教育频道",国学
+http://tvcdn.stream3.hndt.com/tv/647f9277018410008cf925e200000000_transios/playlist.m3u8?wsSecret=3106bb919a4590f71e361b4327877863&wsTime=1795302266
+# TVBS Asia | 质量82.8 (1080P) | 3.101MB/s | 码率0.0Mbps | 综合89.5
+#EXTINF:-1 tvg-id="TVBSAsia" tvg-name="TVBSAsia" tvg-logo="https://live.fanmingming.com/tv/TVBSAsia.png" group-title="🇭🇰 港澳台频道",TVBS Asia
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
-# TVBS亚洲 | 质量82.8 (1080P) | 3.099MB/s | 码率0.0Mbps | 综合88.28
-#EXTINF:-1 tvg-id="TVBS" tvg-name="TVBS" tvg-logo="https://live.fanmingming.com/tv/TVBS%E4%BA%9A%E6%B4%B2.png" group-title="🇭🇰 港澳台频道·1080P",TVBS亚洲
+# TVBS亚洲 | 质量82.8 (1080P) | 3.067MB/s | 码率0.0Mbps | 综合89.68
+#EXTINF:-1 tvg-id="TVBS亚洲" tvg-name="TVBS亚洲" tvg-logo="https://live.fanmingming.com/tv/TVBS%E4%BA%9A%E6%B4%B2.png" group-title="🇭🇰 港澳台频道",TVBS亚洲
 http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
-# TVBS新闻台 | 质量22.5 (SD) | 0.371MB/s | 码率0.42Mbps | 综合26.32
-#EXTINF:-1 tvg-id="TVBS" tvg-name="TVBS" tvg-logo="https://live.fanmingming.com/tv/TVBS%E6%96%B0%E9%97%BB%E5%8F%B0.png" group-title="🇭🇰 港澳台频道·SD",TVBS新闻台
+# TVBS新闻台 | 质量22.5 (SD) | 0.41MB/s | 码率0.42Mbps | 综合26.39
+#EXTINF:-1 tvg-id="TVBS新闻台" tvg-name="TVBS新闻台" tvg-logo="https://live.fanmingming.com/tv/TVBS%E6%96%B0%E9%97%BB%E5%8F%B0.png" group-title="🇭🇰 港澳台频道",TVBS新闻台
 http://61.221.215.25:8800/hls/9/index.m3u8
-# 东森超视 | 质量22.5 (SD) | 0.659MB/s | 码率0.7Mbps | 综合28.62
-#EXTINF:-1 tvg-id="ch163e6c3e" tvg-name="ch163e6c3e" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%9C%E6%A3%AE%E8%B6%85%E8%A7%86.png" group-title="🇭🇰 港澳台频道·SD",东森超视
+# 东森超视 | 质量22.5 (SD) | 2.067MB/s | 码率0.7Mbps | 综合50.81
+#EXTINF:-1 tvg-id="东森超视" tvg-name="东森超视" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%9C%E6%A3%AE%E8%B6%85%E8%A7%86.png" group-title="🇭🇰 港澳台频道",东森超视
 http://38.64.72.148:80/hls/modn/list/2013/chunklist1.m3u8
-# 凤凰卫视 | 质量49.5 (480P) | 0.613MB/s | 码率0.84Mbps | 综合43.84
-#EXTINF:-1 tvg-id="chbb8f7378" tvg-name="chbb8f7378" tvg-logo="https://live.fanmingming.com/tv/%E5%87%A4%E5%87%B0%E5%8D%AB%E8%A7%86.png" group-title="🇭🇰 港澳台频道·480P",凤凰卫视
+# 凤凰卫视 | 质量49.5 (480P) | 0.529MB/s | 码率0.84Mbps | 综合38.49
+#EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.fanmingming.com/tv/%E5%87%A4%E5%87%B0%E5%8D%AB%E8%A7%86.png" group-title="🇭🇰 港澳台频道",凤凰卫视
 http://221.7.175.154:8445/tsfile/live/1020_1.m3u8
-# 凤凰卫视中文台 | 质量40.0 (未知) | 1.971MB/s | 码率0.0Mbps | 综合53.52
-#EXTINF:-1 tvg-id="ch7ab7c7d7" tvg-name="ch7ab7c7d7" tvg-logo="https://live.fanmingming.com/tv/%E5%87%A4%E5%87%B0%E5%8D%AB%E8%A7%86%E4%B8%AD%E6%96%87%E5%8F%B0.png" group-title="🇭🇰 港澳台频道",凤凰卫视中文台
-http://xiangxiws.vip:6777/qlw.php?key=qq%E7%BE%A4746405779&id=fhzw
-# 凤凰卫视资讯台 | 质量40.0 (未知) | 2.054MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch7f4703c7" tvg-name="ch7f4703c7" tvg-logo="https://live.fanmingming.com/tv/%E5%87%A4%E5%87%B0%E5%8D%AB%E8%A7%86%E8%B5%84%E8%AE%AF%E5%8F%B0.png" group-title="🇭🇰 港澳台频道",凤凰卫视资讯台
+# 凤凰卫视中文台 | 质量49.5 (480P) | 0.27MB/s | 码率0.84Mbps | 综合40.43
+#EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.fanmingming.com/tv/%E5%87%A4%E5%87%B0%E5%8D%AB%E8%A7%86%E4%B8%AD%E6%96%87%E5%8F%B0.png" group-title="🇭🇰 港澳台频道",凤凰卫视中文台
+http://183.237.95.108:9901/tsfile/live/1103_1.m3u8?key=txiptv&playlive=0&authid=0
+# 凤凰卫视资讯台 | 质量40.0 (未知) | 2.125MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://live.fanmingming.com/tv/%E5%87%A4%E5%87%B0%E5%8D%AB%E8%A7%86%E8%B5%84%E8%AE%AF%E5%8F%B0.png" group-title="🇭🇰 港澳台频道",凤凰卫视资讯台
 http://xiangxiws.vip:6777/qlw.php?key=qq%E7%BE%A4746405779&id=fhzx
-# 台视新闻 | 质量22.5 (SD) | 0.708MB/s | 码率0.7Mbps | 综合32.46
-#EXTINF:-1 tvg-id="chdfa730d8" tvg-name="chdfa730d8" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%B0%E8%A7%86%E6%96%B0%E9%97%BB.png" group-title="🇭🇰 港澳台频道·SD",台视新闻
+# 台视新闻 | 质量22.5 (SD) | 3.111MB/s | 码率0.7Mbps | 综合53.0
+#EXTINF:-1 tvg-id="台视新闻" tvg-name="台视新闻" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%B0%E8%A7%86%E6%96%B0%E9%97%BB.png" group-title="🇭🇰 港澳台频道",台视新闻
 http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
-# 4K视频 | 质量40.0 (未知) | 5.285MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="4K" tvg-name="4K" tvg-logo="https://live.fanmingming.com/tv/4K%E8%A7%86%E9%A2%91.png" group-title="📺 其他频道",4K视频
+# 4K视频 | 质量40.0 (未知) | 2.244MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="4K视频" tvg-name="4K视频" tvg-logo="https://live.fanmingming.com/tv/4K%E8%A7%86%E9%A2%91.png" group-title="📺 其他频道",4K视频
 http://xjj1.716888.xyz/fenlei/4k/4k.php
-# 1993年春晚 | 质量40.0 (未知) | 2.561MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1993" tvg-name="1993" tvg-logo="https://live.fanmingming.com/tv/1993%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1993年春晚
+# 1993年春晚 | 质量40.0 (未知) | 2.693MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="1993年春晚" tvg-name="1993年春晚" tvg-logo="https://live.fanmingming.com/tv/1993%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1993年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYwODJfMF8z_b_B647d10e431b4cc5e48e6c77347d69021.mp4
-# 1994年春晚 | 质量40.0 (未知) | 2.393MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1994" tvg-name="1994" tvg-logo="https://live.fanmingming.com/tv/1994%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1994年春晚
+# 1994年春晚 | 质量40.0 (未知) | 2.428MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="1994年春晚" tvg-name="1994年春晚" tvg-logo="https://live.fanmingming.com/tv/1994%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1994年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYxMjNfMF8z_b_B3dde97f36273f04403d4dc5eec611a35.mp4
-# 1995年春晚 | 质量40.0 (未知) | 2.651MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1995" tvg-name="1995" tvg-logo="https://live.fanmingming.com/tv/1995%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1995年春晚
+# 1995年春晚 | 质量40.0 (未知) | 2.27MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="1995年春晚" tvg-name="1995年春晚" tvg-logo="https://live.fanmingming.com/tv/1995%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1995年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQwNzVfMF8z_b_B811c0dec6b9a3d3074a18522c185010a.mp4
-# 1996年春晚 | 质量40.0 (未知) | 2.709MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1996" tvg-name="1996" tvg-logo="https://live.fanmingming.com/tv/1996%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1996年春晚
+# 1996年春晚 | 质量40.0 (未知) | 2.686MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="1996年春晚" tvg-name="1996年春晚" tvg-logo="https://live.fanmingming.com/tv/1996%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",1996年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYxNTJfMF8z_b_Bd841eae10ab1c9955ef55fbedfae6c45.mp4
-# 2000年春晚 | 质量40.0 (未知) | 2.738MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2000" tvg-name="2000" tvg-logo="https://live.fanmingming.com/tv/2000%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2000年春晚
+# 2000年春晚 | 质量40.0 (未知) | 2.617MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2000年春晚" tvg-name="2000年春晚" tvg-logo="https://live.fanmingming.com/tv/2000%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2000年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxMTNfMF8z_b_Bdddf4e7ef0ff6cfd477857bb40e78419.mp4
-# 2001年春晚 | 质量40.0 (未知) | 2.465MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2001" tvg-name="2001" tvg-logo="https://live.fanmingming.com/tv/2001%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2001年春晚
+# 2001年春晚 | 质量40.0 (未知) | 2.28MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2001年春晚" tvg-name="2001年春晚" tvg-logo="https://live.fanmingming.com/tv/2001%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2001年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyMDFfMF8z_b_B70592cb7c4054e9cabb675e849bbf4bd.mp4
-# 2002年春晚 | 质量40.0 (未知) | 2.379MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2002" tvg-name="2002" tvg-logo="https://live.fanmingming.com/tv/2002%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2002年春晚
+# 2002年春晚 | 质量40.0 (未知) | 2.685MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2002年春晚" tvg-name="2002年春晚" tvg-logo="https://live.fanmingming.com/tv/2002%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2002年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxNDdfMF8z_b_Ba6271d10b7e6cfae83759033a091f257.mp4
-# 2003年春晚 | 质量40.0 (未知) | 2.715MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2003" tvg-name="2003" tvg-logo="https://live.fanmingming.com/tv/2003%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2003年春晚
+# 2003年春晚 | 质量40.0 (未知) | 2.38MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2003年春晚" tvg-name="2003年春晚" tvg-logo="https://live.fanmingming.com/tv/2003%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2003年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/14/23/BMjAyMzAxMTQyMzQxNDdfNDAzMDAxOTlfOTM2MTU0MTk1NDFfMF8z_b_B182749d2cd2ea9323639254af385f24b.mp4
-# 2004年春晚 | 质量40.0 (未知) | 2.627MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2004" tvg-name="2004" tvg-logo="https://live.fanmingming.com/tv/2004%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2004年春晚
+# 2004年春晚 | 质量40.0 (未知) | 2.651MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2004年春晚" tvg-name="2004年春晚" tvg-logo="https://live.fanmingming.com/tv/2004%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2004年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxOTVfMF8z_b_B86c4430b82ff5a7f4e8132f6ee558536.mp4
-# 2005年春晚 | 质量40.0 (未知) | 2.187MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2005" tvg-name="2005" tvg-logo="https://live.fanmingming.com/tv/2005%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2005年春晚
+# 2005年春晚 | 质量40.0 (未知) | 2.711MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2005年春晚" tvg-name="2005年春晚" tvg-logo="https://live.fanmingming.com/tv/2005%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2005年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyMzhfMF8z_b_B35ad7cc86aec8fc9e5ddfb31fc7bed63.mp4
-# 2006年春晚 | 质量40.0 (未知) | 2.449MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2006" tvg-name="2006" tvg-logo="https://live.fanmingming.com/tv/2006%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2006年春晚
+# 2006年春晚 | 质量40.0 (未知) | 2.456MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2006年春晚" tvg-name="2006年春晚" tvg-logo="https://live.fanmingming.com/tv/2006%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2006年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyNzlfMF8z_b_Bbc3703fc331dc994c50859c19aad28ff.mp4
-# 2007年春晚 | 质量40.0 (未知) | 2.197MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2007" tvg-name="2007" tvg-logo="https://live.fanmingming.com/tv/2007%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2007年春晚
+# 2007年春晚 | 质量40.0 (未知) | 2.587MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2007年春晚" tvg-name="2007年春晚" tvg-logo="https://live.fanmingming.com/tv/2007%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2007年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzMjNfMF8z_b_B00b069c7899976459ceeaa99353dfefe.mp4
-# 2009年春晚 | 质量40.0 (未知) | 2.232MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2009" tvg-name="2009" tvg-logo="https://live.fanmingming.com/tv/2009%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2009年春晚
+# 2009年春晚 | 质量40.0 (未知) | 2.561MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2009年春晚" tvg-name="2009年春晚" tvg-logo="https://live.fanmingming.com/tv/2009%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2009年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzOTBfMF8z_b_B29a36a85e0277f6c2a1f033ef7c10708.mp4
-# 2010年春晚 | 质量40.0 (未知) | 2.281MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2010" tvg-name="2010" tvg-logo="https://live.fanmingming.com/tv/2010%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2010年春晚
+# 2010年春晚 | 质量40.0 (未知) | 2.638MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2010年春晚" tvg-name="2010年春晚" tvg-logo="https://live.fanmingming.com/tv/2010%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2010年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ0MjlfMF8z_b_B8818807a00eed329a69fb494f405bd43.mp4
-# 2013年春晚 | 质量40.0 (未知) | 2.492MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2013" tvg-name="2013" tvg-logo="https://live.fanmingming.com/tv/2013%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2013年春晚
+# 2013年春晚 | 质量40.0 (未知) | 2.719MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2013年春晚" tvg-name="2013年春晚" tvg-logo="https://live.fanmingming.com/tv/2013%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2013年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ1NjNfMF8z_b_B4fea55408dca4471a68a963ae096be59.mp4
-# 2014年春晚 | 质量40.0 (未知) | 2.263MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2014" tvg-name="2014" tvg-logo="https://live.fanmingming.com/tv/2014%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2014年春晚
+# 2014年春晚 | 质量40.0 (未知) | 2.797MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2014年春晚" tvg-name="2014年春晚" tvg-logo="https://live.fanmingming.com/tv/2014%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2014年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTNfNDAzMDAxOTlfOTI4OTY2ODAzNjlfMF8z_b_Bdee65c77f9e7b2120a185c919dad81d2.mp4
-# 2018年春晚 | 质量40.0 (未知) | 2.705MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2018" tvg-name="2018" tvg-logo="https://live.fanmingming.com/tv/2018%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2018年春晚
+# 2018年春晚 | 质量40.0 (未知) | 2.582MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="2018年春晚" tvg-name="2018年春晚" tvg-logo="https://live.fanmingming.com/tv/2018%E5%B9%B4%E6%98%A5%E6%99%9A.png" group-title="📺 其他频道",2018年春晚
 https://alimov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTRfNDAzMDAxOTlfOTI4OTY2ODE2MTBfMF8z_b_B11a778e34390a21de42d407e94f45b91.mp4
-# DJ舞曲 | 质量40.0 (未知) | 2.019MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="DJ" tvg-name="DJ" tvg-logo="https://live.fanmingming.com/tv/DJ%E8%88%9E%E6%9B%B2.png" group-title="📺 其他频道",DJ舞曲
+# DJ舞曲 | 质量40.0 (未知) | 0.307MB/s | 码率0.0Mbps | 综合26.55
+#EXTINF:-1 tvg-id="DJ舞曲" tvg-name="DJ舞曲" tvg-logo="https://live.fanmingming.com/tv/DJ%E8%88%9E%E6%9B%B2.png" group-title="📺 其他频道",DJ舞曲
 http://xjj1.716888.xyz/fenlei/djxjj/dj1.php
-# RT Español | 质量49.5 (480P) | 0.726MB/s | 码率1.06Mbps | 综合44.72
-#EXTINF:-1 tvg-id="RTEspaol" tvg-name="RTEspaol" tvg-logo="https://live.fanmingming.com/tv/RTEspa%C3%B1ol.png" group-title="📺 其他频道·480P",RT Español
-https://rt-esp.rttv.com/dvr/rtesp/playlist_4500Kb.m3u8
-# RT Français | 质量49.5 (480P) | 0.743MB/s | 码率1.06Mbps | 综合45.15
-#EXTINF:-1 tvg-id="RTFranais" tvg-name="RTFranais" tvg-logo="https://live.fanmingming.com/tv/RTFran%C3%A7ais.png" group-title="📺 其他频道·480P",RT Français
+# RT Français | 质量49.5 (480P) | 0.796MB/s | 码率1.06Mbps | 综合44.65
+#EXTINF:-1 tvg-id="RTFrançais" tvg-name="RTFrançais" tvg-logo="https://live.fanmingming.com/tv/RTFran%C3%A7ais.png" group-title="📺 其他频道",RT Français
 https://rt-fra.rttv.com/dvr/rtfrance/playlist_4500Kb.m3u8
-# 七台河新闻综合 | 质量22.5 (SD) | 0.529MB/s | 码率0.7Mbps | 综合27.28
-#EXTINF:-1 tvg-id="ch8577d3fb" tvg-name="ch8577d3fb" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%83%E5%8F%B0%E6%B2%B3%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",七台河新闻综合
+# 七台河新闻综合 | 质量22.5 (SD) | 0.46MB/s | 码率0.71Mbps | 综合23.34
+#EXTINF:-1 tvg-id="七台河新闻综合" tvg-name="七台河新闻综合" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%83%E5%8F%B0%E6%B2%B3%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",七台河新闻综合
 http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
-# 万荣综合 | 质量49.5 (480P) | 0.411MB/s | 码率0.84Mbps | 综合41.41
-#EXTINF:-1 tvg-id="ch40c6de61" tvg-name="ch40c6de61" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%87%E8%8D%A3%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·480P",万荣综合
+# 万荣综合 | 质量49.5 (480P) | 0.32MB/s | 码率0.84Mbps | 综合39.87
+#EXTINF:-1 tvg-id="万荣综合" tvg-name="万荣综合" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%87%E8%8D%A3%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",万荣综合
 http://60.222.246.220:19433/hls1.m3u8
-# 上海第一财经 | 质量40.0 (未知) | 15.999MB/s | 码率0.0Mbps | 综合60.75
-#EXTINF:-1 tvg-id="che0181004" tvg-name="che0181004" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F.png" group-title="📺 其他频道",上海第一财经
+# 上海第一财经 | 质量40.0 (未知) | 26.886MB/s | 码率0.0Mbps | 综合62.81
+#EXTINF:-1 tvg-id="上海第一财经" tvg-name="上海第一财经" tvg-logo="https://live.fanmingming.com/tv/%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F.png" group-title="📺 其他频道",上海第一财经
 https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
-# 九台 | 质量25.0 (SD) | 0.634MB/s | 码率0.1Mbps | 综合28.53
-#EXTINF:-1 tvg-id="ch9a91a318" tvg-name="ch9a91a318" tvg-logo="https://live.fanmingming.com/tv/%E4%B9%9D%E5%8F%B0.png" group-title="📺 其他频道·SD",九台
+# 九台 | 质量25.0 (SD) | 0.981MB/s | 码率0.1Mbps | 综合31.61
+#EXTINF:-1 tvg-id="九台" tvg-name="九台" tvg-logo="https://live.fanmingming.com/tv/%E4%B9%9D%E5%8F%B0.png" group-title="📺 其他频道",九台
 http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8?zjild
-# 九台综合 | 质量25.0 (SD) | 0.356MB/s | 码率0.1Mbps | 综合24.13
-#EXTINF:-1 tvg-id="ch9ce2455b" tvg-name="ch9ce2455b" tvg-logo="https://live.fanmingming.com/tv/%E4%B9%9D%E5%8F%B0%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",九台综合
+# 九台综合 | 质量25.0 (SD) | 0.374MB/s | 码率0.1Mbps | 综合22.19
+#EXTINF:-1 tvg-id="九台综合" tvg-name="九台综合" tvg-logo="https://live.fanmingming.com/tv/%E4%B9%9D%E5%8F%B0%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",九台综合
 http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8
-# 井研综合 | 质量22.5 (SD) | 0.368MB/s | 码率0.34Mbps | 综合19.13
-#EXTINF:-1 tvg-id="ch8d8cd1a5" tvg-name="ch8d8cd1a5" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%95%E7%A0%94%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",井研综合
+# 井研综合 | 质量22.5 (SD) | 0.322MB/s | 码率0.34Mbps | 综合19.8
+#EXTINF:-1 tvg-id="井研综合" tvg-name="井研综合" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%95%E7%A0%94%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",井研综合
 http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8
-# 亳州农村 | 质量82.8 (1080P) | 24.529MB/s | 码率0.0Mbps | 综合85.6
-#EXTINF:-1 tvg-id="ch3275f738" tvg-name="ch3275f738" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%B3%E5%B7%9E%E5%86%9C%E6%9D%91.png" group-title="📺 其他频道·1080P",亳州农村
+# 亳州农村 | 质量82.8 (1080P) | 29.501MB/s | 码率0.0Mbps | 综合88.37
+#EXTINF:-1 tvg-id="亳州农村" tvg-name="亳州农村" tvg-logo="https://live.fanmingming.com/tv/%E4%BA%B3%E5%B7%9E%E5%86%9C%E6%9D%91.png" group-title="📺 其他频道",亳州农村
 http://zbbf2.ahbztv.com/live/418.m3u8?zanhd
-# 任丘综合 | 质量22.5 (SD) | 0.701MB/s | 码率0.22Mbps | 综合31.93
-#EXTINF:-1 tvg-id="chdb8dfebe" tvg-name="chdb8dfebe" tvg-logo="https://live.fanmingming.com/tv/%E4%BB%BB%E4%B8%98%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",任丘综合
+# 任丘综合 | 质量22.5 (SD) | 0.958MB/s | 码率0.22Mbps | 综合36.28
+#EXTINF:-1 tvg-id="任丘综合" tvg-name="任丘综合" tvg-logo="https://live.fanmingming.com/tv/%E4%BB%BB%E4%B8%98%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",任丘综合
 https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8
-# 伊犁哈萨克 | 质量40.0 (未知) | 0.391MB/s | 码率0.0Mbps | 综合36.23
-#EXTINF:-1 tvg-id="ch8af1d094" tvg-name="ch8af1d094" tvg-logo="https://live.fanmingming.com/tv/%E4%BC%8A%E7%8A%81%E5%93%88%E8%90%A8%E5%85%8B.png" group-title="📺 其他频道",伊犁哈萨克
-http://110.153.180.106:55555/out_3/index.m3u8
-# 伊犁经济法制 | 质量40.0 (未知) | 0.39MB/s | 码率0.0Mbps | 综合35.22
-#EXTINF:-1 tvg-id="ch386a1f86" tvg-name="ch386a1f86" tvg-logo="https://live.fanmingming.com/tv/%E4%BC%8A%E7%8A%81%E7%BB%8F%E6%B5%8E%E6%B3%95%E5%88%B6.png" group-title="📺 其他频道",伊犁经济法制
-http://110.153.180.106:55555/out_4/index.m3u8?zxinjd
-# 伊犁维吾尔 | 质量40.0 (未知) | 0.376MB/s | 码率0.0Mbps | 综合35.84
-#EXTINF:-1 tvg-id="cha371d95e" tvg-name="cha371d95e" tvg-logo="https://live.fanmingming.com/tv/%E4%BC%8A%E7%8A%81%E7%BB%B4%E5%90%BE%E5%B0%94.png" group-title="📺 其他频道",伊犁维吾尔
+# 伊犁哈萨克 | 质量40.0 (未知) | 0.386MB/s | 码率0.0Mbps | 综合36.33
+#EXTINF:-1 tvg-id="伊犁哈萨克" tvg-name="伊犁哈萨克" tvg-logo="https://live.fanmingming.com/tv/%E4%BC%8A%E7%8A%81%E5%93%88%E8%90%A8%E5%85%8B.png" group-title="📺 其他频道",伊犁哈萨克
+http://110.153.180.106:55555/out_3/index.m3u8?zxinjd
+# 伊犁经济法制 | 质量40.0 (未知) | 0.397MB/s | 码率0.0Mbps | 综合36.61
+#EXTINF:-1 tvg-id="伊犁经济法制" tvg-name="伊犁经济法制" tvg-logo="https://live.fanmingming.com/tv/%E4%BC%8A%E7%8A%81%E7%BB%8F%E6%B5%8E%E6%B3%95%E5%88%B6.png" group-title="📺 其他频道",伊犁经济法制
+http://110.153.180.106:55555/out_4/index.m3u8
+# 伊犁维吾尔 | 质量40.0 (未知) | 0.39MB/s | 码率0.0Mbps | 综合36.3
+#EXTINF:-1 tvg-id="伊犁维吾尔" tvg-name="伊犁维吾尔" tvg-logo="https://live.fanmingming.com/tv/%E4%BC%8A%E7%8A%81%E7%BB%B4%E5%90%BE%E5%B0%94.png" group-title="📺 其他频道",伊犁维吾尔
 http://110.153.180.106:55555/out_2/index.m3u8
-# 免费分享 | 质量40.0 (未知) | 6.155MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch468ef750" tvg-name="ch468ef750" tvg-logo="https://live.fanmingming.com/tv/%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB.png" group-title="📺 其他频道",免费分享
+# 免费分享 | 质量40.0 (未知) | 6.349MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="免费分享" tvg-name="免费分享" tvg-logo="https://live.fanmingming.com/tv/%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB.png" group-title="📺 其他频道",免费分享
 https://测试.nxog.top/m/tv/xjj.php?id=0
-# 公共 | 质量82.8 (1080P) | 25.752MB/s | 码率0.0Mbps | 综合85.58
-#EXTINF:-1 tvg-id="ch9be5920f" tvg-name="ch9be5920f" tvg-logo="https://live.fanmingming.com/tv/%E5%85%AC%E5%85%B1.png" group-title="📺 其他频道·1080P",公共
-http://tvcdn.stream3.hndt.com/tv/65b93894017e10000ae6b07d00000000_transios/playlist.m3u8?wsSecret=9066ae3c53b04e208403e74c7aa2ba1b&wsTime=1795298643
-# 兴隆综合 | 质量22.5 (SD) | 1.913MB/s | 码率0.17Mbps | 综合51.87
-#EXTINF:-1 tvg-id="ch9e101f8f" tvg-name="ch9e101f8f" tvg-logo="https://live.fanmingming.com/tv/%E5%85%B4%E9%9A%86%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",兴隆综合
+# 公共 | 质量82.8 (1080P) | 20.766MB/s | 码率0.0Mbps | 综合85.31
+#EXTINF:-1 tvg-id="公共" tvg-name="公共" tvg-logo="https://live.fanmingming.com/tv/%E5%85%AC%E5%85%B1.png" group-title="📺 其他频道",公共
+http://tvcdn.stream3.hndt.com/tv/65b93894017e10000ae6b07d00000000_transios/playlist.m3u8?wsSecret=b6672ffc716339919a3c2dfc46e05e95&wsTime=1795302266
+# 兴隆综合 | 质量22.5 (SD) | 0.711MB/s | 码率0.17Mbps | 综合32.11
+#EXTINF:-1 tvg-id="兴隆综合" tvg-name="兴隆综合" tvg-logo="https://live.fanmingming.com/tv/%E5%85%B4%E9%9A%86%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",兴隆综合
 https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8
-# 南国都市 | 质量45.0 (480P) | 0.724MB/s | 码率1.4Mbps | 综合42.9
-#EXTINF:-1 tvg-id="chaea98670" tvg-name="chaea98670" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%9B%BD%E9%83%BD%E5%B8%82.png" group-title="📺 其他频道·480P",南国都市
+# 兵团五师双河影 | 质量22.5 (SD) | 0.52MB/s | 码率0.36Mbps | 综合26.19
+#EXTINF:-1 tvg-id="兵团五师双河影" tvg-name="兵团五师双河影" tvg-logo="https://live.fanmingming.com/tv/%E5%85%B5%E5%9B%A2%E4%BA%94%E5%B8%88%E5%8F%8C%E6%B2%B3%E5%BD%B1.png" group-title="📺 其他频道",兵团五师双河影
+https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd
+# 南国都市 | 质量45.0 (480P) | 1.016MB/s | 码率1.4Mbps | 综合45.19
+#EXTINF:-1 tvg-id="南国都市" tvg-name="南国都市" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%9B%BD%E9%83%BD%E5%B8%82.png" group-title="📺 其他频道",南国都市
 http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
-# 南宁影视娱乐 | 质量40.0 (未知) | 0.819MB/s | 码率0.0Mbps | 综合38.42
-#EXTINF:-1 tvg-id="ch9ee0a79f" tvg-name="ch9ee0a79f" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%AE%81%E5%BD%B1%E8%A7%86%E5%A8%B1%E4%B9%90.png" group-title="📺 其他频道",南宁影视娱乐
-http://hls.nntv.cn/nnlive/YSYL_244.m3u8
-# 南宁文旅 | 质量67.5 (720P) | 0.563MB/s | 码率0.0Mbps | 综合53.93
-#EXTINF:-1 tvg-id="ch404def5d" tvg-name="ch404def5d" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%AE%81%E6%96%87%E6%97%85.png" group-title="📺 其他频道·720P",南宁文旅
+# 南宁文旅 | 质量40.0 (未知) | 1.053MB/s | 码率0.0Mbps | 综合45.45
+#EXTINF:-1 tvg-id="南宁文旅" tvg-name="南宁文旅" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%AE%81%E6%96%87%E6%97%85.png" group-title="📺 其他频道",南宁文旅
 https://hls.nntv.cn/nnlive/WLSH_24.m3u8
-# 南宁新闻 | 质量67.5 (720P) | 0.75MB/s | 码率0.0Mbps | 综合56.72
-#EXTINF:-1 tvg-id="chba0a35c0" tvg-name="chba0a35c0" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%AE%81%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道·720P",南宁新闻
+# 南宁新闻 | 质量40.0 (未知) | 0.845MB/s | 码率0.0Mbps | 综合41.88
+#EXTINF:-1 tvg-id="南宁新闻" tvg-name="南宁新闻" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%AE%81%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道",南宁新闻
 https://hls.nntv.cn/nnlive/XWZH_24.m3u8
-# 南宁都市生活 | 质量67.5 (720P) | 0.767MB/s | 码率1.9Mbps | 综合57.73
-#EXTINF:-1 tvg-id="ch94c85ddd" tvg-name="ch94c85ddd" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%AE%81%E9%83%BD%E5%B8%82%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道·720P",南宁都市生活
+# 南宁都市生活 | 质量49.5 (480P) | 1.983MB/s | 码率1.16Mbps | 综合66.11
+#EXTINF:-1 tvg-id="南宁都市生活" tvg-name="南宁都市生活" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%97%E5%AE%81%E9%83%BD%E5%B8%82%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道",南宁都市生活
 http://615bbf179ba53515dccad7b1da5d1ad9.livehwc3.cn/hls.nntv.cn/nnlive/WLSH_24.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2598844eaee8a4265e706fc14b3fc11d
-# 卡左右可换源 | 质量40.0 (未知) | 0.451MB/s | 码率0.0Mbps | 综合28.89
-#EXTINF:-1 tvg-id="chc9c391c0" tvg-name="chc9c391c0" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%A1%E5%B7%A6%E5%8F%B3%E5%8F%AF%E6%8D%A2%E6%BA%90.png" group-title="📺 其他频道",卡左右可换源
+# 卡左右可换源 | 质量40.0 (未知) | 0.492MB/s | 码率0.0Mbps | 综合29.55
+#EXTINF:-1 tvg-id="卡左右可换源" tvg-name="卡左右可换源" tvg-logo="https://live.fanmingming.com/tv/%E5%8D%A1%E5%B7%A6%E5%8F%B3%E5%8F%AF%E6%8D%A2%E6%BA%90.png" group-title="📺 其他频道",卡左右可换源
 https://测试.nxog.top/m/tv/xjj.php?id=3&4
-# 双辽 | 质量25.0 (SD) | 0.478MB/s | 码率0.1Mbps | 综合27.43
-#EXTINF:-1 tvg-id="ch225588e0" tvg-name="ch225588e0" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%8C%E8%BE%BD.png" group-title="📺 其他频道·SD",双辽
+# 双辽 | 质量25.0 (SD) | 0.332MB/s | 码率0.03Mbps | 综合23.48
+#EXTINF:-1 tvg-id="双辽" tvg-name="双辽" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%8C%E8%BE%BD.png" group-title="📺 其他频道",双辽
 http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild
-# 古县综合 | 质量82.8 (1080P) | 0.485MB/s | 码率0.0Mbps | 综合58.47
-#EXTINF:-1 tvg-id="chee1fd188" tvg-name="chee1fd188" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%A4%E5%8E%BF%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·1080P",古县综合
+# 古县综合 | 质量82.8 (1080P) | 0.597MB/s | 码率0.0Mbps | 综合59.28
+#EXTINF:-1 tvg-id="古县综合" tvg-name="古县综合" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%A4%E5%8E%BF%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",古县综合
 https://l2fpdktp.live.sxmty.com/live/hls/e4c3b363cc4549788e2d983f403e07db/d99ce1eb686e41b9afc888110bd95aa7.m3u8?zshanxd
-# 句容党建 | 质量49.5 (480P) | 0.485MB/s | 码率0.0Mbps | 综合40.12
-#EXTINF:-1 tvg-id="ch9fd3c7f1" tvg-name="ch9fd3c7f1" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%A5%E5%AE%B9%E5%85%9A%E5%BB%BA.png" group-title="📺 其他频道·480P",句容党建
+# 句容党建 | 质量49.5 (480P) | 0.676MB/s | 码率0.0Mbps | 综合45.07
+#EXTINF:-1 tvg-id="句容党建" tvg-name="句容党建" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%A5%E5%AE%B9%E5%85%9A%E5%BB%BA.png" group-title="📺 其他频道",句容党建
 http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
-# 句容生活 | 质量49.5 (480P) | 0.748MB/s | 码率0.0Mbps | 综合44.83
-#EXTINF:-1 tvg-id="chcd58af44" tvg-name="chcd58af44" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%A5%E5%AE%B9%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道·480P",句容生活
+# 句容生活 | 质量49.5 (480P) | 0.894MB/s | 码率0.0Mbps | 综合48.72
+#EXTINF:-1 tvg-id="句容生活" tvg-name="句容生活" tvg-logo="https://live.fanmingming.com/tv/%E5%8F%A5%E5%AE%B9%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道",句容生活
 http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
-# 吉林乡村 | 质量40.0 (未知) | 28.264MB/s | 码率0.0Mbps | 综合61.03
-#EXTINF:-1 tvg-id="ch7e25e8a2" tvg-name="ch7e25e8a2" tvg-logo="https://live.fanmingming.com/tv/%E5%90%89%E6%9E%97%E4%B9%A1%E6%9D%91.png" group-title="📺 其他频道",吉林乡村
+# 吉林乡村 | 质量40.0 (未知) | 25.013MB/s | 码率0.0Mbps | 综合63.3
+#EXTINF:-1 tvg-id="吉林乡村" tvg-name="吉林乡村" tvg-logo="https://live.fanmingming.com/tv/%E5%90%89%E6%9E%97%E4%B9%A1%E6%9D%91.png" group-title="📺 其他频道",吉林乡村
 https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
-# 哈尔滨影视 | 质量25.0 (SD) | 0.28MB/s | 码率0.75Mbps | 综合25.1
-#EXTINF:-1 tvg-id="ch959c1e61" tvg-name="ch959c1e61" tvg-logo="https://live.fanmingming.com/tv/%E5%93%88%E5%B0%94%E6%BB%A8%E5%BD%B1%E8%A7%86.png" group-title="📺 其他频道·SD",哈尔滨影视
-http://stream.hrbtv.net/yspd/sd/live.m3u8?zheild
-# 哈尔滨新闻综合 | 质量25.0 (SD) | 0.295MB/s | 码率0.71Mbps | 综合25.42
-#EXTINF:-1 tvg-id="ch3048d4c6" tvg-name="ch3048d4c6" tvg-logo="https://live.fanmingming.com/tv/%E5%93%88%E5%B0%94%E6%BB%A8%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",哈尔滨新闻综合
-http://stream.hrbtv.net/xwzh/sd/live.m3u8?zheild
-# 哈尔滨生活 | 质量25.0 (SD) | 0.262MB/s | 码率0.69Mbps | 综合24.36
-#EXTINF:-1 tvg-id="ch862aac29" tvg-name="ch862aac29" tvg-logo="https://live.fanmingming.com/tv/%E5%93%88%E5%B0%94%E6%BB%A8%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道·SD",哈尔滨生活
-http://stream.hrbtv.net/shpd/sd/live.m3u8?zheild
-# 哈尔滨都市咨询 | 质量25.0 (SD) | 0.181MB/s | 码率0.03Mbps | 综合20.6
-#EXTINF:-1 tvg-id="ch6273edb9" tvg-name="ch6273edb9" tvg-logo="https://live.fanmingming.com/tv/%E5%93%88%E5%B0%94%E6%BB%A8%E9%83%BD%E5%B8%82%E5%92%A8%E8%AF%A2.png" group-title="📺 其他频道·SD",哈尔滨都市咨询
-http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild
-# 嘉兴新闻综合 | 质量22.5 (SD) | 0.37MB/s | 码率0.34Mbps | 综合26.27
-#EXTINF:-1 tvg-id="ch0dbc17f2" tvg-name="ch0dbc17f2" tvg-logo="https://live.fanmingming.com/tv/%E5%98%89%E5%85%B4%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",嘉兴新闻综合
+# 名山综合 | 质量22.5 (SD) | 0.909MB/s | 码率0.79Mbps | 综合31.84
+#EXTINF:-1 tvg-id="名山综合" tvg-name="名山综合" tvg-logo="https://live.fanmingming.com/tv/%E5%90%8D%E5%B1%B1%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",名山综合
+https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8
+# 嘉兴新闻综合 | 质量22.5 (SD) | 0.301MB/s | 码率0.34Mbps | 综合24.9
+#EXTINF:-1 tvg-id="嘉兴新闻综合" tvg-name="嘉兴新闻综合" tvg-logo="https://live.fanmingming.com/tv/%E5%98%89%E5%85%B4%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",嘉兴新闻综合
 http://tvfile.jyrmt.cn:80/nmip-media/channellive/channel104452/playlist.m3u8
-# 固镇新闻 | 质量45.0 (480P) | 0.515MB/s | 码率1.17Mbps | 综合40.39
-#EXTINF:-1 tvg-id="ch09418a90" tvg-name="ch09418a90" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%BA%E9%95%87%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道·480P",固镇新闻
+# 固镇新闻 | 质量45.0 (480P) | 0.513MB/s | 码率1.17Mbps | 综合39.46
+#EXTINF:-1 tvg-id="固镇新闻" tvg-name="固镇新闻" tvg-logo="https://live.fanmingming.com/tv/%E5%9B%BA%E9%95%87%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道",固镇新闻
 http://www.guzhenm.com:7001/hls/hd-live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
-# 天祝综合 | 质量82.8 (1080P) | 15.894MB/s | 码率0.0Mbps | 综合83.87
-#EXTINF:-1 tvg-id="chb285cdf3" tvg-name="chb285cdf3" tvg-logo="https://live.fanmingming.com/tv/%E5%A4%A9%E7%A5%9D%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·1080P",天祝综合
+# 天祝综合 | 质量82.8 (1080P) | 12.717MB/s | 码率0.0Mbps | 综合85.1
+#EXTINF:-1 tvg-id="天祝综合" tvg-name="天祝综合" tvg-logo="https://live.fanmingming.com/tv/%E5%A4%A9%E7%A5%9D%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",天祝综合
 https://play.kankanlive.com/live/1656487214793905.m3u8
-# 太谷新闻综合 | 质量55.0 (480P) | 25.288MB/s | 码率1.44Mbps | 综合70.53
-#EXTINF:-1 tvg-id="ch3ef3dc1e" tvg-name="ch3ef3dc1e" tvg-logo="https://live.fanmingming.com/tv/%E5%A4%AA%E8%B0%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·480P",太谷新闻综合
+# 太谷新闻综合 | 质量55.0 (480P) | 32.554MB/s | 码率1.45Mbps | 综合70.43
+#EXTINF:-1 tvg-id="太谷新闻综合" tvg-name="太谷新闻综合" tvg-logo="https://live.fanmingming.com/tv/%E5%A4%AA%E8%B0%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",太谷新闻综合
 https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&amp;amp;tpid=1516989100&amp;amp;type=0
-# 平泉综合 | 质量22.5 (SD) | 0.913MB/s | 码率0.44Mbps | 综合33.88
-#EXTINF:-1 tvg-id="ch176566db" tvg-name="ch176566db" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%B3%E6%B3%89%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",平泉综合
+# 平泉综合 | 质量22.5 (SD) | 0.9MB/s | 码率0.44Mbps | 综合35.07
+#EXTINF:-1 tvg-id="平泉综合" tvg-name="平泉综合" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%B3%E6%B3%89%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",平泉综合
 https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8
-# 广州新闻 | 质量55.0 (480P) | 0.822MB/s | 码率1.05Mbps | 综合51.83
-#EXTINF:-1 tvg-id="chbc53aa4a" tvg-name="chbc53aa4a" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E5%B7%9E%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道·480P",广州新闻
+# 广州新闻 | 质量55.0 (480P) | 0.776MB/s | 码率1.05Mbps | 综合50.62
+#EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E5%B7%9E%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道",广州新闻
 http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
-# 广州综合 | 质量55.0 (480P) | 0.766MB/s | 码率1.05Mbps | 综合49.83
-#EXTINF:-1 tvg-id="chbe8dfbf8" tvg-name="chbe8dfbf8" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E5%B7%9E%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·480P",广州综合
-https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488
-# 广德生活 | 质量22.5 (SD) | 0.606MB/s | 码率0.24Mbps | 综合25.17
-#EXTINF:-1 tvg-id="ch1d1dd573" tvg-name="ch1d1dd573" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E5%BE%B7%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道·SD",广德生活
+# 广州综合 | 质量55.0 (480P) | 0.699MB/s | 码率0.81Mbps | 综合49.95
+#EXTINF:-1 tvg-id="广州综合" tvg-name="广州综合" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E5%B7%9E%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",广州综合
+https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
+# 广德生活 | 质量22.5 (SD) | 0.616MB/s | 码率0.24Mbps | 综合21.91
+#EXTINF:-1 tvg-id="广德生活" tvg-name="广德生活" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E5%BE%B7%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道",广德生活
 https://live.gdtv.ah.cn/live/newsTV.m3u8
-# 广西国际 | 质量82.8 (1080P) | 2.602MB/s | 码率0.0Mbps | 综合88.14
-#EXTINF:-1 tvg-id="ch858542b1" tvg-name="ch858542b1" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E8%A5%BF%E5%9B%BD%E9%99%85.png" group-title="📺 其他频道·1080P",广西国际
+# 广西国际 | 质量82.8 (1080P) | 2.813MB/s | 码率0.0Mbps | 综合86.64
+#EXTINF:-1 tvg-id="广西国际" tvg-name="广西国际" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E8%A5%BF%E5%9B%BD%E9%99%85.png" group-title="📺 其他频道",广西国际
 https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8
-# 延边2 | 质量31.5 (SD) | 0.59MB/s | 码率0.0Mbps | 综合33.38
-#EXTINF:-1 tvg-id="2" tvg-name="2" tvg-logo="https://live.fanmingming.com/tv/%E5%BB%B6%E8%BE%B92.png" group-title="📺 其他频道·SD",延边2
+# 延边2 | 质量31.5 (SD) | 0.534MB/s | 码率0.0Mbps | 综合30.98
+#EXTINF:-1 tvg-id="延边2" tvg-name="延边2" tvg-logo="https://live.fanmingming.com/tv/%E5%BB%B6%E8%BE%B92.png" group-title="📺 其他频道",延边2
 http://stream5.jlntv.cn/wq/playlist.m3u8
-# 怀仁综合 | 质量49.5 (480P) | 0.616MB/s | 码率1.4Mbps | 综合41.19
-#EXTINF:-1 tvg-id="cheda78898" tvg-name="cheda78898" tvg-logo="https://live.fanmingming.com/tv/%E6%80%80%E4%BB%81%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·480P",怀仁综合
+# 怀仁综合 | 质量49.5 (480P) | 0.899MB/s | 码率1.36Mbps | 综合47.09
+#EXTINF:-1 tvg-id="怀仁综合" tvg-name="怀仁综合" tvg-logo="https://live.fanmingming.com/tv/%E6%80%80%E4%BB%81%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",怀仁综合
 https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8
-# 接口软件永远免费 | 质量40.0 (未知) | 0.462MB/s | 码率0.0Mbps | 综合29.07
-#EXTINF:-1 tvg-id="ch237a982e" tvg-name="ch237a982e" tvg-logo="https://live.fanmingming.com/tv/%E6%8E%A5%E5%8F%A3%E8%BD%AF%E4%BB%B6%E6%B0%B8%E8%BF%9C%E5%85%8D%E8%B4%B9.png" group-title="📺 其他频道",接口软件永远免费
+# 接口软件永远免费 | 质量40.0 (未知) | 1.891MB/s | 码率0.0Mbps | 综合52.23
+#EXTINF:-1 tvg-id="接口软件永远免费" tvg-name="接口软件永远免费" tvg-logo="https://live.fanmingming.com/tv/%E6%8E%A5%E5%8F%A3%E8%BD%AF%E4%BB%B6%E6%B0%B8%E8%BF%9C%E5%85%8D%E8%B4%B9.png" group-title="📺 其他频道",接口软件永远免费
 https://测试.nxog.top/m/tv/xjj.php?id=1&2
-# 敦化一套 | 质量31.5 (SD) | 0.613MB/s | 码率0.0Mbps | 综合31.86
-#EXTINF:-1 tvg-id="chf5f82d11" tvg-name="chf5f82d11" tvg-logo="https://live.fanmingming.com/tv/%E6%95%A6%E5%8C%96%E4%B8%80%E5%A5%97.png" group-title="📺 其他频道·SD",敦化一套
+# 敦化一套 | 质量31.5 (SD) | 0.621MB/s | 码率0.0Mbps | 综合32.33
+#EXTINF:-1 tvg-id="敦化一套" tvg-name="敦化一套" tvg-logo="https://live.fanmingming.com/tv/%E6%95%A6%E5%8C%96%E4%B8%80%E5%A5%97.png" group-title="📺 其他频道",敦化一套
 http://stream8.jlntv.cn/dhtv/playlist.m3u8?zjild
-# 文化旅游 | 质量82.8 (1080P) | 0.603MB/s | 码率0.0Mbps | 综合61.03
-#EXTINF:-1 tvg-id="cha5f2e466" tvg-name="cha5f2e466" tvg-logo="https://live.fanmingming.com/tv/%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8.png" group-title="📺 其他频道·1080P",文化旅游
+# 文化旅游 | 质量82.8 (1080P) | 0.63MB/s | 码率0.0Mbps | 综合60.68
+#EXTINF:-1 tvg-id="文化旅游" tvg-name="文化旅游" tvg-logo="https://live.fanmingming.com/tv/%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8.png" group-title="📺 其他频道",文化旅游
 https://live.0593tv.cn/live/d1znvar7tabf.m3u8
-# 文化精品 | 质量40.0 (未知) | 18.459MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="chb30a2cfd" tvg-name="chb30a2cfd" tvg-logo="https://live.fanmingming.com/tv/%E6%96%87%E5%8C%96%E7%B2%BE%E5%93%81.png" group-title="📺 其他频道",文化精品
+# 文化精品 | 质量40.0 (未知) | 24.026MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="文化精品" tvg-name="文化精品" tvg-logo="https://live.fanmingming.com/tv/%E6%96%87%E5%8C%96%E7%B2%BE%E5%93%81.png" group-title="📺 其他频道",文化精品
 https://live.264788.xyz/channel/yangshiwenhuajingpin?streamid=bc185d1ef1e528922e83efd845006277&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 文物宝库 | 质量49.5 (480P) | 0.878MB/s | 码率1.05Mbps | 综合47.62
-#EXTINF:-1 tvg-id="ch79ebee54" tvg-name="ch79ebee54" tvg-logo="https://live.fanmingming.com/tv/%E6%96%87%E7%89%A9%E5%AE%9D%E5%BA%93.png" group-title="📺 其他频道·480P",文物宝库
-https://dxtx.hntv.tv/live/wwbk.m3u8?txSecret=317b89626134fd6bea6e129455b5ff18&txTime=7C4C635C&wsSecret=bbff39c9d103458f9cf81bf11a84dab6&wsTime=1795298643
-# 新闻 | 质量82.8 (1080P) | 16.227MB/s | 码率0.0Mbps | 综合85.58
-#EXTINF:-1 tvg-id="ch1d9c15c5" tvg-name="ch1d9c15c5" tvg-logo="https://live.fanmingming.com/tv/%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道·1080P",新闻
-http://tvcdn.stream3.hndt.com/tv/65bb6966017e100059b75a8500000000_transios/playlist.m3u8?wsSecret=a139ed323751c2bae7e661f5ec143a9e&wsTime=1795298643
-# 昌黎综合 | 质量22.5 (SD) | 1.229MB/s | 码率0.18Mbps | 综合37.31
-#EXTINF:-1 tvg-id="ch8143cc89" tvg-name="ch8143cc89" tvg-logo="https://live.fanmingming.com/tv/%E6%98%8C%E9%BB%8E%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",昌黎综合
+# 文物宝库 | 质量49.5 (480P) | 0.596MB/s | 码率1.05Mbps | 综合42.82
+#EXTINF:-1 tvg-id="文物宝库" tvg-name="文物宝库" tvg-logo="https://live.fanmingming.com/tv/%E6%96%87%E7%89%A9%E5%AE%9D%E5%BA%93.png" group-title="📺 其他频道",文物宝库
+https://dxtx.hntv.tv/live/wwbk.m3u8?txSecret=317b89626134fd6bea6e129455b5ff18&txTime=7C4C635C&wsSecret=d852b13b2827c23f8e052341c7dff859&wsTime=1795302266
+# 新闻 | 质量82.8 (1080P) | 22.341MB/s | 码率0.0Mbps | 综合85.29
+#EXTINF:-1 tvg-id="新闻" tvg-name="新闻" tvg-logo="https://live.fanmingming.com/tv/%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道",新闻
+http://tvcdn.stream3.hndt.com/tv/65bb6966017e100059b75a8500000000_transios/playlist.m3u8?wsSecret=937dd045963aa6319484c21f9edf53cb&wsTime=1795302266
+# 新闻咨询 | 质量22.5 (SD) | 0.23MB/s | 码率0.35Mbps | 综合23.74
+#EXTINF:-1 tvg-id="新闻咨询" tvg-name="新闻咨询" tvg-logo="https://live.fanmingming.com/tv/%E6%96%B0%E9%97%BB%E5%92%A8%E8%AF%A2.png" group-title="📺 其他频道",新闻咨询
+http://112.46.105.20:8009/hls/18/index.m3u8
+# 昌黎综合 | 质量22.5 (SD) | 0.619MB/s | 码率0.18Mbps | 综合27.13
+#EXTINF:-1 tvg-id="昌黎综合" tvg-name="昌黎综合" tvg-logo="https://live.fanmingming.com/tv/%E6%98%8C%E9%BB%8E%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",昌黎综合
 https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8
-# 春晚1983 | 质量40.0 (未知) | 2.191MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1983" tvg-name="1983" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1983.png" group-title="📺 其他频道",春晚1983
+# 春晚1983 | 质量40.0 (未知) | 2.596MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1983" tvg-name="春晚1983" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1983.png" group-title="📺 其他频道",春晚1983
 https://alimov2.a.kwimgs.com/upic/2022/01/31/15/BMjAyMjAxMzExNTU5MTRfNDAzMDAxOTlfNjYyNzMxNjcwMjBfMF8z_b_Beb3bda599f76c60c463c433ca7460153.mp4
-# 春晚1984 | 质量40.0 (未知) | 2.253MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1984" tvg-name="1984" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1984.png" group-title="📺 其他频道",春晚1984
+# 春晚1984 | 质量40.0 (未知) | 2.701MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1984" tvg-name="春晚1984" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1984.png" group-title="📺 其他频道",春晚1984
 https://alimov2.a.kwimgs.com/upic/2022/01/31/15/BMjAyMjAxMzExNTU5NTRfNDAzMDAxOTlfNjYyNzMyMzg3MTRfMF8z_b_B192356dadbc90d207ba16964d4c2914c.mp4
-# 春晚1985 | 质量40.0 (未知) | 2.221MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1985" tvg-name="1985" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1985.png" group-title="📺 其他频道",春晚1985
+# 春晚1985 | 质量40.0 (未知) | 2.719MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1985" tvg-name="春晚1985" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1985.png" group-title="📺 其他频道",春晚1985
 https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMDFfNDAzMDAxOTlfNjYyNzMyNTAwMzJfMF8z_b_Be73c5abcbc0eeb2ec9fce6842e1362a4.mp4
-# 春晚1986 | 质量40.0 (未知) | 2.167MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1986" tvg-name="1986" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1986.png" group-title="📺 其他频道",春晚1986
+# 春晚1986 | 质量40.0 (未知) | 2.401MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1986" tvg-name="春晚1986" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1986.png" group-title="📺 其他频道",春晚1986
 https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMDRfNDAzMDAxOTlfNjYyNzMyNTU0OTRfMF8z_b_B24f7d19f1132fa5d7f502f8377ad5567.mp4
-# 春晚1987 | 质量40.0 (未知) | 2.108MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1987" tvg-name="1987" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1987.png" group-title="📺 其他频道",春晚1987
+# 春晚1987 | 质量40.0 (未知) | 2.572MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1987" tvg-name="春晚1987" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1987.png" group-title="📺 其他频道",春晚1987
 https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMDhfNDAzMDAxOTlfNjYyNzMyNjMyMDNfMF8z_b_B570493ed8f7200d4013a66b2d21b2de9.mp4
-# 春晚1988 | 质量40.0 (未知) | 2.321MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1988" tvg-name="1988" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1988.png" group-title="📺 其他频道",春晚1988
+# 春晚1988 | 质量40.0 (未知) | 2.61MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1988" tvg-name="春晚1988" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1988.png" group-title="📺 其他频道",春晚1988
 https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMTJfNDAzMDAxOTlfNjYyNzMyNjkxNjBfMF8z_b_B8c835b83a92d25bde81ba22c5cd9521e.mp4
-# 春晚1989 | 质量40.0 (未知) | 2.216MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1989" tvg-name="1989" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1989.png" group-title="📺 其他频道",春晚1989
+# 春晚1989 | 质量40.0 (未知) | 2.291MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1989" tvg-name="春晚1989" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1989.png" group-title="📺 其他频道",春晚1989
 https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjAwMTVfNDAzMDAxOTlfNjYyNzMyNzQ2OTlfMF8z_b_Be477b27b9ce655d2372df56a5a3d96ef.mp4
-# 春晚1991 | 质量40.0 (未知) | 2.632MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1991" tvg-name="1991" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1991.png" group-title="📺 其他频道",春晚1991
+# 春晚1991 | 质量40.0 (未知) | 2.306MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1991" tvg-name="春晚1991" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1991.png" group-title="📺 其他频道",春晚1991
 https://alimov2.a.kwimgs.com/upic/2022/01/31/16/BMjAyMjAxMzExNjI2MTVfNDAzMDAxOTlfNjYyNzYwNjUxNjVfMF8z_b_B8feb7b85888678d71bf37a259c6850f6.mp4
-# 春晚1999 | 质量40.0 (未知) | 2.234MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="1999" tvg-name="1999" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1999.png" group-title="📺 其他频道",春晚1999
+# 春晚1999 | 质量40.0 (未知) | 2.687MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚1999" tvg-name="春晚1999" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A1999.png" group-title="📺 其他频道",春晚1999
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQxNTRfMF8z_b_B0b5e52bc003285ef66ec0cbb2be08556.mp4
-# 春晚2008 | 质量40.0 (未知) | 2.364MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2008" tvg-name="2008" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2008.png" group-title="📺 其他频道",春晚2008
+# 春晚2008 | 质量40.0 (未知) | 2.693MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚2008" tvg-name="春晚2008" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2008.png" group-title="📺 其他频道",春晚2008
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzNTNfMF8z_b_Bd7346962e61bd7b84e11a1fa6e4616f9.mp4
-# 春晚2011 | 质量40.0 (未知) | 2.336MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2011" tvg-name="2011" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2011.png" group-title="📺 其他频道",春晚2011
+# 春晚2011 | 质量40.0 (未知) | 2.578MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚2011" tvg-name="春晚2011" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2011.png" group-title="📺 其他频道",春晚2011
 https://alimov2.a.kwimgs.com/upic/2023/01/16/11/BMjAyMzAxMTYxMTA3MjFfNDAzMDAxOTlfOTM3MjcyMjA3ODhfMF8z_b_B8214200efc869dc6fcf99dad619fa4c1.mp4
-# 春晚2015 | 质量40.0 (未知) | 2.329MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2015" tvg-name="2015" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2015.png" group-title="📺 其他频道",春晚2015
+# 春晚2015 | 质量40.0 (未知) | 2.709MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚2015" tvg-name="春晚2015" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2015.png" group-title="📺 其他频道",春晚2015
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ2MTZfMF8z_b_B4851f43f5a2bc2871a9b0ec87294a6e7.mp4
-# 春晚2017 | 质量40.0 (未知) | 2.316MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2017" tvg-name="2017" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2017.png" group-title="📺 其他频道",春晚2017
+# 春晚2017 | 质量40.0 (未知) | 2.639MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚2017" tvg-name="春晚2017" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2017.png" group-title="📺 其他频道",春晚2017
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ2NDhfMF8z_b_B6527b0c2ce3dda1d9b3f34edd4fdb9aa.mp4
-# 春晚2020 | 质量40.0 (未知) | 2.192MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2020" tvg-name="2020" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2020.png" group-title="📺 其他频道",春晚2020
+# 春晚2020 | 质量40.0 (未知) | 2.394MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚2020" tvg-name="春晚2020" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2020.png" group-title="📺 其他频道",春晚2020
 https://alimov2.a.kwimgs.com/upic/2022/01/30/17/BMjAyMjAxMzAxNzA5NDdfNDAzMDAxOTlfNjYxNzQ2MDAyMTFfMF8z_b_B5d51d9564c5670dc66faeba20aa7af3f.mp4
-# 春晚2021 | 质量40.0 (未知) | 2.573MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2021" tvg-name="2021" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2021.png" group-title="📺 其他频道",春晚2021
+# 春晚2021 | 质量40.0 (未知) | 2.644MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚2021" tvg-name="春晚2021" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2021.png" group-title="📺 其他频道",春晚2021
 https://alimov2.a.kwimgs.com/upic/2022/01/30/17/BMjAyMjAxMzAxNzE4NTJfNDAzMDAxOTlfNjYxNzUzOTg3NjlfMF8z_b_Be41d9503181d7b0608a839ed401e02c2.mp4
-# 春晚2022 | 质量40.0 (未知) | 2.306MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="2022" tvg-name="2022" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2022.png" group-title="📺 其他频道",春晚2022
+# 春晚2022 | 质量40.0 (未知) | 2.612MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="春晚2022" tvg-name="春晚2022" tvg-logo="https://live.fanmingming.com/tv/%E6%98%A5%E6%99%9A2022.png" group-title="📺 其他频道",春晚2022
 https://alimov2.a.kwimgs.com/upic/2022/02/01/11/BMjAyMjAyMDExMTEwMjNfNDAzMDAxOTlfNjYzNzA4MTk4NzNfMF8z_b_B898cc7ddd0025bf54ddb18ec1f723c84.mp4
-# 梨园 | 质量45.0 (480P) | 0.861MB/s | 码率1.05Mbps | 综合45.63
-#EXTINF:-1 tvg-id="ch331ded2b" tvg-name="ch331ded2b" tvg-logo="https://live.fanmingming.com/tv/%E6%A2%A8%E5%9B%AD.png" group-title="📺 其他频道·480P",梨园
+# 梨园 | 质量45.0 (480P) | 0.698MB/s | 码率1.05Mbps | 综合43.54
+#EXTINF:-1 tvg-id="梨园" tvg-name="梨园" tvg-logo="https://live.fanmingming.com/tv/%E6%A2%A8%E5%9B%AD.png" group-title="📺 其他频道",梨园
 https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549
-# 欢腾购物 | 质量82.8 (1080P) | 22.112MB/s | 码率0.0Mbps | 综合85.6
-#EXTINF:-1 tvg-id="ch2c6c7383" tvg-name="ch2c6c7383" tvg-logo="https://live.fanmingming.com/tv/%E6%AC%A2%E8%85%BE%E8%B4%AD%E7%89%A9.png" group-title="📺 其他频道·1080P",欢腾购物
-http://tvcdn.stream3.hndt.com/tv/65ba653b017e1000d4ee41c700000000_transios/playlist.m3u8?wsSecret=81a14ed5a6dfb7e2838e981db36b49de&wsTime=1795298643
-# 武术 | 质量45.0 (480P) | 0.824MB/s | 码率1.05Mbps | 综合43.85
-#EXTINF:-1 tvg-id="chcba73b14" tvg-name="chcba73b14" tvg-logo="https://live.fanmingming.com/tv/%E6%AD%A6%E6%9C%AF.png" group-title="📺 其他频道·480P",武术
-https://dxtx.hntv.tv/live/wssj.m3u8?txSecret=c38b4d31ba4c45c6babb5c47132123e3&txTime=7ABB976A&wsSecret=7b556f4c810a8f49cb930f4a365ea9bf&wsTime=1795298643
-# 民生 | 质量82.8 (1080P) | 20.442MB/s | 码率0.0Mbps | 综合85.58
-#EXTINF:-1 tvg-id="chdfdffdb4" tvg-name="chdfdffdb4" tvg-logo="https://live.fanmingming.com/tv/%E6%B0%91%E7%94%9F.png" group-title="📺 其他频道·1080P",民生
-http://tvcdn.stream3.hndt.com/tv/65bef28a017e10009c49d5f900000000_transios/playlist.m3u8?wsSecret=9f0300bab3c021b598cae743b11da4a0&wsTime=1795298643
-# 永昌综合 | 质量82.8 (1080P) | 0.983MB/s | 码率0.0Mbps | 综合67.33
-#EXTINF:-1 tvg-id="ch20bbfce2" tvg-name="ch20bbfce2" tvg-logo="https://live.fanmingming.com/tv/%E6%B0%B8%E6%98%8C%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·1080P",永昌综合
+# 欢腾购物 | 质量82.8 (1080P) | 25.179MB/s | 码率0.0Mbps | 综合85.3
+#EXTINF:-1 tvg-id="欢腾购物" tvg-name="欢腾购物" tvg-logo="https://live.fanmingming.com/tv/%E6%AC%A2%E8%85%BE%E8%B4%AD%E7%89%A9.png" group-title="📺 其他频道",欢腾购物
+http://tvcdn.stream3.hndt.com/tv/65ba653b017e1000d4ee41c700000000_transios/playlist.m3u8?wsSecret=02eff2ad2bab5fba00b6f34223c5e8af&wsTime=1795302266
+# 武术 | 质量45.0 (480P) | 0.741MB/s | 码率1.05Mbps | 综合42.29
+#EXTINF:-1 tvg-id="武术" tvg-name="武术" tvg-logo="https://live.fanmingming.com/tv/%E6%AD%A6%E6%9C%AF.png" group-title="📺 其他频道",武术
+https://dxtx.hntv.tv/live/wssj.m3u8?txSecret=c38b4d31ba4c45c6babb5c47132123e3&txTime=7ABB976A&wsSecret=5bd0d521c53bc503400bbeb5e7a31128&wsTime=1795302266
+# 民生 | 质量82.8 (1080P) | 27.601MB/s | 码率0.0Mbps | 综合85.3
+#EXTINF:-1 tvg-id="民生" tvg-name="民生" tvg-logo="https://live.fanmingming.com/tv/%E6%B0%91%E7%94%9F.png" group-title="📺 其他频道",民生
+http://tvcdn.stream3.hndt.com/tv/65bef28a017e10009c49d5f900000000_transios/playlist.m3u8?wsSecret=ceda489419e956e81e07e8433839ffcb&wsTime=1795302266
+# 永昌综合 | 质量82.8 (1080P) | 1.074MB/s | 码率0.0Mbps | 综合70.67
+#EXTINF:-1 tvg-id="永昌综合" tvg-name="永昌综合" tvg-logo="https://live.fanmingming.com/tv/%E6%B0%B8%E6%98%8C%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",永昌综合
 https://play.kankanlive.com/live/1652755738635915.m3u8
-# 汪清 | 质量25.0 (SD) | 0.823MB/s | 码率0.1Mbps | 综合33.56
-#EXTINF:-1 tvg-id="ch442b079f" tvg-name="ch442b079f" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%AA%E6%B8%85.png" group-title="📺 其他频道·SD",汪清
+# 汪清 | 质量25.0 (SD) | 1.092MB/s | 码率0.1Mbps | 综合36.49
+#EXTINF:-1 tvg-id="汪清" tvg-name="汪清" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%AA%E6%B8%85.png" group-title="📺 其他频道",汪清
 http://stream5.jlntv.cn/wq/sd/live.m3u8?zjild
-# 汪清综合 | 质量25.0 (SD) | 0.494MB/s | 码率0.1Mbps | 综合28.25
-#EXTINF:-1 tvg-id="ch1a46ec6f" tvg-name="ch1a46ec6f" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%AA%E6%B8%85%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",汪清综合
+# 汪清综合 | 质量25.0 (SD) | 0.622MB/s | 码率0.1Mbps | 综合29.04
+#EXTINF:-1 tvg-id="汪清综合" tvg-name="汪清综合" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%AA%E6%B8%85%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",汪清综合
 http://stream5.jlntv.cn/wq/sd/live.m3u8
-# 河北 | 质量45.0 (480P) | 0.761MB/s | 码率1.23Mbps | 综合44.28
-#EXTINF:-1 tvg-id="ch81a26b59" tvg-name="ch81a26b59" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8C%97.png" group-title="📺 其他频道·480P",河北
+# 汾西综合 | 质量82.8 (1080P) | 0.694MB/s | 码率0.0Mbps | 综合64.8
+#EXTINF:-1 tvg-id="汾西综合" tvg-name="汾西综合" tvg-logo="https://live.fanmingming.com/tv/%E6%B1%BE%E8%A5%BF%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",汾西综合
+https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd
+# 河北 | 质量45.0 (480P) | 0.783MB/s | 码率1.04Mbps | 综合44.63
+#EXTINF:-1 tvg-id="河北" tvg-name="河北" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8C%97.png" group-title="📺 其他频道",河北
 https://event.pull.hebtv.com:443/live/live101.m3u8
-# 河北农民 | 质量22.5 (SD) | 0.67MB/s | 码率0.18Mbps | 综合29.97
-#EXTINF:-1 tvg-id="ch9582d94f" tvg-name="ch9582d94f" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8C%97%E5%86%9C%E6%B0%91.png" group-title="📺 其他频道·SD",河北农民
+# 河北农民 | 质量22.5 (SD) | 1.019MB/s | 码率0.18Mbps | 综合35.3
+#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://live.fanmingming.com/tv/%E6%B2%B3%E5%8C%97%E5%86%9C%E6%B0%91.png" group-title="📺 其他频道",河北农民
 https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd
-# 法治 | 质量82.8 (1080P) | 21.614MB/s | 码率0.0Mbps | 综合85.57
-#EXTINF:-1 tvg-id="chdf8fc7cb" tvg-name="chdf8fc7cb" tvg-logo="https://live.fanmingming.com/tv/%E6%B3%95%E6%B2%BB.png" group-title="📺 其他频道·1080P",法治
-http://tvcdn.stream3.hndt.com/tv/65be54a9017e1000af59fb4800000000_transios/playlist.m3u8?wsSecret=ee3d50ae69d6a10de91f984d22cca604&wsTime=1795298643
-# 津南一套 | 质量49.5 (480P) | 29.73MB/s | 码率0.0Mbps | 综合67.29
-#EXTINF:-1 tvg-id="ch14f7218e" tvg-name="ch14f7218e" tvg-logo="https://live.fanmingming.com/tv/%E6%B4%A5%E5%8D%97%E4%B8%80%E5%A5%97.png" group-title="📺 其他频道·480P",津南一套
-http://play.jinnantv.top/live/JNTV1.m3u8?ztianjd
-# 滦平新闻 | 质量22.5 (SD) | 1.369MB/s | 码率0.44Mbps | 综合42.63
-#EXTINF:-1 tvg-id="chb20839f0" tvg-name="chb20839f0" tvg-logo="https://live.fanmingming.com/tv/%E6%BB%A6%E5%B9%B3%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道·SD",滦平新闻
+# 法治 | 质量82.8 (1080P) | 25.468MB/s | 码率0.0Mbps | 综合85.3
+#EXTINF:-1 tvg-id="法治" tvg-name="法治" tvg-logo="https://live.fanmingming.com/tv/%E6%B3%95%E6%B2%BB.png" group-title="📺 其他频道",法治
+http://tvcdn.stream3.hndt.com/tv/65be54a9017e1000af59fb4800000000_transios/playlist.m3u8?wsSecret=4aafacd30c8201eec37220b93f77ec20&wsTime=1795302266
+# 滦平新闻 | 质量22.5 (SD) | 1.061MB/s | 码率0.44Mbps | 综合37.42
+#EXTINF:-1 tvg-id="滦平新闻" tvg-name="滦平新闻" tvg-logo="https://live.fanmingming.com/tv/%E6%BB%A6%E5%B9%B3%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道",滦平新闻
 http://jwplay.hebyun.com.cn/live/LPTV001/1500k/tzwj_video.m3u8
-# 甘南县综合 | 质量25.0 (SD) | 120.037MB/s | 码率0.03Mbps | 综合51.68
-#EXTINF:-1 tvg-id="ch563076be" tvg-name="ch563076be" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E5%8D%97%E5%8E%BF%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",甘南县综合
+# 璧山综合 | 质量22.5 (SD) | 0.314MB/s | 码率0.42Mbps | 综合24.91
+#EXTINF:-1 tvg-id="璧山综合" tvg-name="璧山综合" tvg-logo="https://live.fanmingming.com/tv/%E7%92%A7%E5%B1%B1%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",璧山综合
+http://222.179.42.129:8181/hls1.m3u8
+# 甘南县综合 | 质量25.0 (SD) | 113.868MB/s | 码率0.03Mbps | 综合51.96
+#EXTINF:-1 tvg-id="甘南县综合" tvg-name="甘南县综合" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E5%8D%97%E5%8E%BF%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",甘南县综合
 https://stream.hrbtv.net/zxpd/sd/live.m3u8
-# 甘肃经济 | 质量40.0 (未知) | 739.885MB/s | 码率0.0Mbps | 综合61.78
-#EXTINF:-1 tvg-id="che9da4460" tvg-name="che9da4460" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E8%82%83%E7%BB%8F%E6%B5%8E.png" group-title="📺 其他频道",甘肃经济
+# 甘肃经济 | 质量40.0 (未知) | 53.551MB/s | 码率0.0Mbps | 综合62.6
+#EXTINF:-1 tvg-id="甘肃经济" tvg-name="甘肃经济" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E8%82%83%E7%BB%8F%E6%B5%8E.png" group-title="📺 其他频道",甘肃经济
 https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8
-# 甘肃都市 | 质量40.0 (未知) | 21.374MB/s | 码率0.0Mbps | 综合61.36
-#EXTINF:-1 tvg-id="ch613a9c83" tvg-name="ch613a9c83" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E8%82%83%E9%83%BD%E5%B8%82.png" group-title="📺 其他频道",甘肃都市
+# 甘肃都市 | 质量40.0 (未知) | 61.004MB/s | 码率0.0Mbps | 综合62.45
+#EXTINF:-1 tvg-id="甘肃都市" tvg-name="甘肃都市" tvg-logo="https://live.fanmingming.com/tv/%E7%94%98%E8%82%83%E9%83%BD%E5%B8%82.png" group-title="📺 其他频道",甘肃都市
 https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
-# 电视剧 | 质量82.8 (1080P) | 18.389MB/s | 码率0.0Mbps | 综合85.6
-#EXTINF:-1 tvg-id="ch29cbacc1" tvg-name="ch29cbacc1" tvg-logo="https://live.fanmingming.com/tv/%E7%94%B5%E8%A7%86%E5%89%A7.png" group-title="📺 其他频道·1080P",电视剧
-http://tvcdn.stream3.hndt.com/tv/65bd329b017e1000648cd2ed00000000_transios/playlist.m3u8?wsSecret=eb3c273d4d1c8018aa8c3010516c60a2&wsTime=1795298643
-# 白山公共 | 质量49.5 (480P) | 0.917MB/s | 码率0.0Mbps | 综合48.2
-#EXTINF:-1 tvg-id="ch35c4f6ff" tvg-name="ch35c4f6ff" tvg-logo="https://live.fanmingming.com/tv/%E7%99%BD%E5%B1%B1%E5%85%AC%E5%85%B1.png" group-title="📺 其他频道·480P",白山公共
+# 电视剧 | 质量82.8 (1080P) | 26.093MB/s | 码率0.0Mbps | 综合87.03
+#EXTINF:-1 tvg-id="电视剧" tvg-name="电视剧" tvg-logo="https://live.fanmingming.com/tv/%E7%94%B5%E8%A7%86%E5%89%A7.png" group-title="📺 其他频道",电视剧
+http://tvcdn.stream3.hndt.com/tv/65bd329b017e1000648cd2ed00000000_transios/playlist.m3u8?wsSecret=ac1c67d322fd32f599a8e367203a6a8b&wsTime=1795302266
+# 白山公共 | 质量49.5 (480P) | 0.931MB/s | 码率0.0Mbps | 综合48.79
+#EXTINF:-1 tvg-id="白山公共" tvg-name="白山公共" tvg-logo="https://live.fanmingming.com/tv/%E7%99%BD%E5%B1%B1%E5%85%AC%E5%85%B1.png" group-title="📺 其他频道",白山公共
 http://stream8.jlntv.cn/baishan2/playlist.m3u8?zjild
-# 祁门综合 | 质量82.8 (1080P) | 19.715MB/s | 码率0.0Mbps | 综合83.07
-#EXTINF:-1 tvg-id="ch7643ef51" tvg-name="ch7643ef51" tvg-logo="https://live.fanmingming.com/tv/%E7%A5%81%E9%97%A8%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·1080P",祁门综合
+# 祁门综合 | 质量82.8 (1080P) | 22.786MB/s | 码率0.0Mbps | 综合86.75
+#EXTINF:-1 tvg-id="祁门综合" tvg-name="祁门综合" tvg-logo="https://live.fanmingming.com/tv/%E7%A5%81%E9%97%A8%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",祁门综合
 http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
-# 福建公共 | 质量40.0 (未知) | 29.116MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="cha403db74" tvg-name="cha403db74" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E5%85%AC%E5%85%B1.png" group-title="📺 其他频道",福建公共
+# 福建公共 | 质量40.0 (未知) | 32.696MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="福建公共" tvg-name="福建公共" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E5%85%AC%E5%85%B1.png" group-title="📺 其他频道",福建公共
 https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=1cf7fc3a8f6d160c33b43c2f9507a0cc&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 福建新闻 | 质量40.0 (未知) | 28.861MB/s | 码率0.0Mbps | 综合59.82
-#EXTINF:-1 tvg-id="chfff8be1a" tvg-name="chfff8be1a" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道",福建新闻
+# 福建新闻 | 质量40.0 (未知) | 66.406MB/s | 码率0.0Mbps | 综合62.61
+#EXTINF:-1 tvg-id="福建新闻" tvg-name="福建新闻" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道",福建新闻
 http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8
-# 福建旅游 | 质量40.0 (未知) | 29.158MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="chbbe9d3a4" tvg-name="chbbe9d3a4" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E6%97%85%E6%B8%B8.png" group-title="📺 其他频道",福建旅游
-https://live.264788.xyz/channel/fujianlvyou?streamid=fc58882de71ce4575b66002f2475226b&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-# 福建经济 | 质量40.0 (未知) | 20.44MB/s | 码率0.0Mbps | 综合59.63
-#EXTINF:-1 tvg-id="ch706548d1" tvg-name="ch706548d1" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E7%BB%8F%E6%B5%8E.png" group-title="📺 其他频道",福建经济
+# 福建旅游 | 质量40.0 (未知) | 29.905MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="福建旅游" tvg-name="福建旅游" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E6%97%85%E6%B8%B8.png" group-title="📺 其他频道",福建旅游
+https://live.264788.xyz/channel/fujianlvyou?streamid=221239fcf3c7edb274f2f0760fe47f96&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+# 福建经济 | 质量40.0 (未知) | 16.629MB/s | 码率0.0Mbps | 综合62.26
+#EXTINF:-1 tvg-id="福建经济" tvg-name="福建经济" tvg-logo="https://live.fanmingming.com/tv/%E7%A6%8F%E5%BB%BA%E7%BB%8F%E6%B5%8E.png" group-title="📺 其他频道",福建经济
 http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8
-# 第一财经 | 质量40.0 (未知) | 26.499MB/s | 码率0.0Mbps | 综合60.79
-#EXTINF:-1 tvg-id="ch882c305e" tvg-name="ch882c305e" tvg-logo="https://live.fanmingming.com/tv/%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F.png" group-title="📺 其他频道",第一财经
+# 第一财经 | 质量40.0 (未知) | 21.427MB/s | 码率0.0Mbps | 综合62.89
+#EXTINF:-1 tvg-id="第一财经" tvg-name="第一财经" tvg-logo="https://live.fanmingming.com/tv/%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F.png" group-title="📺 其他频道",第一财经
 http://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
-# 网络收集随时失效 | 质量40.0 (未知) | 5.911MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch9e07b1e9" tvg-name="ch9e07b1e9" tvg-logo="https://live.fanmingming.com/tv/%E7%BD%91%E7%BB%9C%E6%94%B6%E9%9B%86%E9%9A%8F%E6%97%B6%E5%A4%B1%E6%95%88.png" group-title="📺 其他频道",网络收集随时失效
+# 网络收集随时失效 | 质量40.0 (未知) | 1.912MB/s | 码率0.0Mbps | 综合52.56
+#EXTINF:-1 tvg-id="网络收集随时失效" tvg-name="网络收集随时失效" tvg-logo="https://live.fanmingming.com/tv/%E7%BD%91%E7%BB%9C%E6%94%B6%E9%9B%86%E9%9A%8F%E6%97%B6%E5%A4%B1%E6%95%88.png" group-title="📺 其他频道",网络收集随时失效
 https://测试.nxog.top/m/tv/xjj.php
-# 网络热曲 | 质量40.0 (未知) | 2.359MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch2ffe8a6c" tvg-name="ch2ffe8a6c" tvg-logo="https://live.fanmingming.com/tv/%E7%BD%91%E7%BB%9C%E7%83%AD%E6%9B%B2.png" group-title="📺 其他频道",网络热曲
+# 网络热曲 | 质量40.0 (未知) | 2.679MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="网络热曲" tvg-name="网络热曲" tvg-logo="https://live.fanmingming.com/tv/%E7%BD%91%E7%BB%9C%E7%83%AD%E6%9B%B2.png" group-title="📺 其他频道",网络热曲
 https://188sp.711888.xyz/188/video.php
-# 苏州 | 质量45.0 (480P) | 0.771MB/s | 码率1.41Mbps | 综合43.86
-#EXTINF:-1 tvg-id="ch995882b9" tvg-name="ch995882b9" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E.png" group-title="📺 其他频道·480P",苏州
+# 苏州 | 质量45.0 (480P) | 0.767MB/s | 码率1.41Mbps | 综合42.42
+#EXTINF:-1 tvg-id="苏州" tvg-name="苏州" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E.png" group-title="📺 其他频道",苏州
 https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
-# 苏州娱乐 | 质量55.0 (480P) | 20.209MB/s | 码率0.85Mbps | 综合71.69
-#EXTINF:-1 tvg-id="ch087a2e4c" tvg-name="ch087a2e4c" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E5%A8%B1%E4%B9%90.png" group-title="📺 其他频道·480P",苏州娱乐
+# 苏州娱乐 | 质量55.0 (480P) | 39.91MB/s | 码率0.85Mbps | 综合71.41
+#EXTINF:-1 tvg-id="苏州娱乐" tvg-name="苏州娱乐" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E5%A8%B1%E4%B9%90.png" group-title="📺 其他频道",苏州娱乐
 https://live-auth.51kandianshi.com/szgd/csztv4.m3u8
-# 苏州文化生活 | 质量55.0 (480P) | 34.935MB/s | 码率0.8Mbps | 综合70.73
-#EXTINF:-1 tvg-id="ch8ab2aac8" tvg-name="ch8ab2aac8" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E6%96%87%E5%8C%96%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道·480P",苏州文化生活
+# 苏州文化生活 | 质量55.0 (480P) | 9.228MB/s | 码率0.8Mbps | 综合71.85
+#EXTINF:-1 tvg-id="苏州文化生活" tvg-name="苏州文化生活" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E6%96%87%E5%8C%96%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道",苏州文化生活
 https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
-# 苏州新闻综合 | 质量45.0 (480P) | 7.874MB/s | 码率1.05Mbps | 综合64.61
-#EXTINF:-1 tvg-id="ch4b5a4cba" tvg-name="ch4b5a4cba" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·480P",苏州新闻综合
+# 苏州新闻综合 | 质量45.0 (480P) | 8.733MB/s | 码率1.05Mbps | 综合65.73
+#EXTINF:-1 tvg-id="苏州新闻综合" tvg-name="苏州新闻综合" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",苏州新闻综合
 https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
-# 苏州生活资讯 | 质量55.0 (480P) | 8.749MB/s | 码率0.8Mbps | 综合70.65
-#EXTINF:-1 tvg-id="ch98780d8f" tvg-name="ch98780d8f" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E7%94%9F%E6%B4%BB%E8%B5%84%E8%AE%AF.png" group-title="📺 其他频道·480P",苏州生活资讯
+# 苏州生活资讯 | 质量55.0 (480P) | 16.04MB/s | 码率0.8Mbps | 综合70.72
+#EXTINF:-1 tvg-id="苏州生活资讯" tvg-name="苏州生活资讯" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E7%94%9F%E6%B4%BB%E8%B5%84%E8%AE%AF.png" group-title="📺 其他频道",苏州生活资讯
 https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
-# 苏州社会经济 | 质量45.0 (480P) | 14.742MB/s | 码率1.05Mbps | 综合65.72
-#EXTINF:-1 tvg-id="ch5c7359f6" tvg-name="ch5c7359f6" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E7%A4%BE%E4%BC%9A%E7%BB%8F%E6%B5%8E.png" group-title="📺 其他频道·480P",苏州社会经济
+# 苏州社会经济 | 质量45.0 (480P) | 7.785MB/s | 码率1.05Mbps | 综合65.84
+#EXTINF:-1 tvg-id="苏州社会经济" tvg-name="苏州社会经济" tvg-logo="https://live.fanmingming.com/tv/%E8%8B%8F%E5%B7%9E%E7%A4%BE%E4%BC%9A%E7%BB%8F%E6%B5%8E.png" group-title="📺 其他频道",苏州社会经济
 https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
-# 荆门新闻综合 | 质量82.8 (1080P) | 0.613MB/s | 码率0.0Mbps | 综合63.61
-#EXTINF:-1 tvg-id="chc8aa3966" tvg-name="chc8aa3966" tvg-logo="https://live.fanmingming.com/tv/%E8%8D%86%E9%97%A8%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·1080P",荆门新闻综合
+# 荆门新闻综合 | 质量82.8 (1080P) | 0.625MB/s | 码率0.0Mbps | 综合63.68
+#EXTINF:-1 tvg-id="荆门新闻综合" tvg-name="荆门新闻综合" tvg-logo="https://live.fanmingming.com/tv/%E8%8D%86%E9%97%A8%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",荆门新闻综合
 https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691
-# 荥经综合 | 质量22.5 (SD) | 0.854MB/s | 码率0.79Mbps | 综合28.67
-#EXTINF:-1 tvg-id="chc96939c6" tvg-name="chc96939c6" tvg-logo="https://live.fanmingming.com/tv/%E8%8D%A5%E7%BB%8F%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",荥经综合
+# 荥经综合 | 质量22.5 (SD) | 0.88MB/s | 码率0.7Mbps | 综合30.76
+#EXTINF:-1 tvg-id="荥经综合" tvg-name="荥经综合" tvg-logo="https://live.fanmingming.com/tv/%E8%8D%A5%E7%BB%8F%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",荥经综合
 https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8
-# 西宁新闻综合 | 质量75.0 (720P) | 0.368MB/s | 码率1.83Mbps | 综合55.55
-#EXTINF:-1 tvg-id="chb15ceee8" tvg-name="chb15ceee8" tvg-logo="https://live.fanmingming.com/tv/%E8%A5%BF%E5%AE%81%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·720P",西宁新闻综合
+# 西宁新闻综合 | 质量45.0 (480P) | 0.297MB/s | 码率1.21Mbps | 综合36.24
+#EXTINF:-1 tvg-id="西宁新闻综合" tvg-name="西宁新闻综合" tvg-logo="https://live.fanmingming.com/tv/%E8%A5%BF%E5%AE%81%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",西宁新闻综合
 https://liveout.xntv.tv/a65jur/96iln2.m3u8?zqinghd
-# 西安都市 | 质量22.5 (SD) | 0.152MB/s | 码率0.29Mbps | 综合16.77
-#EXTINF:-1 tvg-id="chfe68645e" tvg-name="chfe68645e" tvg-logo="https://live.fanmingming.com/tv/%E8%A5%BF%E5%AE%89%E9%83%BD%E5%B8%82.png" group-title="📺 其他频道·SD",西安都市
-http://112.46.105.20:8009/hls/29/index.m3u8
-# 辉南新闻 | 质量55.0 (480P) | 1.041MB/s | 码率0.8Mbps | 综合54.88
-#EXTINF:-1 tvg-id="cha0736f49" tvg-name="cha0736f49" tvg-logo="https://live.fanmingming.com/tv/%E8%BE%89%E5%8D%97%E6%96%B0%E9%97%BB.png" group-title="📺 其他频道·480P",辉南新闻
-http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild
-# 遂昌综合 | 质量22.5 (SD) | 0.587MB/s | 码率0.52Mbps | 综合23.44
-#EXTINF:-1 tvg-id="ch21172af5" tvg-name="ch21172af5" tvg-logo="https://live.fanmingming.com/tv/%E9%81%82%E6%98%8C%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",遂昌综合
+# 西峰综合 | 质量67.5 (720P) | 1.081MB/s | 码率0.0Mbps | 综合61.99
+#EXTINF:-1 tvg-id="西峰综合" tvg-name="西峰综合" tvg-logo="https://live.fanmingming.com/tv/%E8%A5%BF%E5%B3%B0%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",西峰综合
+https://play.kankanlive.com/live/1683944827526991.m3u8
+# 通化县 | 质量25.0 (SD) | 2.056MB/s | 码率0.1Mbps | 综合47.7
+#EXTINF:-1 tvg-id="通化县" tvg-name="通化县" tvg-logo="https://live.fanmingming.com/tv/%E9%80%9A%E5%8C%96%E5%8E%BF.png" group-title="📺 其他频道",通化县
+http://stream5.jlntv.cn/thx/sd/live.m3u8?zjild
+# 遂昌综合 | 质量22.5 (SD) | 0.636MB/s | 码率0.52Mbps | 综合24.85
+#EXTINF:-1 tvg-id="遂昌综合" tvg-name="遂昌综合" tvg-logo="https://live.fanmingming.com/tv/%E9%81%82%E6%98%8C%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",遂昌综合
 http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed
-# 邢台生活 | 质量22.5 (SD) | 1.015MB/s | 码率0.32Mbps | 综合33.53
-#EXTINF:-1 tvg-id="ch2a40737f" tvg-name="ch2a40737f" tvg-logo="https://live.fanmingming.com/tv/%E9%82%A2%E5%8F%B0%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道·SD",邢台生活
+# 邢台生活 | 质量22.5 (SD) | 0.713MB/s | 码率0.32Mbps | 综合28.07
+#EXTINF:-1 tvg-id="邢台生活" tvg-name="邢台生活" tvg-logo="https://live.fanmingming.com/tv/%E9%82%A2%E5%8F%B0%E7%94%9F%E6%B4%BB.png" group-title="📺 其他频道",邢台生活
 https://jwcdnqx.hebyun.com.cn/live/xtcsshpd/1500k/tzwj_video.m3u8
-# 邢台综合 | 质量22.5 (SD) | 0.866MB/s | 码率0.32Mbps | 综合32.33
-#EXTINF:-1 tvg-id="chcee165f3" tvg-name="chcee165f3" tvg-logo="https://live.fanmingming.com/tv/%E9%82%A2%E5%8F%B0%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",邢台综合
+# 邢台综合 | 质量22.5 (SD) | 0.679MB/s | 码率0.32Mbps | 综合27.71
+#EXTINF:-1 tvg-id="邢台综合" tvg-name="邢台综合" tvg-logo="https://live.fanmingming.com/tv/%E9%82%A2%E5%8F%B0%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",邢台综合
 http://jwplay.hebyun.com.cn/live/xtsrmtzs/1500k/tzwj_video.m3u8
-# 都市 | 质量82.8 (1080P) | 22.829MB/s | 码率0.0Mbps | 综合89.01
-#EXTINF:-1 tvg-id="ch2e80c8b3" tvg-name="ch2e80c8b3" tvg-logo="https://live.fanmingming.com/tv/%E9%83%BD%E5%B8%82.png" group-title="📺 其他频道·1080P",都市
-http://tvcdn.stream3.hndt.com/tv/65c3fbc5017e1000fde13faa00000000_transios/playlist.m3u8?wsSecret=3661e6ca0460562347fa2b4fe091eecd&wsTime=1795298643
-# 都市剧场 | 质量40.0 (未知) | 15.857MB/s | 码率0.0Mbps | 综合60.82
-#EXTINF:-1 tvg-id="chfcab5f59" tvg-name="chfcab5f59" tvg-logo="https://live.fanmingming.com/tv/%E9%83%BD%E5%B8%82%E5%89%A7%E5%9C%BA.png" group-title="📺 其他频道",都市剧场
+# 都市 | 质量82.8 (1080P) | 22.214MB/s | 码率0.0Mbps | 综合88.74
+#EXTINF:-1 tvg-id="都市" tvg-name="都市" tvg-logo="https://live.fanmingming.com/tv/%E9%83%BD%E5%B8%82.png" group-title="📺 其他频道",都市
+http://tvcdn.stream3.hndt.com/tv/65c3fbc5017e1000fde13faa00000000_transios/playlist.m3u8?wsSecret=9f32003612695820a70b1ba5db456f8b&wsTime=1795302266
+# 都市剧场 | 质量40.0 (未知) | 13.211MB/s | 码率0.0Mbps | 综合61.2
+#EXTINF:-1 tvg-id="都市剧场" tvg-name="都市剧场" tvg-logo="https://live.fanmingming.com/tv/%E9%83%BD%E5%B8%82%E5%89%A7%E5%9C%BA.png" group-title="📺 其他频道",都市剧场
 https://satellitepull.cnr.cn/live/wxcqxwgb/playlist.m3u8
-# 都市青春 | 质量22.5 (SD) | 0.168MB/s | 码率0.35Mbps | 综合22.85
-#EXTINF:-1 tvg-id="ch2609af64" tvg-name="ch2609af64" tvg-logo="https://live.fanmingming.com/tv/%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5.png" group-title="📺 其他频道·SD",都市青春
-http://112.46.105.20:8009/hls/19/index.m3u8
-# 铜梁综合 | 质量49.5 (480P) | 0.268MB/s | 码率0.83Mbps | 综合40.02
-#EXTINF:-1 tvg-id="ch265d934b" tvg-name="ch265d934b" tvg-logo="https://live.fanmingming.com/tv/%E9%93%9C%E6%A2%81%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·480P",铜梁综合
+# 铜梁综合 | 质量49.5 (480P) | 0.256MB/s | 码率0.83Mbps | 综合39.99
+#EXTINF:-1 tvg-id="铜梁综合" tvg-name="铜梁综合" tvg-logo="https://live.fanmingming.com/tv/%E9%93%9C%E6%A2%81%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",铜梁综合
 http://183.64.174.171:40123/ch1.m3u8?zzhongqd
-# 长影 | 质量22.5 (SD) | 0.284MB/s | 码率0.28Mbps | 综合21.81
-#EXTINF:-1 tvg-id="ch9d964cc9" tvg-name="ch9d964cc9" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E5%BD%B1.png" group-title="📺 其他频道·SD",长影
-http://tpc.x3322.net:9901/tsfile/live/1010_1.m3u8
-# 长期维护切勿贩卖 | 质量40.0 (未知) | 6.337MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="cha33a4195" tvg-name="cha33a4195" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E6%9C%9F%E7%BB%B4%E6%8A%A4%E5%88%87%E5%8B%BF%E8%B4%A9%E5%8D%96.png" group-title="📺 其他频道",长期维护切勿贩卖
+# 长子综合 | 质量22.5 (SD) | 0.522MB/s | 码率0.35Mbps | 综合26.39
+#EXTINF:-1 tvg-id="长子综合" tvg-name="长子综合" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E5%AD%90%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",长子综合
+https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd
+# 长期维护切勿贩卖 | 质量40.0 (未知) | 16.647MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="长期维护切勿贩卖" tvg-name="长期维护切勿贩卖" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E6%9C%9F%E7%BB%B4%E6%8A%A4%E5%88%87%E5%8B%BF%E8%B4%A9%E5%8D%96.png" group-title="📺 其他频道",长期维护切勿贩卖
 https://测试.nxog.top/m/tv/xjj.php?id=2&3
-# 长白山电视台 | 质量25.0 (SD) | 0.473MB/s | 码率0.1Mbps | 综合27.24
-#EXTINF:-1 tvg-id="chb85b9dfa" tvg-name="chb85b9dfa" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E7%99%BD%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="📺 其他频道·SD",长白山电视台
+# 长白山电视台 | 质量25.0 (SD) | 0.886MB/s | 码率0.1Mbps | 综合33.94
+#EXTINF:-1 tvg-id="长白山电视台" tvg-name="长白山电视台" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E7%99%BD%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="📺 其他频道",长白山电视台
 http://stream8.jlntv.cn/cbstv/sd/live.m3u8?zjild
-# 长白朝语 | 质量40.0 (未知) | 0.656MB/s | 码率0.0Mbps | 综合38.72
-#EXTINF:-1 tvg-id="chbc1fad28" tvg-name="chbc1fad28" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E7%99%BD%E6%9C%9D%E8%AF%AD.png" group-title="📺 其他频道",长白朝语
+# 长白朝语 | 质量40.0 (未知) | 0.507MB/s | 码率0.0Mbps | 综合36.36
+#EXTINF:-1 tvg-id="长白朝语" tvg-name="长白朝语" tvg-logo="https://live.fanmingming.com/tv/%E9%95%BF%E7%99%BD%E6%9C%9D%E8%AF%AD.png" group-title="📺 其他频道",长白朝语
 http://hplayer1.juyun.tv:80/camera/11344136.m3u8
-# 青川综合 | 质量22.5 (SD) | 0.594MB/s | 码率0.7Mbps | 综合28.9
-#EXTINF:-1 tvg-id="ch17759b33" tvg-name="ch17759b33" tvg-logo="https://live.fanmingming.com/tv/%E9%9D%92%E5%B7%9D%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道·SD",青川综合
+# 青川综合 | 质量22.5 (SD) | 0.486MB/s | 码率0.7Mbps | 综合27.08
+#EXTINF:-1 tvg-id="青川综合" tvg-name="青川综合" tvg-logo="https://live.fanmingming.com/tv/%E9%9D%92%E5%B7%9D%E7%BB%BC%E5%90%88.png" group-title="📺 其他频道",青川综合
 http://qcfile.qcrmt.com/nmip-media/channellive/channel100933/playlist.m3u8
-# 音乐现场 | 质量40.0 (未知) | 53.69MB/s | 码率0.0Mbps | 综合60.38
-#EXTINF:-1 tvg-id="chf1857b77" tvg-name="chf1857b77" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%B3%E4%B9%90%E7%8E%B0%E5%9C%BA.png" group-title="📺 其他频道",音乐现场
+# 音乐现场 | 质量40.0 (未知) | 24.782MB/s | 码率0.0Mbps | 综合62.6
+#EXTINF:-1 tvg-id="音乐现场" tvg-name="音乐现场" tvg-logo="https://live.fanmingming.com/tv/%E9%9F%B3%E4%B9%90%E7%8E%B0%E5%9C%BA.png" group-title="📺 其他频道",音乐现场
 https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8
-# 风云剧场 | 质量40.0 (未知) | 9.651MB/s | 码率0.0Mbps | 综合54.0
-#EXTINF:-1 tvg-id="ch31be045f" tvg-name="ch31be045f" tvg-logo="https://live.fanmingming.com/tv/%E9%A3%8E%E4%BA%91%E5%89%A7%E5%9C%BA.png" group-title="📺 其他频道",风云剧场
+# 风云剧场 | 质量40.0 (未知) | 27.642MB/s | 码率0.0Mbps | 综合54.0
+#EXTINF:-1 tvg-id="风云剧场" tvg-name="风云剧场" tvg-logo="https://live.fanmingming.com/tv/%E9%A3%8E%E4%BA%91%E5%89%A7%E5%9C%BA.png" group-title="📺 其他频道",风云剧场
 https://live.264788.xyz/channel/fengyunjuchang?streamid=31e7b5b7032d25dd215a4069cdee1a48&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
