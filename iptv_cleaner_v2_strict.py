@@ -730,6 +730,18 @@ BITRATE_TIERS: List[Tuple[float, float, str]] = [
 
 UNKNOWN_QUALITY_SCORE = 40.0  # 指标缺失时的中性分，避免误杀也避免虚高
 
+# 报表/展示用的统一档位排序分数：分值越高画质越好，"未知" 排最后。
+# 合并分辨率档与码率档的全部档位名（含 SD），避免对档位名字符串做算术。
+TIER_SORT_SCORE: Dict[str, float] = {name: score for _, score, name in RESOLUTION_TIERS}
+for _score, _tier_name in ((s, n) for _, s, n in BITRATE_TIERS):
+    TIER_SORT_SCORE.setdefault(_tier_name, _score)
+TIER_SORT_SCORE.setdefault("未知", 0.0)
+
+
+def tier_sort_key(tier: str) -> float:
+    """档位排序键：返回负数分数，数值越小（越靠前）代表画质越高。"""
+    return -TIER_SORT_SCORE.get(tier, 0.0)
+
 
 def resolution_tier(resolution: Optional[str]) -> Tuple[float, str]:
     """把 '1920x1080' 映射到 (分数, 档位名)"""
@@ -1325,10 +1337,7 @@ def write_outputs(
     # 画质档位分布
     tier_counter = Counter(item.get("quality_tier", "未知") for item in channels)
     report += ["", "## 画质档位分布", ""]
-    for tier, count in sorted(
-        tier_counter.items(),
-        key=lambda x: -next((t[2] for t in RESOLUTION_TIERS if t[2] == x[0]), 0),
-    ):
+    for tier, count in sorted(tier_counter.items(), key=lambda x: tier_sort_key(x[0])):
         report.append(f"- **{tier}**: {count}")
 
     report += ["", "## 高质量源 Top 10", "", "| 频道 | 档位 | 质量 | 速度 | 码率 | 综合分 |", "|---|---|---|---|---|---|"]
