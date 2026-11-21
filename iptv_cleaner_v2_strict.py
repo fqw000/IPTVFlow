@@ -33,7 +33,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, List, Optional, Set, Tuple
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, quote
 
 try:
     import aiohttp
@@ -54,6 +54,9 @@ class Config:
     BLACKLIST_FILE = os.getenv("IPTV_BLACKLIST_FILE", "config/blackHost_list.txt")
     CHANNEL_ORDER_FILE = os.getenv("IPTV_CHANNEL_ORDER_FILE", "config/channel_order.json")
     OUTPUT_FILE = os.getenv("IPTV_OUTPUT_FILE", "output/live.m3u")
+    # 备份源单独输出：主列表每频道只留 1 条，避免遥控器换台要点多次
+    BACKUP_FILE = os.getenv("IPTV_BACKUP_FILE", "output/live_backup.m3u")
+    WRITE_BACKUP = os.getenv("IPTV_WRITE_BACKUP", "1") == "1"
     REPORT_FILE = os.getenv("IPTV_REPORT_FILE", "output/report.md")
     HISTORY_FILE = os.getenv("IPTV_HISTORY_FILE", "output/history.json")
     LOCAL_DIR = os.getenv("IPTV_LOCAL_DIR", "local_playlists")
@@ -72,11 +75,25 @@ class Config:
     MIN_SPEED_MBPS = float(os.getenv("IPTV_MIN_SPEED", "0.15"))
     MAX_TTFB_MS = int(os.getenv("IPTV_MAX_TTFB", "3000"))
 
+    # --- 质量优先评分（质量分 + 速度分 + 延迟分 加权）---
+    MIN_QUALITY_SCORE = float(os.getenv("IPTV_MIN_QUALITY", "20"))
+    WEIGHT_QUALITY = float(os.getenv("IPTV_W_QUALITY", "0.6"))
+    WEIGHT_SPEED = float(os.getenv("IPTV_W_SPEED", "0.3"))
+    WEIGHT_LATENCY = float(os.getenv("IPTV_W_LATENCY", "0.1"))
+    # 声明分辨率与实际码率差距过大时的额外惩罚分
+    MISMATCH_PENALTY = float(os.getenv("IPTV_MISMATCH_PENALTY", "10"))
+
     KEEP_PER_CHANNEL = int(os.getenv("IPTV_KEEP_PER_CHANNEL", "3"))
     FREEZE_AFTER_FAILS = int(os.getenv("IPTV_FREEZE_FAILS", "3"))
     THAW_AFTER_RUNS = int(os.getenv("IPTV_THAW_RUNS", "5"))
     SKIP_VOD = os.getenv("IPTV_SKIP_VOD", "1") == "1"
     ALLOW_SAME_HOST_BACKUP = os.getenv("IPTV_ALLOW_SAME_HOST", "0") == "1"
+
+    # --- group-title 优化 ---
+    # 内容细分：把 CCTV-5/5+ 归体育、CCTV-14 归儿童（口径更准）
+    GROUP_FINE_GRAINED = os.getenv("IPTV_GROUP_FINE", "1") == "1"
+    # 画质后缀：group-title 追加频道最优源的画质档位，如 "央视频道·1080P"
+    GROUP_SHOW_QUALITY = os.getenv("IPTV_GROUP_QUALITY", "1") == "1"
 
     USER_AGENT = "Mozilla/5.0 (compatible; IPTVCleaner/3.0)"
     HLS_EXTENSIONS = (".m3u8", ".m3u")
@@ -120,7 +137,22 @@ ALIAS_MAP: Dict[str, str] = {
 
 # 分组规则：地区词优先于通用词，避免“香港卫视/凤凰卫视”被误判为卫视
 GROUP_RULES: List[Tuple[str, str]] = [
-    (r"(哈哈炫动|卡酷|宝宝|幼教|贝瓦|巧虎|新科动漫|小猪佩奇|汪汪队|海底小纵队|米老鼠|迪士尼|熊出没|猫和老鼠|哆啦A梦|喜羊羊|青少|儿童|动画|动漫|少儿|卡通|金鹰|CCTV-14|cartoon|disney|nickelodeon|kids|kika|cbbc)", "🧸 儿童动画"),
+    # 儿童动画：放在最前，避免“少儿/卡通”被“卫视/央视”等通用词抢先匹配
+    # 中英文关键词尽量齐全；英文统一由 re.IGNORECASE 兜底
+    (
+        r"("
+        r"哈哈炫动|炫动卡通|卡酷|嘉佳|优漫|金鹰卡通|动漫秀场|"
+        r"少儿|儿童|幼教|幼儿|亲子|育儿|宝宝|宝贝|童话|童年|青少|"
+        r"贝瓦|巧虎|新科动漫|小猪佩奇|汪汪队|海底小纵队|米老鼠|迪士尼|"
+        r"熊出没|猫和老鼠|哆啦A梦|喜羊羊|大头儿子|葫芦娃|黑猫警长|"
+        r"舒克贝塔|奥特曼|巴啦啦|铠甲勇士|"
+        r"动画|动漫|卡通|"
+        r"CCTV-?14|"
+        r"cartoon|disney|nickelodeon|nick\s*jr|kids|kika|cbbc|cbeebies|"
+        r"babytv|baby\s*tv|pbs\s*kids|boomerang|tooncast"
+        r")",
+        "🧸 儿童动画",
+    ),
     (r"(央视|CCTV|CGTN|风云音乐|第一剧场|怀旧剧场|女性时尚|风云足球|世界地理|兵器科技|电视指南)", "🇨🇳 央视频道"),
     (r"(翡翠|明珠|凤凰|鳳凰|莲花|TVB|华语|中天|东森|年代|民视|三立|台视|美亚|美亞|千禧|无线|無線|VIUTV|HOY|RTHK|靖天|星卫|香港|澳门|澳门|台湾|港澳)", "🇭🇰 港澳台频道"),
     (r"(卫视|湖南|浙江|江苏|北京|广东|深圳|东方|安徽|山东|河南|湖北|四川|辽宁|东南|天津|内蒙古|云南)", "📺 卫视频道"),
@@ -230,6 +262,34 @@ def guess_group(title: str) -> str:
     return "📺 其他频道"
 
 
+def guess_group_optimized(title: str, cfg: Config) -> str:
+    """
+    精细化分组：在通用规则前先按频道号判断央视子类。
+    - CCTV-5 / CCTV-5+ -> 体育频道
+    - CCTV-14 -> 儿童动画（已在通用规则首位）
+    - CCTV-4 中文国际 -> 国际频道（央视频道组内更精确的语义）
+    其余沿用通用规则。GROUP_FINE_GRAINED=0 时退回通用分组。
+    """
+    if not cfg.GROUP_FINE_GRAINED:
+        return guess_group(title)
+
+    if re.match(r"^CCTV-5(\+|\s|$)", title, re.I):
+        return "⚽ 体育频道"
+    if re.match(r"^CCTV-4\s+中文国际", title):
+        return "🌍 国际频道"
+    # CETV 是中国教育电视台，不能因纯英文被兜底到国际频道
+    if re.match(r"^CETV\b", title, re.I):
+        return "🎓 教育频道"
+    return guess_group(title)
+
+
+def group_title_with_quality(group: str, tier: str, cfg: Config) -> str:
+    """给 group-title 追加画质档位后缀，便于播放器按清晰度筛选"""
+    if not cfg.GROUP_SHOW_QUALITY or not tier or tier == "未知":
+        return group
+    return f"{group}·{tier}"
+
+
 def make_tvg_id(name: str) -> str:
     """生成不含中文的 tvg-id，避免 EPG 匹配失败"""
     m = re.match(r"^(CCTV)-(\d+)", name)
@@ -237,6 +297,24 @@ def make_tvg_id(name: str) -> str:
         return f"CCTV-{m.group(2)}"
     ascii_part = re.sub(r"[^A-Za-z0-9]+", "", name)
     return ascii_part or ("ch" + hashlib.md5(name.encode("utf-8")).hexdigest()[:8])
+
+
+def make_logo_url(name: str, cfg: Config) -> str:
+    """
+    生成台标 URL。fanmingming 台标库的命名规则（实测）：
+    - CCTV 系列无横杠: CCTV1.png / CCTV14.png（CCTV-14.png 是 404）
+    - 中文频道直接用中文名: 卡酷少儿.png / 湖南卫视.png（拼音 hash 是 404）
+    文件名需做 URL 编码，否则中文名在部分播放器中失效。
+    """
+    m = re.match(r"^CCTV-(\d+)", name)
+    if m:
+        filename = f"CCTV{int(m.group(1))}.png"
+    elif name.upper().startswith("CCTV-4K"):
+        filename = "CCTV4K.png"
+    else:
+        # 中文频道名直接用；去掉空格，保留中文/字母/数字
+        filename = re.sub(r"\s+", "", name) + ".png"
+    return f"{cfg.LOGO_BASE_URL}{quote(filename)}"
 
 
 def clean_url(raw: str) -> str:
@@ -524,6 +602,125 @@ def check_segment_header(data: bytes) -> Tuple[bool, Optional[str]]:
 
 
 # ============================================================
+# 质量评分：分辨率 + 真实码率（木桶效应，防假高清）
+# ============================================================
+
+# 分辨率档位 -> (最低像素值, 分数, 档位名)
+RESOLUTION_TIERS: List[Tuple[int, float, str]] = [
+    (3840 * 2160, 100.0, "4K"),
+    (1920 * 1080, 92.0, "1080P"),
+    (1280 * 720, 75.0, "720P"),
+    (720 * 480, 55.0, "480P"),
+]
+
+# 码率档位 -> (最低 Mbps, 分数, 档位名)。取自真实分片字节/时长，不信任 manifest 声明
+BITRATE_TIERS: List[Tuple[float, float, str]] = [
+    (15.0, 100.0, "4K"),
+    (4.0, 92.0, "1080P"),
+    (1.5, 75.0, "720P"),
+    (0.8, 55.0, "480P"),
+    (0.0, 25.0, "SD"),
+]
+
+UNKNOWN_QUALITY_SCORE = 40.0  # 指标缺失时的中性分，避免误杀也避免虚高
+
+
+def resolution_tier(resolution: Optional[str]) -> Tuple[float, str]:
+    """把 '1920x1080' 映射到 (分数, 档位名)"""
+    if not resolution:
+        return UNKNOWN_QUALITY_SCORE, "未知"
+    m = re.search(r"(\d{3,4})[xX](\d{3,4})", resolution)
+    if not m:
+        return UNKNOWN_QUALITY_SCORE, "未知"
+    pixels = int(m.group(1)) * int(m.group(2))
+    for threshold, score, name in RESOLUTION_TIERS:
+        if pixels >= threshold * 0.9:  # 允许 10% 容差（如 1920x1080 的轻微裁剪）
+            return score, name
+    return 35.0, "SD"
+
+
+def bitrate_tier(bitrate_mbps: float) -> Tuple[float, str]:
+    """把真实码率映射到 (分数, 档位名)"""
+    if bitrate_mbps <= 0:
+        return UNKNOWN_QUALITY_SCORE, "未知"
+    for threshold, score, name in BITRATE_TIERS:
+        if bitrate_mbps >= threshold:
+            return score, name
+    return 25.0, "SD"
+
+
+def evaluate_quality(
+    resolution: Optional[str], bitrate_mbps: float, penalty: float = 10.0
+) -> Tuple[float, str]:
+    """
+    质量分（0-100）+ 档位名。
+    核心：分辨率分与码率分取较低者（木桶效应）。
+    - '1920x1080' 但实测 0.3Mbps 的假高清 -> 码率档 SD -> 质量分 25
+    - 两者档位差 >= 2 档，再扣 penalty（声明与事实严重不符）
+    - 只有一个指标时，取该指标分但打折，避免过度自信
+    """
+    r_score, r_name = resolution_tier(resolution)
+    b_score, b_name = bitrate_tier(bitrate_mbps)
+
+    names = [n for n in (r_name, b_name) if n != "未知"]
+
+    if r_name != "未知" and b_name != "未知":
+        score = min(r_score, b_score)
+        if abs(r_score - b_score) >= 30:
+            score = max(0.0, score - penalty)
+        tier = r_name if r_score <= b_score else b_name
+    elif r_name != "未知":
+        score = r_score * 0.9
+        tier = r_name
+    elif b_name != "未知":
+        score = b_score * 0.9
+        tier = b_name
+    else:
+        score = UNKNOWN_QUALITY_SCORE
+        tier = "未知"
+
+    return round(score, 1), tier
+
+
+def speed_score(speed_mbps: float) -> float:
+    """速度分（0-100）：0.15MB/s 起评，2MB/s 满分"""
+    if speed_mbps <= 0.15:
+        return 0.0
+    if speed_mbps >= 2.0:
+        return 100.0
+    return round((speed_mbps - 0.15) / (2.0 - 0.15) * 100, 1)
+
+
+def latency_score(ttfb_ms: int) -> float:
+    """延迟分（0-100）：100ms 满分，3000ms 归零"""
+    if ttfb_ms < 0:
+        return 0.0
+    if ttfb_ms <= 100:
+        return 100.0
+    if ttfb_ms >= 3000:
+        return 0.0
+    return round((3000 - ttfb_ms) / (3000 - 100) * 100, 1)
+
+
+def composite_score(item: Dict[str, Any], cfg: Config) -> Dict[str, float]:
+    """计算综合分及各分项，供排序与报告使用"""
+    q = float(item.get("quality", 0))
+    s = speed_score(float(item.get("speed", 0)))
+    l = latency_score(int(item.get("ttfb", -1)))
+    total = (
+        cfg.WEIGHT_QUALITY * q
+        + cfg.WEIGHT_SPEED * s
+        + cfg.WEIGHT_LATENCY * l
+    )
+    return {
+        "quality": q,
+        "speed_score": s,
+        "latency_score": l,
+        "total": round(total, 2),
+    }
+
+
+# ============================================================
 # 验证结果 / 历史缓存
 # ============================================================
 
@@ -535,6 +732,8 @@ class ProbeResult:
     ttfb_ms: int = -1
     resolution: Optional[str] = None
     bitrate_mbps: float = 0.0
+    quality: float = 0.0
+    quality_tier: str = ""
     stage: str = ""
     reason: str = ""
 
@@ -571,13 +770,14 @@ class History:
 
     def record(self, url: str, result: ProbeResult) -> None:
         rec = self.data["urls"].setdefault(
-            url, {"fails": 0, "oks": 0, "last_ok": "", "speed": 0.0}
+            url, {"fails": 0, "oks": 0, "last_ok": "", "speed": 0.0, "quality": 0.0}
         )
         if result.alive:
             rec["fails"] = 0
             rec["oks"] = int(rec.get("oks", 0)) + 1
             rec["last_ok"] = beijing_time_str()
             rec["speed"] = round(result.speed, 3)
+            rec["quality"] = result.quality
             rec.pop("frozen_until_run", None)
         else:
             rec["fails"] = int(rec.get("fails", 0)) + 1
@@ -772,6 +972,9 @@ async def probe_source(
 
         result.resolution = resolution
         result.speed = round(speed, 3)
+        result.quality, result.quality_tier = evaluate_quality(
+            resolution, result.bitrate_mbps, cfg.MISMATCH_PENALTY
+        )
 
         if speed < cfg.MIN_SPEED_MBPS:
             result.stage, result.reason = "L3", f"too slow {speed:.2f}MB/s"
@@ -821,6 +1024,8 @@ async def probe_all(
                 "ttfb": res.ttfb_ms,
                 "resolution": res.resolution,
                 "bitrate": res.bitrate_mbps,
+                "quality": res.quality,
+                "quality_tier": res.quality_tier,
             })
             enriched.append(item)
     return enriched, stage_counter
@@ -832,12 +1037,33 @@ async def probe_all(
 
 def rank_and_select(
     results: List[Dict[str, Any]], cfg: Config
-) -> Tuple[List[Dict[str, Any]], int]:
-    """按速度降序、延迟升序排序；每频道保留 top N 且优先不同 host"""
-    results.sort(key=lambda x: (-x.get("speed", 0), x.get("ttfb", 9999)))
-
-    by_name: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+) -> Tuple[List[Dict[str, Any]], int, List[Dict[str, Any]]]:
+    """
+    质量优先筛选 + 综合分排序；每频道保留 top N 且优先不同 host。
+    1) 硬门槛：质量分低于 MIN_QUALITY_SCORE 的源直接淘汰（画质太差不保留）
+    2) 软排序：综合分 = 质量*0.6 + 速度*0.3 + 延迟*0.1
+    3) 同一频道内取 top N 不同 host，作为主源/备份
+    返回 (选中列表, 重复源淘汰数, 被质量门槛淘汰的列表)
+    """
+    # 1) 质量硬门槛
+    passed: List[Dict[str, Any]] = []
+    quality_rejected: List[Dict[str, Any]] = []
     for item in results:
+        if float(item.get("quality", 0)) < cfg.MIN_QUALITY_SCORE:
+            item = dict(item)
+            item["reject_reason"] = f"质量分 {item.get('quality', 0)} < {cfg.MIN_QUALITY_SCORE}"
+            quality_rejected.append(item)
+        else:
+            passed.append(item)
+
+    # 2) 计算综合分并排序
+    for item in passed:
+        item["score_detail"] = composite_score(item, cfg)
+    passed.sort(key=lambda x: (-x["score_detail"]["total"], -x.get("speed", 0), x.get("ttfb", 9999)))
+
+    # 3) 按频道分组，取 top N 不同 host
+    by_name: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    for item in passed:
         by_name[item["name"]].append(item)
 
     selected: List[Dict[str, Any]] = []
@@ -849,6 +1075,7 @@ def rank_and_select(
             host = get_host_key(item["url"]) or ""
             if not cfg.ALLOW_SAME_HOST_BACKUP and host in hosts:
                 continue
+            item["backup_index"] = len(chosen)  # 频道内独立编号：0=主源, 1/2=备份
             chosen.append(item)
             hosts.add(host)
             if len(chosen) >= cfg.KEEP_PER_CHANNEL:
@@ -857,8 +1084,8 @@ def rank_and_select(
         dropped += len(items) - len(chosen)
         selected.extend(chosen)
 
-    selected.sort(key=lambda x: (x["name"], -x.get("speed", 0)))
-    return selected, dropped
+    selected.sort(key=lambda x: (x["name"], -x["score_detail"]["total"]))
+    return selected, dropped, quality_rejected
 
 
 def sort_channels_with_predefined(
@@ -883,10 +1110,11 @@ def write_outputs(
     stage_counter: Counter,
     stats: Dict[str, Any],
     dropped: int,
+    quality_rejected: List[Dict[str, Any]],
 ) -> None:
     grouped: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
     for item in channels:
-        grouped[guess_group(item["name"])].append(item)
+        grouped[guess_group_optimized(item["name"], cfg)].append(item)
 
     order = load_channel_order(cfg.CHANNEL_ORDER_FILE)
     for g, chs in grouped.items():
@@ -899,20 +1127,54 @@ def write_outputs(
     for g, chs in grouped.items():
         ordered_groups.append((g, chs))
 
+    # 每个频道的最优画质档位（该频道所有备份源共用同一后缀，避免频道被拆散）
+    best_tier: Dict[str, str] = {}
+    for item in channels:
+        name, tier = item["name"], item.get("quality_tier", "")
+        if name not in best_tier or tier == "4K":
+            best_tier[name] = tier
+
+    def write_playlist(path: str, items: List[Dict[str, Any]], *, backups: bool) -> None:
+        """backups=False: 主列表每频道仅主源(换台一次到位); True: 全部源"""
+        with open(path, "w", encoding="utf-8") as f:
+            f.write('#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"\n')
+            f.write(f"# Generated at {beijing_time_str()} by IPTVCleaner v3.0\n")
+            if backups:
+                f.write("# 备份源列表：同频道多线路，播放失败时可手动切换；不影响主列表换台\n")
+            else:
+                f.write("# 主列表：每频道仅 1 条最优源，换台一次到位；备份见 live_backup.m3u\n")
+            for group_name, chs in ordered_groups:
+                for item in chs:
+                    idx = item.get("backup_index", 0)
+                    if backups and idx == 0:
+                        continue  # 备份文件只放备源，避免与主列表重复
+                    if not backups and idx != 0:
+                        continue  # 主列表只放主源
+                    tid = make_tvg_id(item["name"])
+                    logo = make_logo_url(item["name"], cfg)
+                    item_gt = group_title_with_quality(
+                        group_name, best_tier.get(item["name"], ""), cfg
+                    )
+                    label = item["name"] if idx == 0 else f'{item["name"]} [备{idx}]'
+                    detail = item.get("score_detail", {})
+                    comment = (
+                        f'# {item["name"]} | 质量{item.get("quality", 0)} '
+                        f'({item.get("quality_tier", "未知")}) | '
+                        f'{item.get("speed", 0)}MB/s | 码率{item.get("bitrate", 0)}Mbps | '
+                        f'综合{detail.get("total", 0)}\n'
+                    )
+                    f.write(comment)
+                    f.write(
+                        f'#EXTINF:-1 tvg-id="{tid}" tvg-name="{tid}" '
+                        f'tvg-logo="{logo}" group-title="{item_gt}",{label}\n'
+                    )
+                    f.write(f'{item["url"]}\n')
+
     os.makedirs(os.path.dirname(cfg.OUTPUT_FILE) or ".", exist_ok=True)
-    with open(cfg.OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write('#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"\n')
-        f.write(f"# Generated at {beijing_time_str()} by IPTVCleaner v3.0\n")
-        for group_name, chs in ordered_groups:
-            for i, item in enumerate(chs):
-                tid = make_tvg_id(item["name"])
-                logo = f"{cfg.LOGO_BASE_URL}{tid}.png"
-                label = item["name"] if i == 0 else f'{item["name"]} (备用{i})'
-                f.write(
-                    f'#EXTINF:-1 tvg-id="{tid}" tvg-name="{tid}" '
-                    f'tvg-logo="{logo}" group-title="{group_name}",{label}\n'
-                )
-                f.write(f'{item["url"]}\n')
+    write_playlist(cfg.OUTPUT_FILE, channels, backups=False)
+    if cfg.WRITE_BACKUP and cfg.BACKUP_FILE:
+        os.makedirs(os.path.dirname(cfg.BACKUP_FILE) or ".", exist_ok=True)
+        write_playlist(cfg.BACKUP_FILE, channels, backups=True)
 
     report = [
         "# IPTV 清洗报告 v3.0 (轻量漏斗版)",
@@ -923,9 +1185,14 @@ def write_outputs(
         f"| 原始频道 | {stats['raw']} |",
         f"| 过滤后 | {stats['filtered']} |",
         f"| 测速有效 | {stats['alive']} |",
-        f"| 最终输出 | {stats['final']} |",
-        f"| 备份源淘汰 | {dropped} |",
+        f"| 筛选后有效源 | {stats['final']} |",
+        f"| 主列表频道数 | {stats['main']}（每频道 1 条） |",
+        f"| 备份源数 | {stats['backup']}（单独文件） |",
+        f"| 重复源淘汰 | {dropped} |",
+        f"| 质量门槛淘汰 | {len(quality_rejected)} |",
         f"| 存活率 | {stats['rate']:.1f}% |",
+        "",
+        f"> 评分权重: 质量 {cfg.WEIGHT_QUALITY:.0%} + 速度 {cfg.WEIGHT_SPEED:.0%} + 延迟 {cfg.WEIGHT_LATENCY:.0%}；质量门槛 ≥ {cfg.MIN_QUALITY_SCORE}",
         "",
         "## 验证漏斗统计",
         "",
@@ -942,6 +1209,33 @@ def write_outputs(
     }
     for k, v in sorted(stage_counter.items(), key=lambda x: -x[1]):
         report.append(f"| {labels.get(k, k)} | {v} |")
+
+    # 画质档位分布
+    tier_counter = Counter(item.get("quality_tier", "未知") for item in channels)
+    report += ["", "## 画质档位分布", ""]
+    for tier, count in sorted(
+        tier_counter.items(),
+        key=lambda x: -next((t[2] for t in RESOLUTION_TIERS if t[2] == x[0]), 0),
+    ):
+        report.append(f"- **{tier}**: {count}")
+
+    report += ["", "## 高质量源 Top 10", "", "| 频道 | 档位 | 质量 | 速度 | 码率 | 综合分 |", "|---|---|---|---|---|---|"]
+    top = sorted(channels, key=lambda x: -x.get("score_detail", {}).get("total", 0))[:10]
+    for item in top:
+        d = item.get("score_detail", {})
+        report.append(
+            f'| {item["name"]} | {item.get("quality_tier", "未知")} | '
+            f'{item.get("quality", 0)} | {item.get("speed", 0)}MB/s | '
+            f'{item.get("bitrate", 0)}Mbps | {d.get("total", 0)} |'
+        )
+
+    if quality_rejected:
+        report += ["", "## 质量门槛淘汰（Top 10）", "", "| 频道 | 质量分 | 速度 | 原因 |", "|---|---|---|---|"]
+        for item in quality_rejected[:10]:
+            report.append(
+                f'| {item["name"]} | {item.get("quality", 0)} | '
+                f'{item.get("speed", 0)}MB/s | {item.get("reject_reason", "")} |'
+            )
 
     report += ["", "## 分组统计", ""]
     for g, chs in sorted(ordered_groups, key=lambda x: -len(x[1])):
@@ -1098,17 +1392,23 @@ async def async_main(args: argparse.Namespace, cfg: Config) -> None:
     elapsed = time.monotonic() - t0
     logging.info("测速完成，耗时 %.1fs，漏斗统计 %s", elapsed, dict(counter))
 
-    selected, dropped = rank_and_select(enriched, cfg)
-    logging.info("最终输出 %d 条（含备份），淘汰重复源 %d 条", len(selected), dropped)
+    selected, dropped, quality_rejected = rank_and_select(enriched, cfg)
+    main_count = sum(1 for x in selected if x.get("backup_index", 0) == 0)
+    logging.info(
+        "筛选完成：主列表 %d 个频道 + 备份源 %d 条，重复源淘汰 %d 条，质量门槛淘汰 %d 条",
+        main_count, len(selected) - main_count, dropped, len(quality_rejected),
+    )
 
     stats = {
         "raw": len(raw_channels),
         "filtered": len(filtered),
         "alive": len(enriched),
         "final": len(selected),
+        "main": main_count,
+        "backup": len(selected) - main_count,
         "rate": (len(enriched) / len(filtered) * 100) if filtered else 0,
     }
-    write_outputs(selected, cfg, counter, stats, dropped)
+    write_outputs(selected, cfg, counter, stats, dropped, quality_rejected)
     history.save()
 
     if cfg.BARK_DEVICE_KEY:
