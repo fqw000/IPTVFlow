@@ -27,3 +27,5 @@ https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u
 https://raw.githubusercontent.com/wkyilisha/zubo/e063c186e99dcc136ae435b87f9053f24061a5ad/iptv.txt
 
 https://raw.githubusercontent.com/zilong7728/Collect-IPTV/refs/heads/main/best_sorted.m3u
+
+https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt
