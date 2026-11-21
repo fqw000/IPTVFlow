@@ -1368,7 +1368,10 @@ def write_outputs(
     logging.info("输出已保存: %s, %s", cfg.OUTPUT_FILE, cfg.REPORT_FILE)
 
 
-def send_bark(report_path: str, device_key: str) -> None:
+async def send_bark(report_path: str, device_key: str) -> None:
+    """异步发送 Bark 通知。注意：本函数在 async_main 的事件循环内运行，
+    绝不能再用 asyncio.run()——那会在已运行的循环中抛 RuntimeError，
+    异常被吞掉后通知静默丢失。"""
     if not device_key:
         return
     try:
@@ -1389,11 +1392,9 @@ def send_bark(report_path: str, device_key: str) -> None:
     }
     try:
         timeout = ClientTimeout(total=10)
-        async def _post():
-            async with ClientSession(timeout=timeout) as s:
-                async with s.post("https://api.day.app/push", json=payload) as r:
-                    return r.status
-        status = asyncio.run(_post())
+        async with ClientSession(timeout=timeout) as s:
+            async with s.post("https://api.day.app/push", json=payload) as r:
+                status = r.status
         if status == 200:
             logging.info("Bark 报告已发送")
         else:
@@ -1533,7 +1534,7 @@ async def async_main(args: argparse.Namespace, cfg: Config) -> None:
     history.save()
 
     if cfg.BARK_DEVICE_KEY:
-        send_bark(cfg.REPORT_FILE, cfg.BARK_DEVICE_KEY)
+        await send_bark(cfg.REPORT_FILE, cfg.BARK_DEVICE_KEY)
 
 
 def main() -> None:
