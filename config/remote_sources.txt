@@ -50,5 +50,14 @@ https://raw.githubusercontent.com/YueChan/Live/main/Hunan.txt
 # ------------------------------------------------------------
 # kakaxi-1/zubo 酒店源扫描结果（每日更新，310 条 http 频道，#genre# TXT 格式）
 https://raw.githubusercontent.com/kakaxi-1/zubo/main/itvlist.txt
+https://raw.githubusercontent.com/liulei120/TVCrazy/main/output/itvlist.m3u
+
+https://raw.githubusercontent.com/Ethan-Men/8159-TV/master/output/user_result.m3u
+https://raw.githubusercontent.com/alantang1977/jtv/main/综合源.txt
+https://raw.githubusercontent.com/yyyr-otz/iptv-api/master/output/result.m3u
+https://github.com/xiongjian83/TV1/blob/master/output/result.m3u
+
+https://raw.githubusercontent.com/niubihu1/tvbox/main/live.txt
+
 
 
