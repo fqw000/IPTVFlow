@@ -1,4 +1,3 @@
-
 # ============================================================
 # 远程直播源订阅列表（每行一个 URL，# 开头为注释）
 # 支持格式：M3U / M3U8 / TXT(#genre# 格式) / 纯 URL 列表
@@ -21,6 +20,9 @@ https://iptv-org.github.io/iptv/countries/cn.m3u
 https://iptv-org.github.io/iptv/categories/kids.m3u
 # YueChan/Live 港澳台及海外华语（GNTV 27KB，每日更新）
 https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u
+# iptv-org 港澳台单表（补充港/台地区频道，6KB，每日 bot 更新）
+https://iptv-org.github.io/iptv/countries/hk.m3u
+https://iptv-org.github.io/iptv/countries/tw.m3u
 # thetvapp（海外华语/国际，27KB）
 https://raw.wangqifei.eu.org/thetvapp/thetvapplist.m3u
 
@@ -30,6 +32,9 @@ https://raw.wangqifei.eu.org/thetvapp/thetvapplist.m3u
 # Guovin/iptv-api 国内 IPv4 / IPv6（已测速筛选后的结果，优先级最高）
 https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u
 https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u
+# vbskycn/iptv 国内聚合（10.7k star，今日更新，335 频道，央视/卫视齐全、带 tvg-id/logo）
+# 官方另有 live.zbds.top/tv/iptv4.m3u 镜像；raw 直链更稳定，二者内容同源勿重复启用
+https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u
 # suxuandg/myIPTV 国内 IPv4 / IPv6（268KB/200KB，每日更新）
 https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
 https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
@@ -37,11 +42,29 @@ https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
 https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt
 # zilong7728 聚合（精选排序，80KB）
 https://raw.githubusercontent.com/zilong7728/Collect-IPTV/refs/heads/main/best_sorted.m3u
-# TVCrazy 运营商源（27 频道，质量不错）
+# TVCrazy 运营商源（fqw000 精简版 27 频道 / liulei120 完整版 256 频道）
 https://raw.githubusercontent.com/fqw000/TVCrazy/refs/heads/main/output/itvlist.m3u
+https://raw.githubusercontent.com/liulei120/TVCrazy/main/output/itvlist.m3u
 # YueChan 地方台（CUTV 地市台 / 湖南台）
 https://raw.githubusercontent.com/YueChan/Live/main/CUTV.txt
 https://raw.githubusercontent.com/YueChan/Live/main/Hunan.txt
+# hujingguang/ChinaIPTV（2.1k star，今日更新，49 频道；湖南台/港澳台/4K/儿童等特色频道，
+#   与 vbskycn 重叠仅 1 个，补充价值高）
+https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8
+# 以下为用户补充的 IPTV-API 系产出（每日更新，频道量大）
+# Ethan-Men/8159-TV（278KB，1122 唯一源；带 EPG x-tvg-url）
+https://raw.githubusercontent.com/Ethan-Men/8159-TV/master/output/user_result.m3u
+# xiongjian83/TV1（800KB，3607 唯一源；注意原 blob 链接是网页，已改为 raw 直链）
+https://raw.githubusercontent.com/xiongjian83/TV1/master/output/result.m3u
+# yyyr-otz/iptv-api（829KB，3492 唯一源；与 xiongjian83 重叠约 70%，二选一亦可）
+https://raw.githubusercontent.com/yyyr-otz/iptv-api/master/output/result.m3u
+# niubihu1/tvbox（182KB，1998 唯一源，#genre# TXT 格式）
+https://raw.githubusercontent.com/niubihu1/tvbox/main/live.txt
+# BurningC4/Chinese-IPTV（58 频道，tvg-id 为小写 cctv1 等，与 EPG 大写 id 不匹配，列为备选）
+# https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
+
+https://raw.githubusercontent.com/alantang1977/jtv/main/网络收集.txt
+https://raw.githubusercontent.com/alantang1977/jtv/main/综合源.txt
 
 # ------------------------------------------------------------
 # 🏨 酒店源 / 组播源（项目产出为 http 订阅，清洗器可直接用）
@@ -50,14 +73,12 @@ https://raw.githubusercontent.com/YueChan/Live/main/Hunan.txt
 # ------------------------------------------------------------
 # kakaxi-1/zubo 酒店源扫描结果（每日更新，310 条 http 频道，#genre# TXT 格式）
 https://raw.githubusercontent.com/kakaxi-1/zubo/main/itvlist.txt
-https://raw.githubusercontent.com/liulei120/TVCrazy/main/output/itvlist.m3u
 
-https://raw.githubusercontent.com/Ethan-Men/8159-TV/master/output/user_result.m3u
-https://raw.githubusercontent.com/alantang1977/jtv/main/综合源.txt
-https://raw.githubusercontent.com/yyyr-otz/iptv-api/master/output/result.m3u
-https://github.com/xiongjian83/TV1/blob/master/output/result.m3u
+# ------------------------------------------------------------
+# 📌 已失效 / 重复（勿启用，仅为记录）
+# ------------------------------------------------------------
+# 404: YueChan/Live Global.m3u、China.m3u、wkyilisha/zubo iptv.txt、raw.wangqifei.eu.org/rtp
+# 重复: s.wangqifei.eu.org/live 与 Supprise0901/TVBox_live/live.txt 内容完全相同（MD5 一致）
 
-https://raw.githubusercontent.com/niubihu1/tvbox/main/live.txt
-
-
-
+# 网页链接非订阅: github.com/xiongjian83/TV1/blob/... —— 已改 raw 直链（见国内源）
+# xiongjian83 与 yyyr-otz 重叠约 70%，若嫌测速慢可注释其一
