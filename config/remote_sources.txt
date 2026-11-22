@@ -1,31 +1,54 @@
+
+# ============================================================
+# 远程直播源订阅列表（每行一个 URL，# 开头为注释）
+# 支持格式：M3U / M3U8 / TXT(#genre# 格式) / 纯 URL 列表
 #
-# # 国际源
-# thetvapp
-# https://raw.wangqifei.eu.org/thetvapp/thetvapplist.m3u
-https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u
+# 维护说明（2026-11-22 整理）：
+#   - 只收录“更新频繁 + 可用”的源，已剔除失效(404)与重复源
+#   - 清洗器仅支持 http/https；纯 rtp:// / udp:// 组播源会被过滤，
+#     因此这里收录的是“组播/酒店源项目产出的 http 订阅结果”
+#   - 单个源不宜过大；iptv-org 全量表 2.5MB 加载较慢，按需启用
+#   - 全部源经并发拉取后合并去重，数量过多会拉长测速时间
+# ============================================================
 
-#
-# # 国内源
-# iptv_api项目源
-# https://raw.githubusercontent.com/alantang1977/iptv_api/refs/heads/main/output/live_ipv4.m3u
+# ------------------------------------------------------------
+# 🌍 国际 / 全球源
+# ------------------------------------------------------------
+# iptv-org 全球总表（每日自动更新，2.5MB，频道极多；如只需国内可换下方 cn.m3u）
+# https://iptv-org.github.io/iptv/index.m3u
+https://iptv-org.github.io/iptv/countries/cn.m3u
+# 国际儿童频道（补充 kids 分组，Bark/ kids 频道）
+https://iptv-org.github.io/iptv/categories/kids.m3u
+# YueChan/Live 港澳台及海外华语（GNTV 27KB，每日更新）
+https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u
+# thetvapp（海外华语/国际，27KB）
+https://raw.wangqifei.eu.org/thetvapp/thetvapplist.m3u
 
-https://raw.wangqifei.eu.org/rtp
-https://s.wangqifei.eu.org/live
-
-# TVCrazy
-https://raw.githubusercontent.com/fqw000/TVCrazy/refs/heads/main/output/itvlist.m3u
-
-
-# myiptv
-https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
-# iptv-api
+# ------------------------------------------------------------
+# 🇨🇳 国内源（IPTV-API 项目产出，每日 6:00/18:00 更新两次，质量高）
+# ------------------------------------------------------------
+# Guovin/iptv-api 国内 IPv4 / IPv6（已测速筛选后的结果，优先级最高）
 https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u
-# gntv
-https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u
-
-# wkyilisha/zubo
-https://raw.githubusercontent.com/wkyilisha/zubo/e063c186e99dcc136ae435b87f9053f24061a5ad/iptv.txt
-
-https://raw.githubusercontent.com/zilong7728/Collect-IPTV/refs/heads/main/best_sorted.m3u
-
+https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u
+# suxuandg/myIPTV 国内 IPv4 / IPv6（268KB/200KB，每日更新）
+https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
+https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
+# 自有聚合（s.wangqifei.eu.org/live，114KB，与 TVBox_live 同源二选一，保留官方 GitHub 版）
 https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt
+# zilong7728 聚合（精选排序，80KB）
+https://raw.githubusercontent.com/zilong7728/Collect-IPTV/refs/heads/main/best_sorted.m3u
+# TVCrazy 运营商源（27 频道，质量不错）
+https://raw.githubusercontent.com/fqw000/TVCrazy/refs/heads/main/output/itvlist.m3u
+# YueChan 地方台（CUTV 地市台 / 湖南台）
+https://raw.githubusercontent.com/YueChan/Live/main/CUTV.txt
+https://raw.githubusercontent.com/YueChan/Live/main/Hunan.txt
+
+# ------------------------------------------------------------
+# 🏨 酒店源 / 组播源（项目产出为 http 订阅，清洗器可直接用）
+# 说明：原始 rtp:// / udp:// 组播地址无法被本清洗器请求，
+#       这里只收录“已转成 http m3u8”的成品列表。
+# ------------------------------------------------------------
+# kakaxi-1/zubo 酒店源扫描结果（每日更新，310 条 http 频道，#genre# TXT 格式）
+https://raw.githubusercontent.com/kakaxi-1/zubo/main/itvlist.txt
+
+
