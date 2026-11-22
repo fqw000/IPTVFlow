@@ -2,6 +2,12 @@ on:
   schedule:
     - cron: '15 1 * * *'  # UTC 01:15 → 北京时间 09:15
   workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'config/**'
+      - 'local_playlist/**'
+      - '*.py'
 
 jobs:
   update-iptv:
