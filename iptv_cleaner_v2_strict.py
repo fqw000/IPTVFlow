@@ -53,6 +53,10 @@ class Config:
 
     BASE_URL_FILE = os.getenv("IPTV_BASE_URL_FILE", "config/remote_sources.txt")
     BLACKLIST_FILE = os.getenv("IPTV_BLACKLIST_FILE", "config/blackHost_list.txt")
+    # 频道名黑名单（正则），每行一条；命中的频道在过滤阶段直接剔除
+    CHANNEL_BLACKLIST_FILE = os.getenv(
+        "IPTV_CHANNEL_BLACKLIST_FILE", "config/channel_blacklist.txt"
+    )
     CHANNEL_ORDER_FILE = os.getenv("IPTV_CHANNEL_ORDER_FILE", "config/channel_order.json")
     OUTPUT_FILE = os.getenv("IPTV_OUTPUT_FILE", "output/live.m3u")
     # 备份源单独输出：主列表每频道只留 1 条，避免遥控器换台要点多次
@@ -482,6 +486,38 @@ def is_blocked(url: str, hosts: Set[str], host_ports: Set[str]) -> bool:
         return f"{h}:{port}" in host_ports or h in hosts
     except Exception:
         return False
+
+
+def load_channel_blacklist(path: str) -> List[re.Pattern]:
+    """加载频道名黑名单（正则表达式列表）。
+
+    每行一条正则，空行与 # 开头忽略。用 re.search 匹配，因此写 `春晚`
+    即可命中任意含“春晚”的频道名；写 `^春晚` 则只匹配开头。
+    非法正则会被跳过并告警，避免单条配置写错导致整个流程失败。
+    """
+    patterns: List[re.Pattern] = []
+    if not os.path.exists(path):
+        return patterns
+    try:
+        with open(path, "r", encoding="utf-8-sig") as f:
+            for lineno, line in enumerate(f, 1):
+                raw = line.strip()
+                if not raw or raw.startswith("#"):
+                    continue
+                try:
+                    patterns.append(re.compile(raw))
+                except re.error as exc:
+                    logging.warning(
+                        "频道黑名单正则无效(第%d行 %r): %s，已跳过", lineno, raw, exc
+                    )
+    except Exception as exc:
+        logging.warning("读取频道黑名单失败: %s", exc)
+    return patterns
+
+
+def is_channel_blocked(name: str, patterns: List[re.Pattern]) -> bool:
+    """频道名是否命中黑名单正则（任一命中即剔除）。"""
+    return any(p.search(name) for p in patterns)
 
 
 def load_channel_order(path: str) -> Dict[str, List[str]]:
@@ -1307,6 +1343,7 @@ def write_outputs(
         "| 指标 | 数值 |",
         "|---|---|",
         f"| 原始频道 | {stats['raw']} |",
+        f"| 频道黑名单剔除 | {stats.get('channel_blocked', 0)} |",
         f"| 过滤后 | {stats['filtered']} |",
         f"| 测速有效 | {stats['alive']} |",
         f"| 筛选后有效源 | {stats['final']} |",
@@ -1368,26 +1405,89 @@ def write_outputs(
     logging.info("输出已保存: %s, %s", cfg.OUTPUT_FILE, cfg.REPORT_FILE)
 
 
-async def send_bark(report_path: str, device_key: str) -> None:
+def build_bark_message(
+    stats: Dict[str, Any],
+    counter: Counter,
+    dropped: int,
+    quality_rejected: List[Dict[str, Any]],
+    group_counts: Optional[Dict[str, int]] = None,
+) -> Tuple[str, str, str]:
+    """构造 Bark 通知的 (标题, markdown正文, 纯文本正文)。
+
+    Bark 支持 Markdown（标题/粗体/列表等），但**不支持表格**——所以绝不把
+    report.md 的表格塞进通知。正文用固定顺序：时间 → 核心指标 → 漏斗 →
+    频道分类数量，分类按频道名去重统计，便于在通知里一眼看清构成。
+    同时返回一份纯文本正文（去掉 markdown 标记）作为老版本兜底。
+    """
+    main = stats.get("main", 0)
+    backup = stats.get("backup", 0)
+    filtered = stats.get("filtered", 0)
+    alive = stats.get("alive", 0)
+    rate = stats.get("rate", 0.0)
+    blocked = stats.get("channel_blocked", 0)
+
+    title = "📺 IPTV 清洗报告"
+
+    # --- markdown 正文（Bark 用 Swift Markdown 渲染，列表/粗体 OK，表格不行）---
+    md_lines = [
+        f"🕐 {beijing_time_str()}",
+        "",
+        f"- 📺 **主列表** {main} 个频道（每频道 1 条最优源）",
+        f"- 🔗 **备份源** {backup} 条",
+        f"- ✅ **测速通过** {alive} / {filtered}（存活率 {rate:.1f}%）",
+        f"- ❌ **淘汰** 重复 {dropped} · 低质 {len(quality_rejected)}",
+    ]
+    if blocked:
+        md_lines.append(f"- 🚫 **频道黑名单** 剔除 {blocked} 条")
+
+    funnel = " · ".join(
+        f"{label} {counter.get(key, 0)}"
+        for key, label in (("L1", "L1"), ("L2", "L2"), ("L3", "L3"), ("EXC", "异常"))
+        if counter.get(key, 0)
+    )
+    if funnel:
+        md_lines.append(f"- 📊 **漏斗淘汰** {funnel}")
+
+    # 频道分类数量：按频道数降序，正文只展示，标题已固定
+    if group_counts:
+        md_lines += ["", "**频道分类（按频道名）**"]
+        for g, cnt in sorted(group_counts.items(), key=lambda x: -x[1]):
+            md_lines.append(f"- {g}: {cnt}")
+
+    # --- 纯文本兜底：去掉 markdown 的 ** 与列表前缀 ---
+    plain_lines = [
+        line.replace("**", "").lstrip("- ") if line else ""
+        for line in md_lines
+    ]
+    return title, "\n".join(md_lines), "\n".join(plain_lines)
+
+
+async def send_bark(
+    cfg: Config,
+    stats: Dict[str, Any],
+    counter: Counter,
+    dropped: int,
+    quality_rejected: List[Dict[str, Any]],
+    group_counts: Optional[Dict[str, int]] = None,
+) -> None:
     """异步发送 Bark 通知。注意：本函数在 async_main 的事件循环内运行，
     绝不能再用 asyncio.run()——那会在已运行的循环中抛 RuntimeError，
-    异常被吞掉后通知静默丢失。"""
+    异常被吞掉后通知静默丢失。
+
+    内容用精简摘要而非报告全文；body 作纯文本兜底，markdown 供支持的版本
+    渲染，两者文本一致（纯文本对 markdown 解析器是合法的）。
+    """
+    device_key = cfg.BARK_DEVICE_KEY
     if not device_key:
         return
-    try:
-        with open(report_path, "r", encoding="utf-8") as f:
-            content = f.read()
-    except Exception as exc:
-        logging.error("Bark 读取报告失败: %s", exc)
-        return
-
-    if len(content) > 1500:
-        content = content[:1500] + "\n\n...(内容过长，请查看完整报告)"
-
+    title, md_text, plain_text = build_bark_message(
+        stats, counter, dropped, quality_rejected, group_counts
+    )
     payload = {
         "device_key": device_key,
-        "title": "IPTV 清洗报告",
-        "markdown": content,
+        "title": title,
+        "body": plain_text,     # 纯文本兜底（老版本/不支持 markdown 的客户端）
+        "markdown": md_text,    # 富文本：Bark 渲染时优先用这个
         "group": "IPTV",
     }
     try:
@@ -1483,23 +1583,38 @@ async def async_main(args: argparse.Namespace, cfg: Config) -> None:
     logging.info("解析到 %d 条原始记录", len(raw_channels))
 
     host_bl, port_bl = load_blacklist(cfg.BLACKLIST_FILE)
+    channel_bl = load_channel_blacklist(cfg.CHANNEL_BLACKLIST_FILE)
+    if channel_bl:
+        logging.info("频道名黑名单加载 %d 条正则", len(channel_bl))
+    channel_blocked = 0
     seen: Set[str] = set()
     filtered: List[Dict[str, str]] = []
     for ch in raw_channels:
         url = ch["url"]
         if not is_valid_url(url) or url in seen:
             continue
+        # 频道名黑名单：原始名与标准化名任一命中即剔除（如“春晚”等临时频道）
+        norm_name = normalize_channel_name(ch["name"])
+        if channel_bl and (
+            is_channel_blocked(ch["name"], channel_bl)
+            or is_channel_blocked(norm_name, channel_bl)
+        ):
+            channel_blocked += 1
+            continue
         if is_blocked(url, host_bl, port_bl):
             continue
         seen.add(url)
         filtered.append({
-            "name": normalize_channel_name(ch["name"]),
+            "name": norm_name,
             "url": url,
             "original": ch["name"],
         })
 
-    logging.info("过滤后 %d 条，唯一主机 %d 个",
-                 len(filtered), len({get_host_key(c["url"]) for c in filtered}))
+    logging.info(
+        "过滤后 %d 条（频道黑名单剔除 %d 条），唯一主机 %d 个",
+        len(filtered), channel_blocked,
+        len({get_host_key(c["url"]) for c in filtered}),
+    )
 
     if args.limit:
         filtered = filtered[:args.limit]
@@ -1521,6 +1636,13 @@ async def async_main(args: argparse.Namespace, cfg: Config) -> None:
         main_count, len(selected) - main_count, dropped, len(quality_rejected),
     )
 
+    # 按分组统计频道数（只算主源 backup_index==0，按频道名去重）——供通知展示
+    group_channels: Dict[str, Set[str]] = defaultdict(set)
+    for x in selected:
+        if x.get("backup_index", 0) == 0:
+            group_channels[guess_group_optimized(x["name"], cfg)].add(x["name"])
+    group_counts = {g: len(names) for g, names in group_channels.items()}
+
     stats = {
         "raw": len(raw_channels),
         "filtered": len(filtered),
@@ -1529,12 +1651,12 @@ async def async_main(args: argparse.Namespace, cfg: Config) -> None:
         "main": main_count,
         "backup": len(selected) - main_count,
         "rate": (len(enriched) / len(filtered) * 100) if filtered else 0,
+        "channel_blocked": channel_blocked,
     }
     write_outputs(selected, cfg, counter, stats, dropped, quality_rejected)
     history.save()
 
-    if cfg.BARK_DEVICE_KEY:
-        await send_bark(cfg.REPORT_FILE, cfg.BARK_DEVICE_KEY)
+    await send_bark(cfg, stats, counter, dropped, quality_rejected, group_counts)
 
 
 def main() -> None:
@@ -1552,6 +1674,7 @@ def main() -> None:
         base = args.config_dir.rstrip("/")
         cfg.BASE_URL_FILE = f"{base}/remote_sources.txt"
         cfg.BLACKLIST_FILE = f"{base}/blackHost_list.txt"
+        cfg.CHANNEL_BLACKLIST_FILE = f"{base}/channel_blacklist.txt"
         cfg.CHANNEL_ORDER_FILE = f"{base}/channel_order.json"
         cfg.HISTORY_FILE = f"{base}/../output/history.json"
         cfg.OUTPUT_FILE = f"{base}/../output/live.m3u"
