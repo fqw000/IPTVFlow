@@ -589,6 +589,52 @@ def parse_m3u(content: str) -> List[Dict[str, str]]:
     return channels
 
 
+def dedup_m3u_chunks(chunks: List[str]) -> Tuple[str, int]:
+    """合并多个 M3U 文本块，并在拼接阶段按频道 URL 去重（保序，先到先得）。
+
+    为什么不只依赖下游 seen 去重：下游虽能防止重复 URL 被重复测速，但
+    所有重复条目仍会先进入 raw_channels 并逐条做名称标准化等 CPU 处理。
+    在源头去重可让“解析到 N 条”这个数字反映真实唯一源，减少后续每一环
+    的处理量与内存开销。对同一 URL 保留首次出现的 EXTINF 标注（与下游
+    seen 的“先到先得”语义一致，不改变最终选源结果）。
+
+    Returns:
+        (合并去重后的 M3U 文本, 被去重掉的条目数)
+    """
+    seen: Set[str] = set()
+    kept: List[str] = []
+    removed = 0
+    header: Optional[str] = None
+    for chunk in chunks:
+        lines = [l.strip() for l in chunk.splitlines() if l.strip()]
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if line.upper().startswith("#EXTM3U"):
+                # 头行只保留一次（后续源的 x-tvg-url 等头信息丢弃）
+                if header is None:
+                    header = line
+                i += 1
+                continue
+            if line.upper().startswith("#EXTINF:") and i + 1 < len(lines):
+                next_line = lines[i + 1]
+                if next_line.startswith(("http://", "https://")):
+                    url = clean_url(next_line)
+                    if url in seen:
+                        removed += 1
+                        i += 2
+                        continue
+                    seen.add(url)
+                    kept.append(line)
+                    kept.append(next_line)
+                    i += 2
+                    continue
+            # 其他杂项行（如 #EXTGRP）直接跳过，parse_m3u 本就忽略
+            i += 1
+    body = "\n".join(kept)
+    return (header + "\n" + body if header else body), removed
+
+
 def parse_hls(text: str, base: str) -> Dict[str, Any]:
     """轻量 HLS 解析：不依赖 m3u8 库，只提取需要的字段"""
     lines = [l.strip() for l in text.splitlines() if l.strip()]
@@ -1566,7 +1612,14 @@ async def load_sources(cfg: Config) -> Tuple[str, List[Dict[str, Any]]]:
                 detail["error"] = type(exc).__name__
             details.append(detail)
 
-    return "\n".join(chunks), details
+    merged, dup_removed = dedup_m3u_chunks(chunks)
+    details.append({
+        "type": "summary",
+        "chunks": len(chunks),
+        "dedup_removed": dup_removed,
+        "unique_channels": merged.count("#EXTINF:"),
+    })
+    return merged, details
 
 
 async def async_main(args: argparse.Namespace, cfg: Config) -> None:
@@ -1579,6 +1632,13 @@ async def async_main(args: argparse.Namespace, cfg: Config) -> None:
         history.begin_run()
 
     raw_content, source_details = await load_sources(cfg)
+    # 拼接阶段已按 URL 去重的统计（不影响下游 seen 二次去重，作为安全网保留）
+    for d in source_details:
+        if d.get("type") == "summary":
+            logging.info(
+                "源合并去重：%d 个列表块 → 唯一频道 %d 条，拼接阶段剔除重复 %d 条",
+                d.get("chunks", 0), d.get("unique_channels", 0), d.get("dedup_removed", 0),
+            )
     raw_channels = parse_m3u(raw_content)
     logging.info("解析到 %d 条原始记录", len(raw_channels))
 
